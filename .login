@@ -43,6 +43,7 @@ alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
 alias cvsq cvs -n -q update
 alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e less $cwfile.tmp &'
+alias del rm -i
 alias dial sudo /etc/ppp/ppp-on
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
@@ -83,14 +84,13 @@ alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null 
 alias news "xrn -nntpServer news.cebaf.gov &"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu "pushd"
-alias rmi "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_epics \
     source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics
 alias shenv "printenv | grep -i"
 alias soup xv /home/marki/misc/soup.gif
 alias spe "source ~marki/bin/spe"
-alias staff "grep -i \!* /tmp/staff.txt"
+if ($HOST == claspc2.cebaf.gov) alias staff "grep -i \!* /tmp/staff.txt"
 alias sstaff ssh jlaba2 staff
 alias suterm "xterm -e su &"
 alias todo "emacs ~/misc/stuff/lists/todo.txt &"

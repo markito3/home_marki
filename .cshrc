@@ -20,6 +20,8 @@ else if ($HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
   setenv CERN /site/cernlib/pc_linux
 else if ($HOST == claspc2.jlab.org) then
   setenv CERN /home/cern
+else if ($HOST == claslap2.jlab.org) then
+  setenv CERN /home/cern
 else if ($HOST == marki.jlab.org) then
   setenv CERN /home/cern/cernlib
 else
@@ -42,6 +44,8 @@ if ($HOST != marki.jlab.org) setenv PRINTER phyhp9
 #
 if ($HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
     setenv CERN_LEVEL 98a
+else if ($HOST == claslap2.jlab.org) then
+  setenv CERN_LEVEL 2000
 else
     setenv CERN_LEVEL 99
 endif

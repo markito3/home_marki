@@ -77,7 +77,7 @@ else
     alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 endif
 alias setup_epics \
-    source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics
+    source /home/epics/prod/epicsB/prod/scripts/setup_epics
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin \!* &"

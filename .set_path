@@ -1,11 +1,11 @@
 #
 # path
 #
-if ($OSNAME == HP-UX && $HOST != clas10) then
+if ($OSNAME == HP-UX) then
   eval `~marki/bin/addpath.perl /apps/tex/bin /apps/emacs/19.34b/bin /apps/make/bin /apps/bin /site/bin /opt/fortran/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == ifarms1 || $HOST == ifarms2) then
     eval `~marki/bin/delpath.perl /usr/local/bin`
-  eval `~marki/bin/addpath.perl $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
+  eval `~marki/bin/addpath.perl $CLAS_TOOLS/misc $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
 else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 || $HOST == clon10) then
   eval `~marki/bin/addpath.perl $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
@@ -22,4 +22,4 @@ if ($HOST == clas10) then
   eval `~marki/bin/delpath.perl /usr/local/bin /usr/bin /bin /usr/site2/gnu/bin /usr/site2/bin /usr/vue/bin /usr/contrib/bin . /bin/posix /usr/bin/X11`
   eval `~marki/bin/addpath.perl /usr/vue/bin /usr/bin/X11 /usr/local/bin /usr/bin /bin`
 endif
-eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CLAS_SCRIPTS $CLAS_BIN $CERN_ROOT/bin`
+eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin`

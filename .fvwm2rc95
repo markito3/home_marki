@@ -640,7 +640,7 @@ Key Escape      A       C       WindowList
 *FvwmWinListShowCurrentDesk
         
 #------------------ FvwmTaskBar
-Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky,StaysOnTop,WindowListSkip,CirculateSkip
+Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky,WindowListSkip,CirculateSkip
 
 *FvwmTaskBarGeometry +0-0
 *FvwmTaskBarFore Black

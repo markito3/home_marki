@@ -49,7 +49,7 @@ alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias colors "more /usr/lib/X11/rgb.txt"
 alias crib "less $MISC/crib.txt"
-alias cribadd "x $MISC/crib.txt"
+alias cribadd "emacs $MISC/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /apps/clas/u1/clas_cvs
 alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/apps/clas/u1/clas_cvs

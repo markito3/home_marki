@@ -10,6 +10,7 @@ steve_b	Barrow, Steve	barrow@jlab.org
 dzb	Besson, David Z.	dzb@kuhep4.phsx.ukans.edu
 matt_b	Bickley, Matt	bickley@jlab.org
 ed_b	Bimler, Edward	ebimler@aol.com
+bin	Bin Zhang	bzh@jlab.org
 ian	Bird, Ian G.	igb@jlab.org
 nicole_b	Black, Nicole	nblack@jlab.org
 marvin	Blecher, Marvin	blecherm@vtinte.phys.vt.edu
@@ -33,6 +34,7 @@ computer_list	Computer List
    philpott@jlab.org,kowalski@cebaf.gov,chambers@jlab.org,freyberg@jlab.org,muguira@jlab.org,mjohnson@cebaf.gov,igb@jlab.org,buckle@jlab.org,rackley@jlab.org,wolin@jlab.org,bogdan@jlab.org
 mark_c	Convery, Mark	convery@SLAC.Stanford.EDU
 dieter	Cords, Dieter	cords@jlab.org
+david_c	Cozart, David	David Cozart <david.cozart@lecroy.com>
 carol_jo	Crannell, Carol Jo	CRANNELL@achamp.gsfc.nasa.gov
 chris_c	Cuevas, Chris	cuevas@jlab.org
 dad	Dad	tji567@msn.com
@@ -137,6 +139,7 @@ federico	Ronchetti, Federico
 patrizia	Rossi, Patrizia	rossi@jlab.org
 francois_r	Roudot, Francois	roudot@jlab.org
 james	Shaheen, James Victor	jvshaheen@aol.com
+si	Simeon McAleer	mcaleer@jlab.org
 elton	Smith, Elton	elton@jlab.org
 cole	Smith, L. Cole	cole@apollo.phys.virginia.edu
 aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
@@ -169,6 +172,7 @@ elliott	Wolin, Elliott	wolin@jlab.org
 steve_w	Wood, Steve	saw@jlab.org
 rozelle	Wright, Rozelle	rwright@lanl.gov
 amrit	Yegneswaran, Amrit	yeg@jlab.org
+bert_y	Yost, Bert	Bert Yost <bert.yost@lecroy.com>
 junho	Yun, Junho	jyun@jlab.org
 volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
    Henry Robertson <robertsn@jlab.org>,"Karen C. Hokansson" <kchok@jlab.org>,
@@ -177,13 +181,11 @@ volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
    Renee Ito <reneeab@yahoo.com>,Sherri Thomas <sthomas@jlab.org>,
    Sue Witherspoon <withers@jlab.org>,Tim Whitlatch <whitey@jlab.org>,
    Walter Lacy <lacy@jlab.org>)
-volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
-   Henry Robertson <robertsn@jlab.org>,"Karen C. Hokansson" <kchok@jlab.org>,
-   Lawrence Ferbee <ferbee@jlab.org>,Leigh Harwood <harwood@jlab.org>,
-   marki@jlab.org,mary johnson <maryjane@jlab.org>,
-   Renee Ito <reneeab@yahoo.com>,Sherri Thomas <sthomas@jlab.org>,
-   Sue Witherspoon <withers@jlab.org>,Tim Whitlatch <whitey@jlab.org>,
-   Walter Lacy <lacy@jlab.org>)
+cal_db_group	Calibration Database Group	(
+   Arne Freyberger <freyberg@jlab.org>,"Dennis P. Weygand" <weygand@jlab.org>,
+   Gagik Gavalian <gavalian@jlab.org>,Greg Ricardi <riccardi@scri.fsu.edu>,
+   Larry Dennis <larry@nucott.physics.fsu.edu>,marki@jlab.org,
+   Maurik Holtrop <maurik@einstein.unh.edu>,Riad Suleiman <suleiman@jlab.org>)
 cops	CLAS COP's	(arne,elton,mac,marki,stepan,volker)
 clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
    joe_m,mike_j,mike_k,mike_n,richard_t,stepan,vardan,will)

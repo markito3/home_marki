@@ -105,6 +105,7 @@ alias pu "pushd"
 alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias shenv "printenv | grep -i"
+alias soup xv /home/marki/misc/soup.gif
 alias sstaff ssh jlaba2 staff
 alias suterm "xterm -e su &"
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
@@ -115,6 +116,7 @@ alias wea "telnet downwind.sprl.umich.edu 3000"
 alias windows sudo /sbin/shutdown -r now
 alias xwm "rm -f /tmp/ssh-agent_wm.log ; exec ssh-agent fvwm95-2 > & /tmp/ssh-agent_wm.log"
 alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu puphed.princeton.edu bnlku7.phy.bnl.gov bnlku10.phy.bnl.gov puhep1.princeton.edu clon00 clon01 dev02 clas10"
+alias xload_hp "ssh -n \!* /usr/contrib/bin/X11/xload > & /dev/null &"
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
 alias xn "emacs -nw"
 alias xr "chmod -w \!* ; emacs -name \!* \!* ; chmod +w \!* &"
@@ -130,6 +132,8 @@ if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
 	setenv CLAS_BUILD /home/claslib/builds/PRODUCTION
     setup_clas
+    if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
+	setenv CLAS_PARMS /home/claslib/parms
 endif
 setenv TOP_DIR ~/work
 echo TOP_DIR = $TOP_DIR

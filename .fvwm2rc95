@@ -245,58 +245,58 @@ AddToMenu "StartMenu"
 + "Exit Fvwm        %mini-stop.xpm%"        Popup   Quit-Verify
 
 AddToMenu "HP" "HP Shells" Title
-+ "clas10%mini-term.xpm%"    Exec xterm -j -ls -title "$USER@clas10" -bg DarkGreen -e slogin -C clas10.cebaf.gov -l $USER &
-+ "clas10, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clas10" -bg NavyBlue -e slogin -C clas10.cebaf.gov -l clasrun &
-+ "clas10, epicsb%mini-term.xpm%"  Exec xterm -j -ls -title "epicsb@clas10" -bg DarkRed -e slogin -C clas10.cebaf.gov -l epicsb &
-+ "db1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@db1" -bg SaddleBrown -e slogin -C db1.cebaf.gov -l $USER &
-+ "jlabh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh1" -bg blue2 -e slogin -C jlabh1.cebaf.gov -l $USER &
-+ "jlabh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh2" -bg RoyalBlue4 -e slogin -C jlabh2.cebaf.gov -l $USER &
-+ "jlabh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh3" -bg red2 -e slogin -C jlabh3.cebaf.gov -l $USER &
-+ "jlabh3, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabh3" -bg IndianRed4 -e slogin -C jlabh3.cebaf.gov -l claslib &
-+ "jlabh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh4" -bg DarkOliveGreen -e slogin -C jlabh4.cebaf.gov -l $USER &
-+ "ifarmh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh1" -bg DarkBlue -e slogin -C ifarmh1.cebaf.gov -l $USER &
-+ "ifarmh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh2" -bg green4 -e slogin -C ifarmh2.cebaf.gov -l $USER &
-+ "ifarmh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh3" -bg chartreuse4 -e slogin -C ifarmh3.cebaf.gov -l $USER &
-+ "ifarmh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh4" -bg red3 -e slogin -C ifarmh4.cebaf.gov -l $USER &
++ "clas10%mini-term.xpm%"    Exec xterm -j -ls -title "$USER@clas10" -bg DarkGreen -e slogin -C clas10.jlab.org -l $USER &
++ "clas10, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clas10" -bg NavyBlue -e slogin -C clas10.jlab.org -l clasrun &
++ "clas10, epicsb%mini-term.xpm%"  Exec xterm -j -ls -title "epicsb@clas10" -bg DarkRed -e slogin -C clas10.jlab.org -l epicsb &
++ "db1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@db1" -bg SaddleBrown -e slogin -C db1.jlab.org -l $USER &
++ "jlabh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh1" -bg blue2 -e slogin -C jlabh1.jlab.org -l $USER &
++ "jlabh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh2" -bg RoyalBlue4 -e slogin -C jlabh2.jlab.org -l $USER &
++ "jlabh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh3" -bg red2 -e slogin -C jlabh3.jlab.org -l $USER &
++ "jlabh3, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabh3" -bg IndianRed4 -e slogin -C jlabh3.jlab.org -l claslib &
++ "jlabh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh4" -bg DarkOliveGreen -e slogin -C jlabh4.jlab.org -l $USER &
++ "ifarmh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh1" -bg DarkBlue -e slogin -C ifarmh1.jlab.org -l $USER &
++ "ifarmh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh2" -bg green4 -e slogin -C ifarmh2.jlab.org -l $USER &
++ "ifarmh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh3" -bg chartreuse4 -e slogin -C ifarmh3.jlab.org -l $USER &
++ "ifarmh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh4" -bg red3 -e slogin -C ifarmh4.jlab.org -l $USER &
 
 AddToMenu "IBM" "IBM Shells" Title
-+ "jlaba1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba1" -bg orange4 -e slogin -C jlaba1.cebaf.gov -l $USER &
-+ "jlaba1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlaba1" -bg orange4 -e slogin -C jlaba1.cebaf.gov -l claslib &
-+ "jlaba2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba2" -bg tomato4 -e slogin -C jlaba2.cebaf.gov -l $USER &
-+ "ifarma1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarma1" -bg gray20 -e slogin -C ifarma1.cebaf.gov -l $USER &
++ "jlaba1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba1" -bg orange4 -e slogin -C jlaba1.jlab.org -l $USER &
++ "jlaba1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlaba1" -bg orange4 -e slogin -C jlaba1.jlab.org -l claslib &
++ "jlaba2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba2" -bg tomato4 -e slogin -C jlaba2.jlab.org -l $USER &
++ "ifarma1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarma1" -bg gray20 -e slogin -C ifarma1.jlab.org -l $USER &
 
 AddToMenu "Linux" "Linux Shells" Title
-+ "claslap2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claslap2" -bg grey35 -e slogin -C claslap2.cebaf.gov -l $USER &
-+ "claslap2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claslap2" -bg SlateBlue4 -e slogin -C claslap2.cebaf.gov -l claslib &
-+ "claspc1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc1" -bg OrangeRed4 -e slogin -C claspc1.cebaf.gov -l $USER &
-+ "claspc2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc2" -bg DimGray -e slogin -C claspc2.cebaf.gov -l $USER &
-+ "claspc2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claspc2" -bg salmon4 -e slogin -C claspc2.cebaf.gov -l claslib &
-+ "ifarml1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml1" -bg DeepPink4 -e slogin -C ifarml1.cebaf.gov -l $USER &
-+ "ifarml1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml1" -bg chocolate4 -e slogin -C ifarml1.cebaf.gov -l claslib &
-+ "ifarml2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml2" -bg chartreuse4 -e slogin -C ifarml2.cebaf.gov -l $USER &
-+ "ifarml2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml2" -bg SlateBlue4 -e slogin -C ifarml2.cebaf.gov -l claslib &
-+ "ifarml3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml3" -bg SeaGreen -e slogin -C ifarml3.cebaf.gov -l $USER &
-+ "marki, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@marki" -bg chocolate4 -e slogin -C marki.cebaf.gov -l claslib &
++ "claslap2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claslap2" -bg grey35 -e slogin -C claslap2.jlab.org -l $USER &
++ "claslap2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claslap2" -bg SlateBlue4 -e slogin -C claslap2.jlab.org -l claslib &
++ "claspc1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc1" -bg OrangeRed4 -e slogin -C claspc1.jlab.org -l $USER &
++ "claspc2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc2" -bg DimGray -e slogin -C claspc2.jlab.org -l $USER &
++ "claspc2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claspc2" -bg salmon4 -e slogin -C claspc2.jlab.org -l claslib &
++ "ifarml1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml1" -bg DeepPink4 -e slogin -C ifarml1.jlab.org -l $USER &
++ "ifarml1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml1" -bg chocolate4 -e slogin -C ifarml1.jlab.org -l claslib &
++ "ifarml2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml2" -bg chartreuse4 -e slogin -C ifarml2.jlab.org -l $USER &
++ "ifarml2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml2" -bg SlateBlue4 -e slogin -C ifarml2.jlab.org -l claslib &
++ "ifarml3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml3" -bg SeaGreen -e slogin -C ifarml3.jlab.org -l $USER &
++ "marki, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@marki" -bg chocolate4 -e slogin -C marki.jlab.org -l claslib &
 
 AddToMenu "Sun" "Sun Shells" Title
-+ "clon00%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon00" -bg firebrick4 -e slogin -C clon00.cebaf.gov -l $USER &
-+ "clon00, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon00" -bg DarkSlateGray -e slogin -C clon00.cebaf.gov -l clasrun &
-+ "clon01%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon01" -bg ForestGreen -e slogin -C clon01.cebaf.gov -l $USER &
-+ "clon01, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon01" -bg red -e slogin -C clon01.cebaf.gov -l clasrun &
-+ "clon01, epics%mini-term.xpm%"  Exec xterm -j -ls -title "epics@clon01" -bg VioletRed4 -e slogin -C clon01.cebaf.gov -l epics &
-+ "clon02%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon02" -bg chartreuse4 -e slogin -C clon02.cebaf.gov -l $USER &
-+ "clon03%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon03" -bg DarkOrange4 -e slogin -C clon03.cebaf.gov -l $USER &
-+ "clon04%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon04" -bg brown4 -e slogin -C clon04.cebaf.gov -l $USER &
-+ "clon04, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon04" -bg MediumBlue -e slogin -C clon04.cebaf.gov -l clasrun &
-+ "clon05%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon05" -bg gold4 -e slogin -C clon05.cebaf.gov -l $USER &
-+ "clon05, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon05" -bg OrangeRed3 -e slogin -C clon05.cebaf.gov -l clasrun &
-+ "clon10%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon10" -bg goldenrod4 -e slogin -C clon10.cebaf.gov -l $USER &
-+ "clon10, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon10" -bg maroon4 -e slogin -C clon10.cebaf.gov -l clasrun &
-+ "ifarms1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms1" -bg sienna4 -e slogin -C ifarms1.cebaf.gov -l $USER &
-+ "ifarms2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms2" -bg sienna4 -e slogin -C ifarms2.cebaf.gov -l $USER &
-+ "jlabs1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs1" -bg firebrick -e slogin -C jlabs1.cebaf.gov -l $USER &
-+ "jlabs1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabs1" -bg firebrick -e slogin -C jlabs1.cebaf.gov -l claslib &
-+ "jlabs2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs2" -bg coral4 -e slogin -C jlabs2.cebaf.gov -l $USER &
++ "clon00%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon00" -bg firebrick4 -e slogin -C clon00.jlab.org -l $USER &
++ "clon00, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon00" -bg DarkSlateGray -e slogin -C clon00.jlab.org -l clasrun &
++ "clon01%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon01" -bg ForestGreen -e slogin -C clon01.jlab.org -l $USER &
++ "clon01, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon01" -bg red -e slogin -C clon01.jlab.org -l clasrun &
++ "clon01, epics%mini-term.xpm%"  Exec xterm -j -ls -title "epics@clon01" -bg VioletRed4 -e slogin -C clon01.jlab.org -l epics &
++ "clon02%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon02" -bg chartreuse4 -e slogin -C clon02.jlab.org -l $USER &
++ "clon03%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon03" -bg DarkOrange4 -e slogin -C clon03.jlab.org -l $USER &
++ "clon04%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon04" -bg brown4 -e slogin -C clon04.jlab.org -l $USER &
++ "clon04, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon04" -bg MediumBlue -e slogin -C clon04.jlab.org -l clasrun &
++ "clon05%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon05" -bg gold4 -e slogin -C clon05.jlab.org -l $USER &
++ "clon05, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon05" -bg OrangeRed3 -e slogin -C clon05.jlab.org -l clasrun &
++ "clon10%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon10" -bg goldenrod4 -e slogin -C clon10.jlab.org -l $USER &
++ "clon10, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon10" -bg maroon4 -e slogin -C clon10.jlab.org -l clasrun &
++ "ifarms1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms1" -bg sienna4 -e slogin -C ifarms1.jlab.org -l $USER &
++ "ifarms2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms2" -bg sienna4 -e slogin -C ifarms2.jlab.org -l $USER &
++ "jlabs1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs1" -bg firebrick -e slogin -C jlabs1.jlab.org -l $USER &
++ "jlabs1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabs1" -bg firebrick -e slogin -C jlabs1.jlab.org -l claslib &
++ "jlabs2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs2" -bg coral4 -e slogin -C jlabs2.jlab.org -l $USER &
 
 AddToMenu "IOC" "IOC Consoles" Title
 + "clasgas%mini-term.xpm%"  Exec xterm -j -ls -title "clasgas" -bg grey25 -e rlogin clasgas &
@@ -653,7 +653,7 @@ Key Escape      A       C       WindowList
 *FvwmButtons(Title gview, Icon ps.xpm, \
              Action 'Exec "ghostview" ghostview &')
 *FvwmButtons(Title netscape, Icon mini-nscape.xpm, \
-             Action 'Exec "Netscape" /usr/bin/netscape -install http://claspc2.cebaf.gov/~marki &')
+             Action 'Exec "Netscape" /usr/bin/netscape -install http://claspc2.jlab.org/~marki &')
 *FvwmButtons(Title kill, Icon rbomb.xpm, Action Destroy)
 *FvwmButtons(2x1, Swallow(UseOld) "Desktop" 'FvwmPager 0 0')
 

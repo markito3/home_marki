@@ -61,6 +61,7 @@ alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
+alias cvsq cvs -n -q update
 alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e less $cwfile.tmp &'
 alias dial sudo /etc/ppp/ppp-on
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"

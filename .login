@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.85 2004/03/09 22:53:45 marki Exp $
+# $Id: .login,v 1.86 2004/06/09 18:42:38 marki Exp $
 #
 echo starting .login
 #
@@ -14,9 +14,6 @@ else if (-e .jlab) then
     setenv TOP_DIR /scratch/$USER/top_dir
 else
     set hosttype=undefined
-    setenv CLAS_ROOT /usr/local/clas
-    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
-    setenv TOP_DIR /scratch/$USER/top_dir
 endif
 echo hosttype = $hosttype
 #

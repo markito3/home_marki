@@ -53,7 +53,7 @@ unset CVSROOT_SAVE
 if ($?CVSROOT) then
   set CVSROOT_SAVE=$CVSROOT
 endif
-#if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04 && $HOST != claspc2.cebaf.gov && $HOST != claspc1.cebaf.gov) source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
+#if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04 && $HOST != claspc2.cebaf.gov && $HOST != claspc1.cebaf.gov && $HOST != localhost.localdomain) source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
 if ($?CVSROOT_SAVE) then
   setenv CVSROOT $CVSROOT_SAVE
 else

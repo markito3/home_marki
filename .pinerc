@@ -113,7 +113,7 @@ viewer-hdrs=
 # Determines default folder name for Saves...
 # Choices: default-folder, by-sender, by-from, by-recipient, last-folder-used.
 # Default: "default-folder", i.e. "saved-messages" (Unix) or "SAVEMAIL" (PC).
-saved-msg-name-rule=by-nick-of-from
+saved-msg-name-rule=default-folder
 
 # Determines default name for Fcc...
 # Choices: default-fcc, by-recipient, last-fcc-used.
@@ -122,12 +122,12 @@ fcc-name-rule=
 
 # Sets presentation order of messages in Index. Choices:
 # subject, from, arrival, date, size. Default: "arrival".
-sort-key=Date
+sort-key=OrderedSubj
 
 # Sets presentation order of address book entries. Choices: dont-sort,
 # fullname-with-lists-last, fullname, nickname-with-lists-last, nickname
 # Default: "fullname-with-lists-last".
-addrbook-sort-rule=
+addrbook-sort-rule=fullname
 
 # Sets the default folder and collectionoffered at the Goto Command's prompt.
 goto-default-rule=
@@ -170,7 +170,7 @@ personal-print-command=
 personal-print-category=2
 
 # Set by Pine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=97.10
+last-time-prune-questioned=98.6
 
 # Set by Pine; controls display of "new version" message.
 last-version-used=3.95

@@ -1,5 +1,5 @@
-#DELETED-98/03/24#dummy	last, first, dummy	dummy
 dave_a	Abbott, David	abbottd@jlab.org
+steve_a	Adler, Stephen	adler@bnlku2.phy.bnl.gov
 alex_d	Alex Dzierba	dzierba@indiana.edu
 burin	Asavapibhop, Burin	burin@jlab.org
 david_a	Atwood, David	atwood@jlab.org
@@ -26,12 +26,13 @@ steve_c	Christo, Steve	christo@jlab.org
 ioc_users	CLAS IOC Users	
    marki@JLAB.ORG, mccormic@JLAB.ORG,     mVINEYAR@richmond.edu, madre@JLAB.ORG,     JENKINS@JLAB.ORG, tang@JLAB.ORG, philips@gwis2.circ.gwu.edu,     freyberg@JLAB.ORG, patois@jlab.org, auger@jlab.org, staylor@jlab.org,     cole@apollo.phys.virginia.edu, tung@jlab.org, ficenec@jlab.org,     higgins@jlab.org, mjohnson@jlab.org, giovanetti@jlab.org, beard@jlab.org
 clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
-   joe_m,mike_j,mike_n,richard_t,vardan,will)
+   joe_m,mike_j,mike_k,mike_n,richard_t,stepan,vardan,will)
 clas_offline	CLAS Offline Email List	clas_offline@jlab.org
 slow_list	CLAS Slow Controls Email List	clas_slow_control@jlab.org
 pam	Colburn, Pamela	psamc@aol.com
 computer_list	Computer List	
    philpott@jlab.org,kowalski@cebaf.gov,chambers@jlab.org,freyberg@jlab.org,muguira@jlab.org,mjohnson@cebaf.gov,igb@jlab.org,buckle@jlab.org,rackley@jlab.org,wolin@jlab.org,bogdan@jlab.org
+mark_c	Convery, Mark	convery@SLAC.Stanford.EDU
 dieter	Cords, Dieter	cords@jlab.org
 carol_jo	Crannell, Carol Jo	CRANNELL@achamp.gsfc.nasa.gov
 chris_c	Cuevas, Chris	cuevas@jlab.org
@@ -80,12 +81,15 @@ jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
    mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,vardan,
    weygand@jlab.org,whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
 mike_j	Johnson, Michael	mjohnson@jlab.org
+kyungseon	Joo, Kyungseon	kjoo@jlab.org
 kevin_g	Kevin Giovannetti	giovanetti@jlab.org
 amy	Klein, Amy C.	AKlein@Mathematica-Mpr.com
 franz	Klein, Franz	fklein@jlab.org
+mike_k	Klusman, Mike	klusman@jlab.org
 akira	Konaka, Akira	konaka@sitka.triumf.ca
 andy	Kowalski, Andy	kowalski@jlab.org
 francois_l	Lamarche, Francois	francoisl@lecroy.com
+latex2html	latex2html mailing list	latex2html@mcs.anl.gov
 laur	Littenberg, Laurence	litt@bnlku2.phy.bnl.gov
 alberto_l	Longhi, Alberto	longhi@jlab.org
 costy	Loukachine, Konstantin	costy@jlab.org
@@ -104,6 +108,7 @@ mac	Mestayer, Mac	mestayer@jlab.org
 curtis	Meyer, Curtis A.	cmeyer@ernest.phys.cmu.edu
 bob_m	Michaels, Robert	rom@jlab.org
 ralph	Minehart, Ralph C.	rcm4y@landau4.phys.virginia.edu
+jim_m	Mueller, James	mueller@jlab.org
 ja	Muguira, James A.	muguira@jlab.org
 luc	Murphy, Luc	murphyl@jlab.org
 mike_n	Necaise, Mike	necaise@jlab.org

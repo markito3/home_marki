@@ -51,7 +51,7 @@ alias add \
   grep -i \!* ~/misc/stuff/lists/address.tex'
 alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias addless 'less ~/misc/stuff/lists/address.tex'
-alias bckgnd "xv -root -rmode 5 -maxpect -quit"
+alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias colors "more /usr/lib/X11/rgb.txt"
 alias crib "less $MISC/crib.txt"
 alias cribadd "x $MISC/crib.txt"

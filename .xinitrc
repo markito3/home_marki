@@ -1,7 +1,6 @@
 #!/bin/sh
 xhost + >& /dev/null
 xmodmap .xmodmaprc
-xterm -e calendar.tcl &
 ssh-add >& /dev/null &
 #
 rm -f /tmp/fvwm95-2.log

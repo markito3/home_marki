@@ -53,7 +53,7 @@ unset CVSROOT_SAVE
 if ($?CVSROOT) then
   set CVSROOT_SAVE=$CVSROOT
 endif
-if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04 && $HOST != claspc2.cebaf.gov) source /apps/clas/u1/builds/DEVELOPMENT/packages/cms/onsite.cshrc
+if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04 && $HOST != claspc2.cebaf.gov && $HOST != claspc1.cebaf.gov) source /apps/clas/u1/builds/DEVELOPMENT/packages/cms/onsite.cshrc
 if ($?CVSROOT_SAVE) then
   setenv CVSROOT $CVSROOT_SAVE
 else
@@ -73,19 +73,19 @@ endif
 # path
 #
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlaba1 || $HOST == jlaba2) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
 else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
 else if ($HOST == clas10) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
 else if ($HOST == claspc2.cebaf.gov) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  /usr/openwin/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  /usr/openwin/bin`
 else
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME`
 endif
 #
 # umask

@@ -91,6 +91,7 @@ alias lss "ls -laF \!* | sort -k5nr | more -e"
 alias lst "ls -laFt \!* | more -e"
 alias lsx "'ls' -aF \!* | grep \*"
 alias ls "ls -F" # stick this after the other ls's
+alias lw "xterm -title \!* -e less \!* &"
 alias ncd "setenv DISPLAY clasxt25:0"
 alias netscape "/apps/netscape/netscape -install http://www.cebaf.gov/ > & /dev/null &"
 alias news "xrn -nntpServer news.cebaf.gov &"

@@ -101,6 +101,7 @@ alias lsx "'ls' -aF \!* | grep \*"
 alias ls "ls -F" # stick this after the other ls's
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
+alias mycal 'ssh -l marki -n claspc2.cebaf.gov ical &'x
 alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null &"
 alias news "xrn -nntpServer news.cebaf.gov &"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"

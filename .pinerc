@@ -1,4 +1,4 @@
-# Updated by Pine(tm) 3.95, copyright 1989-1996 University of Washington.
+# Updated by Pine(tm) 3.96, copyright 1989-1996 University of Washington.
 #
 # Pine configuration file -- customize as needed.
 #
@@ -173,7 +173,7 @@ personal-print-category=2
 last-time-prune-questioned=98.6
 
 # Set by Pine; controls display of "new version" message.
-last-version-used=3.95
+last-version-used=3.96
 
 # This names the path to an alternative program, and any necessary arguments,
 # to be used in posting mail messages.  Example:

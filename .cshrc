@@ -65,11 +65,6 @@ else
     alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 endif
 #
-# EPICS
-#
-alias setup_epics "source /apps/epics/setup/setup_epics"
-alias spe "source ~marki/bin/spe"
-#
 # path
 #
 if ($OSNAME == HP-UX && $HOST != clas10) then

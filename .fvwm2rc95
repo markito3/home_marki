@@ -254,11 +254,17 @@ AddToMenu "HP" "HP Shells" Title
 + "jlabh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh3" -bg red2 -e slogin -C jlabh3.cebaf.gov -l $USER &
 + "jlabh3, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabh3" -bg IndianRed4 -e slogin -C jlabh3.cebaf.gov -l claslib &
 + "jlabh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh4" -bg DarkOliveGreen -e slogin -C jlabh4.cebaf.gov -l $USER &
++ "ifarmh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh1" -bg DarkBlue -e slogin -C ifarmh1.cebaf.gov -l $USER &
++ "ifarmh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh2" -bg green4 -e slogin -C ifarmh2.cebaf.gov -l $USER &
++ "ifarmh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh3" -bg green3 -e slogin -C ifarmh3.cebaf.gov -l $USER &
++ "ifarmh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh4" -bg red3 -e slogin -C ifarmh4.cebaf.gov -l $USER &
++ "ifarmh5%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh5" -bg SpringGreen4 -e slogin -C ifarmh5.cebaf.gov -l $USER &
 
 AddToMenu "IBM" "IBM Shells" Title
 + "jlaba1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba1" -bg orange4 -e slogin -C jlaba1.cebaf.gov -l $USER &
 + "jlaba1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlaba1" -bg orange4 -e slogin -C jlaba1.cebaf.gov -l claslib &
 + "jlaba2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlaba2" -bg tomato4 -e slogin -C jlaba2.cebaf.gov -l $USER &
++ "ifarma1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarma1" -bg gray20 -e slogin -C ifarma1.cebaf.gov -l $USER &
 
 AddToMenu "Linux" "Linux Shells" Title
 + "claspc1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc1" -bg OrangeRed4 -e slogin -C claspc1.cebaf.gov -l $USER &

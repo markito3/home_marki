@@ -24,3 +24,5 @@ re*.rzn
 work*
 .mh_profile
 dead.letter
+.pinerc
+.acrorc

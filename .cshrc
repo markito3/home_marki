@@ -44,7 +44,7 @@ if ($HOST != marki.jlab.org) setenv PRINTER phyhp9
 #
 if ($HOST == ifarml1 || $HOST == ifarml2) then
     setenv CERN_LEVEL 98a
-else if ($HOST == claslap2.jlab.org || $HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
+else if ($HOST == claspc2.jlab.org || $HOST == claslap2.jlab.org || $HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
     setenv CERN_LEVEL 2000
 else
     setenv CERN_LEVEL 99

@@ -53,6 +53,10 @@ else
 endif
 setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
+# Hv
+#
+setenv HV_LOCATION /apps/clas/u1/Hv/Hv
+#
 # CLAS
 #
 alias setup_clas source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc

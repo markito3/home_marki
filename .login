@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.87 2004/09/03 16:30:30 marki Exp $
+# $Id: .login,v 1.88 2004/10/02 20:15:04 marki Exp $
 #
 echo starting .login
 #
@@ -60,8 +60,6 @@ else
   echo DISPLAY not defined
 endif
 date
-# set term size variables
-eval `resize`
 #
 # finished
 #

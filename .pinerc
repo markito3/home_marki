@@ -122,7 +122,7 @@ fcc-name-rule=
 
 # Sets presentation order of messages in Index. Choices:
 # subject, from, arrival, date, size. Default: "arrival".
-sort-key=OrderedSubj
+sort-key=Date
 
 # Sets presentation order of address book entries. Choices: dont-sort,
 # fullname-with-lists-last, fullname, nickname-with-lists-last, nickname
@@ -170,7 +170,7 @@ personal-print-command=
 personal-print-category=2
 
 # Set by Pine; controls beginning-of-month sent-mail pruning.
-last-time-prune-questioned=98.6
+last-time-prune-questioned=98.11
 
 # Set by Pine; controls display of "new version" message.
 last-version-used=3.96

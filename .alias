@@ -36,6 +36,7 @@ alias dismount_floppy umount /mnt/floppy
 alias disp "xterm -T \!* -e view \!*"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort du -r \| sort -k 1nr
+alias e "emacs \!* &"
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias enp enscript -r # portrait
@@ -88,7 +89,6 @@ alias update_calendar scp claspc14:~/.calendar ~/claspc14.calendar
 alias vu "vuepad"
 alias wea "telnet downwind.sprl.umich.edu 3000"
 alias windows sudo /sbin/shutdown -r now
-alias x "emacs \!* &"
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
 alias xstart "rm -rf /tmp/ssh-agent.log /tmp/ssh-$USER ; exec ssh-agent startx > & /tmp/ssh-agent.log"
 alias xstartd "dial ; xstart"

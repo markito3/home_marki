@@ -9,13 +9,15 @@ set savehist=1000
 
 setenv OSNAME `/bin/uname -s`
 
-setenv EDITOR emacs
+setenv EDITOR "emacs -nw"
 if ($HOST == jlabh1 || $HOST == jlabh2) then
   setenv CERN /site/cernlib/hp700_ux90
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
   setenv CERN /site/cernlib/sun4_solaris2
 else if ($HOST == jlaba1 || $HOST == jlaba2) then
   setenv CERN /site/cernlib/rs_aix32
+else if ($HOST == ifarml1) then
+  setenv CERN /site/cernlib/pc_linux
 else
   setenv CERN /dummy_file_system
 endif
@@ -44,7 +46,11 @@ endif
 #
 # CERN Libraries
 #
-setenv CERN_LEVEL 96a
+if ($HOST == ifarml1) then
+    setenv CERN_LEVEL 97a
+else
+    setenv CERN_LEVEL 96a
+endif
 setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
 # CLAS

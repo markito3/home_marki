@@ -11,12 +11,12 @@ setenv OSNAME `/bin/uname -s`
 
 setenv EDITOR emacs
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == ifarmh1 || $HOST == ifarmh2 || $HOST == ifarmh3 || $HOST == ifarmh4 || $HOST == ifarmh5) then
-  setenv CERN /site/cernlib/hp700_ux90
+  setenv CERN /site/cernlib/hp_ux102
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 || $HOST == clon10) then
   setenv CERN /site/cernlib/sun4_solaris2
-else if ($HOST == jlaba1 || $HOST == jlaba2) then
-  setenv CERN /site/cernlib/rs_aix32
-else if ($HOST == ifarml1 || $HOST == ifarml2) then
+else if ($HOST == jlaba1 || $HOST == jlaba2 || $HOST == ifarma1) then
+  setenv CERN /site/cernlib/rs_aix41
+else if ($HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
   setenv CERN /site/cernlib/pc_linux
 else if ($HOST == claspc2.cebaf.gov) then
   setenv CERN /home/cern
@@ -42,11 +42,6 @@ if ($HOST != marki.cebaf.gov) setenv PRINTER phyhp9
 #
 #source /usr/user9/marki/egs4_system/Cshrc_additions_for_egs4
 #source /usr/site4/egs4/Cshrc_additions_for_egs4
-if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4) then
-  alias setup 'set s_args=(\!*); source /site/bin/setup'
-else
-  alias setup 'set s_args=(\!*); source /usr/local/bin/setup'
-endif
 #
 # CERN Libraries
 #

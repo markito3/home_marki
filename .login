@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.88 2004/10/02 20:15:04 marki Exp $
+# $Id: .login,v 1.89 2005/01/04 19:08:25 marki Exp $
 #
 echo starting .login
 #
@@ -43,7 +43,7 @@ setenv fontHuge lucidasanstypewriter-24
 #
 # aliases
 #
-source .alias
+source ~/.alias
 #
 # primex
 #

@@ -279,6 +279,7 @@ AddToMenu "Sun" "Sun Shells" Title
 + "clon00%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon00" -bg firebrick4 -e slogin -C clon00.cebaf.gov -l $USER &
 + "clon00, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon00" -bg DarkSlateGray -e slogin -C clon00.cebaf.gov -l clasrun &
 + "clon01%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon01" -bg ForestGreen -e slogin -C clon01.cebaf.gov -l $USER &
++ "clon01, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon01" -bg VioletRed4 -e slogin -C clon01.cebaf.gov -l clasrun &
 + "clon01, epics%mini-term.xpm%"  Exec xterm -j -ls -title "epics@clon01" -bg VioletRed4 -e slogin -C clon01.cebaf.gov -l epics &
 + "clon02%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon02" -bg chartreuse4 -e slogin -C clon02.cebaf.gov -l $USER &
 + "clon03%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon03" -bg DarkOrange4 -e slogin -C clon03.cebaf.gov -l $USER &

@@ -3,10 +3,12 @@ echo starting .login
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
 set prompt="%m:%C> "  # prompt set to machine:current directory
-eval `resize`
 
 # Set up shell environment:
 set autolist
+
+# no core dump
+limit coredumpsize 0
 
 # Set the default X server.
 
@@ -147,6 +149,8 @@ else
   echo DISPLAY not defined
 endif
 date
+# set term size variables
+eval `resize`
 #
 # finished
 #

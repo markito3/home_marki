@@ -1,0 +1,20 @@
+!
+! Swap Caps_Lock and Control_L
+!
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
+!
+! set BackSpace key to be Delete
+!
+!keysym BackSpace = Delete
+!
+! VAX-like function keys
+!
+keysym F1 = KP_F1
+keysym F2 = KP_F2
+keysym F3 = KP_F3
+keysym F4 = KP_F4

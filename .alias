@@ -63,7 +63,6 @@ alias mycal 'ssh -l marki -n claspc2.jlab.org ical &'
 alias netscap "netscape -install http://claspc2.jlab.org/~marki/ > & /dev/null &"
 alias network_start /etc/rc.d/init.d/network start eth0
 alias network_stop /etc/rc.d/init.d/network stop eth0
-alias news "xrn -nntpServer news.jlab.org &"
 alias po popd
 alias poker irc marki irc.poker.net
 alias psf ps auxw --forest | more

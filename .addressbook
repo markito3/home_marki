@@ -1,3 +1,9 @@
+volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
+   Henry Robertson <robertsn@jlab.org>,"Karen C. Hokansson" <kchok@jlab.org>,
+   Lawrence Ferbee <ferbee@jlab.org>,Leigh Harwood <harwood@jlab.org>,
+   mary johnson <maryjane@jlab.org>,Renee Ito <reneeab@yahoo.com>,
+   Sherri Thomas <sthomas@jlab.org>,Sue Witherspoon <withers@jlab.org>,
+   Tim Whitlatch <whitey@jlab.org>,Walter Lacy <lacy@jlab.org>)
 dave_a	Abbott, David	abbottd@jlab.org
 steve_a	Adler, Stephen	adler@bnlku2.phy.bnl.gov
 alex_d	Alex Dzierba	dzierba@indiana.edu
@@ -25,6 +31,7 @@ linda	Ceraul, Linda	ceraul@jlab.org
 penny	Champine, Penny	champine@jlab.org
 jie	Chen, Jie	chen@jlab.org
 steve_c	Christo, Steve	christo@jlab.org
+cops	CLAS COP's	(arne,elton,mac,marki,stepan,volker)
 ioc_users	CLAS IOC Users	
    marki@JLAB.ORG, mccormic@JLAB.ORG,     mVINEYAR@richmond.edu, madre@JLAB.ORG,     JENKINS@JLAB.ORG, tang@JLAB.ORG, philips@gwis2.circ.gwu.edu,     freyberg@JLAB.ORG, patois@jlab.org, auger@jlab.org, staylor@jlab.org,     cole@apollo.phys.virginia.edu, tung@jlab.org, ficenec@jlab.org,     higgins@jlab.org, mjohnson@jlab.org, giovanetti@jlab.org, beard@jlab.org
 clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
@@ -44,6 +51,7 @@ diann	Dicesare, Diann	dicesare@jlab.org
 antonio	Didomenico, Antonio	didomenico@roma1.infn.it
 gail_d	Dodge, Gail	gail@jlab.org
 john_d	Domingo, John J.	domingo@jlab.org
+doug_tilles	Doug Tilles	tilles@jlab.org
 dave_d	Doughty, David	doughty@jlab.org
 steve_d	Dytman, Steven	DYTMAN@vms.cis.pitt.edu
 hovanes	Egiyan, Hovanes	hovanes@jlab.org		
@@ -56,8 +64,10 @@ laurent	Farhi, Laurent	farhi@jlab.org
 lawrence	Ferbee Jr., Lawrence	ferbee@jlab.org
 rob_f	Feuerbach, Robert	Robert Feuerbach <feuerbac@ernest.phys.cmu.edu>
 john_f	Ficenec, John	ficenec@jlab.org
+tony_f	Forest, Tony	forest@physics.odu.edu
 arne	Freyberger, Arne	freyberg@jlab.org
 valera	Frolov, Valera	frolov@jlab.org
+jenny_g	Gabb, Jennifer	gabb@jlab.org
 rob_g	Gardner, Rob	gardner@lexus.physics.indiana.edu
 gerry_g	Gilfoyle, Gerard P.	ggilfoyl@richmond.edu		(804) 289-8255
 pascal	Girard, Pascal	girard@jlab.org
@@ -90,6 +100,7 @@ franz	Klein, Franz	fklein@jlab.org
 mike_k	Klusman, Mike	klusman@jlab.org
 akira	Konaka, Akira	konaka@sitka.triumf.ca
 andy	Kowalski, Andy	kowalski@jlab.org
+walter_l	Lacy, Walter	lacy@jlab.org
 francois_l	Lamarche, Francois	francoisl@lecroy.com
 latex2html	latex2html mailing list	latex2html@mcs.anl.gov
 laur	Littenberg, Laurence	litt@bnlku2.phy.bnl.gov

@@ -73,6 +73,9 @@ alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 alias setup_epics \
     source /home/epics/prod/epicsB/prod/scripts/setup_epics
+alias setup_primex source /group/primex/builds/prod/scripts/primex_jlab
+alias setup_primex_marki source /usr/local/primex/builds/prod/scripts/primex_marki
+alias setup_primex_online source /usr/local/primex/builds/prod/scripts/primex_online
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin \!* &"

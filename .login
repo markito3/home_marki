@@ -95,12 +95,12 @@ alias lpsta "lpstat -r -a\!* -p\!* -o\!*"
 alias lpcolor "lp -dpscolor1"
 alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more -e"
 alias lsb "ls -RalF | sort -k 5nr | more -e"
-alias lsd "'ls' -F \!* | grep /"
+alias lsd "ls -F \!* | grep /"
 alias lsl "ls -laF \!* | more -e"
 alias lss "ls -laF \!* | sort -k5nr | more -e"
 alias lst "ls -laFt \!* | more -e"
-alias lsx "'ls' -aF \!* | grep \*"
-alias ls "ls -F" # stick this after the other ls's
+alias lsx "ls -aF \!* | grep \*"
+alias lsf "ls -F" # stick this after the other ls's
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
 alias mycal 'ssh -l marki -n claspc2.cebaf.gov ical &'

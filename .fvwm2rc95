@@ -256,6 +256,7 @@ AddToMenu "IBM" "IBM Shells" Title
 + "ifarma1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarma1" -bg gray20 -e slogin -C ifarma1.jlab.org -l $USER &
 
 AddToMenu "Linux" "Linux Shells" Title
++ "clasdb%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clasdb" -bg DarkSlateBlue -e slogin -C clasdb.jlab.org -l $USER &
 + "claslap2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claslap2" -bg grey35 -e slogin -C claslap2.jlab.org -l $USER &
 + "claslap2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claslap2" -bg SlateBlue4 -e slogin -C claslap2.jlab.org -l claslib &
 + "claspc1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@claspc1" -bg OrangeRed4 -e slogin -C claspc1.jlab.org -l $USER &

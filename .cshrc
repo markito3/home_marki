@@ -72,7 +72,6 @@ alias spe "source ~marki/bin/spe"
 #
 # path
 #
-eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
 if ($OSNAME == HP-UX && $HOST != clas10) then
   eval `~marki/bin/addpath.perl /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin /opt/fortran/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
@@ -89,9 +88,10 @@ else if ($OSNAME == AIX) then
   eval `~marki/bin/addpath.perl /site/bin /usr/local/bin`
 endif
 if ($HOST == clas10) then
-  eval `~marki/bin/delpath.perl /usr/local/bin`
-  eval `~marki/bin/addpath.perl /usr/local/bin`
+  eval `~marki/bin/delpath.perl /usr/local/bin /usr/bin /bin /usr/site2/gnu/bin /usr/site2/bin /usr/vue/bin /usr/contrib/bin . /bin/posix /usr/bin/X11`
+  eval `~marki/bin/addpath.perl /usr/vue/bin /usr/bin/X11 /usr/local/bin /usr/bin /bin`
 endif
+eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
 eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME`
 #
 # umask

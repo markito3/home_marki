@@ -640,7 +640,7 @@ Key Escape      A       C       WindowList
                      -ls -vb -sb -geometry 80x36 -title "claslap2" -exec slogin claslap2 &')
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
-               -geometry 80x48 -title Pine -e pine &')
+               -geometry 80x36 -title Pine -e pine &')
 *FvwmButtons(Title ical, Icon desk.xpm, \
              Action 'Exec "Calendar" ical &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \

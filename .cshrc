@@ -74,7 +74,7 @@ setenv WINGZ3 /usr/local/src/Wingz3
 # path
 #
 if ($OSNAME == HP-UX && $HOST != clas10) then
-  eval `~marki/bin/addpath.perl /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin /opt/fortran/bin`
+  eval `~marki/bin/addpath.perl /apps/tex/bin /apps/emacs/19.34b/bin /apps/make/bin /apps/bin /site/bin /opt/fortran/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
     eval `~marki/bin/delpath.perl /usr/local/bin`
   eval `~marki/bin/addpath.perl $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`

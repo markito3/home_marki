@@ -10,7 +10,7 @@ set savehist=1000
 setenv OSNAME `/bin/uname -s`
 
 setenv EDITOR "emacs -nw"
-if ($HOST == jlabh1 || $HOST == jlabh2) then
+if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4) then
   setenv CERN /site/cernlib/hp700_ux90
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
   setenv CERN /site/cernlib/sun4_solaris2
@@ -38,7 +38,7 @@ if ($HOST != localhost.localdomain) setenv PRINTER cb113q
 #
 #source /usr/user9/marki/egs4_system/Cshrc_additions_for_egs4
 #source /usr/site4/egs4/Cshrc_additions_for_egs4
-if ($HOST == jlabh1) then
+if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4) then
   alias setup 'set s_args=(\!*); source /site/bin/setup'
 else
   alias setup 'set s_args=(\!*); source /usr/local/bin/setup'
@@ -69,7 +69,7 @@ alias spe "source ~marki/bin/spe"
 # path
 #
 eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
-if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlaba1 || $HOST == jlaba2) then
+if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == jlaba1 || $HOST == jlaba2) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`

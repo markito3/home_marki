@@ -621,7 +621,7 @@ Key Escape      A       C       WindowList
 *FvwmButtons(Title gview, Icon ps.xpm, \
              Action 'Exec "ghostview" ghostview &')
 *FvwmButtons(Title netscape, Icon mini-nscape.xpm, \
-             Action 'Exec "Netscape" /apps/netscape/netscape -install http://claspc2.cebaf.gov/~marki &')
+             Action 'Exec "Netscape" /usr/local/bin/netscape -install http://claspc2.cebaf.gov/~marki &')
 *FvwmButtons(Title kill, Icon rbomb.xpm, Action Destroy)
 *FvwmButtons(2x1, Swallow(UseOld) "Desktop" 'FvwmPager 0 0')
 

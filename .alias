@@ -70,11 +70,7 @@ alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ;
 alias pu pushd
 alias pw "xterm -title \!* -e pico -v \!* &"
 alias sd "setenv DISPLAY \!*':0.0'"
-if ($HOST == claspc2.jlab.org || $HOST == claslap2.jlab.org) then
-    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/`/home/marki/bin/short_host.perl`.cshrc
-else
-    alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
-endif
+alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 alias setup_epics \
     source /home/epics/prod/epicsB/prod/scripts/setup_epics
 alias shenv "printenv | grep -i"

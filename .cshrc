@@ -56,7 +56,7 @@ setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
 # CLAS
 #
-if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) then
+if ($HOST == claspc2.jlab.org || $HOST == localhost.localdomain) then
     alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/claspc2.cshrc
 else
     alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc

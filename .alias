@@ -39,7 +39,7 @@ alias enp enscript -r # portrait
 alias ens enscript -f Courier8 # small font
 alias errchk "grep -i -e error -e '\*\*'"
 alias gr "grep -i"
-alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
+alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
 alias hangup sudo /etc/ppp/ppp-off
 alias hgrep "history | grep -i"
 alias hits 'cat /var/log/httpd/access_log | grep -v node | grep -v claspc2 | grep -v "\.gif" | grep -v "\.jpg" | grep -v "\.net" | grep -v "\.com"'
@@ -48,12 +48,12 @@ alias lprdup "cat /home/marki/misc/prologue_duplex.txt \!* | lpr"
 alias lps 'lpsta $LPDEST'
 alias lpsta "lpstat -r -a\!* -p\!* -o\!*"
 alias lpcolor "lp -dpscolor1"
-alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more -e"
-alias lsb "ls -RalF | sort -k 5nr | more -e"
+alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more"
+alias lsb "ls -RalF | sort -k 5nr | more"
 alias lsd "ls -F \!* | grep /"
-alias lsl "ls -laF \!* | more -e"
-alias lss "ls -laF \!* | sort -k5nr | more -e"
-alias lst "ls -laFt \!* | more -e"
+alias lsl "ls -laF \!* | more"
+alias lss "ls -laF \!* | sort -k5nr | more"
+alias lst "ls -laFt \!* | more"
 alias lsf "ls -aF"
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"

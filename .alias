@@ -60,6 +60,7 @@ alias mycal 'ssh -l marki -n claspc2.jlab.org ical &'
 alias netscap "netscape -install http://claspc2.jlab.org/~marki/ > & /dev/null &"
 alias news "xrn -nntpServer news.jlab.org &"
 alias po popd
+alias poker irc marki irc.poker.net
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd
 alias pw "xterm -title \!* -e pico -v \!* &"

@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.84 2004/02/04 22:45:44 marki Exp $
+# $Id: .login,v 1.85 2004/03/09 22:53:45 marki Exp $
 #
 echo starting .login
 #
@@ -9,15 +9,16 @@ if (-e ~/.marki) then
     set hosttype=marki
 else if (-e .jlab) then
     set hosttype=jlab
-else
-    set hosttype=undefined
-endif
-echo hosttype = $hosttype
-if ($hosttype != 'undefined') then
     setenv CLAS_ROOT /group/clas
     source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
     setenv TOP_DIR /scratch/$USER/top_dir
+else
+    set hosttype=undefined
+    setenv CLAS_ROOT /usr/local/clas
+    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
+    setenv TOP_DIR /scratch/$USER/top_dir
 endif
+echo hosttype = $hosttype
 #
 # set up the terminal
 #

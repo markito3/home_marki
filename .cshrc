@@ -1,7 +1,5 @@
 # Set up C shell environment:
 set noclobber
-set history=1000
-set savehist=1000
 
 # source /site/env/syscshrc # this redefines path from scratch.
 # Wipes out any adjustments to path by user done after initial invocation

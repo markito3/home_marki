@@ -9,6 +9,13 @@ emacs*bitmapIcon: on
 emacs*font: fixed
 emacs.geometry: 80x25
 !
+! gnuplot resources
+!
+gnuplot*background: black
+gnuplot*textColor: white
+gnuplot*borderColor: white
+gnuplot*axisColor: white
+!
 ! xfm
 !
 xfm*defaultEditor: textedit

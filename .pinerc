@@ -113,7 +113,7 @@ viewer-hdrs=
 # Determines default folder name for Saves...
 # Choices: default-folder, by-sender, by-from, by-recipient, last-folder-used.
 # Default: "default-folder", i.e. "saved-messages" (Unix) or "SAVEMAIL" (PC).
-saved-msg-name-rule=
+saved-msg-name-rule=by-nick-of-from
 
 # Determines default name for Fcc...
 # Choices: default-fcc, by-recipient, last-fcc-used.
@@ -122,7 +122,7 @@ fcc-name-rule=
 
 # Sets presentation order of messages in Index. Choices:
 # subject, from, arrival, date, size. Default: "arrival".
-sort-key=
+sort-key=Date
 
 # Sets presentation order of address book entries. Choices: dont-sort,
 # fullname-with-lists-last, fullname, nickname-with-lists-last, nickname

@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.81 2003/11/02 20:10:56 marki Exp $
+# $Id: .login,v 1.82 2004/01/06 16:02:47 marki Exp $
 #
 echo starting .login
 #
@@ -24,15 +24,6 @@ set savehist=(1000 merge)
 # no core dump
 limit coredumpsize 0
 
-# Set the default X server.
-
-if ($?REMHOST ) then
-  if ($REMOTEHOST != "") then
-    setenv DISPLAY "$REMOTEHOST":0
-  else
-    setenv DISPLAY :0
-  endif
-endif
 #
 # font names
 #

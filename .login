@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.83 2004/01/28 15:31:17 marki Exp $
+# $Id: .login,v 1.84 2004/02/04 22:45:44 marki Exp $
 #
 echo starting .login
 #
@@ -49,7 +49,7 @@ source .alias
 # primex
 #
 if ($hosttype == jlab) then
-    source /group/primex/scripts/primex_jlab.cshrc
+    source /group/primex/scripts/primex_jlab
 endif
 #
 # info

@@ -35,7 +35,7 @@ else if ($HOST == jlabs3) then
 endif
 
 # add personal man pages
-setenv MANPATH .:/apps/man
+setenv MANPATH .:/apps/man:/usr/man
 
 # fonts
 

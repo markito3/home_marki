@@ -144,6 +144,7 @@ if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
 	setenv CLAS_ROOT /home/claslib
         set host=`short_host.perl`
     else
+        setenv CLAS_ROOT /group/clas
         set host=jlab
     endif
     source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc

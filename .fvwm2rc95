@@ -600,9 +600,9 @@ Key Escape      A       C       WindowList
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
                      -ls -sb -bg DarkSlateGray -fg cornsilk2 -title "xterm" &')
-*FvwmButtons(Title elm, Icon mail2.xpm, \
-             Action 'Exec "Elm" xterm \
-                     -ls -sb -ls -geometry 80x48 -fg cornsilk2 -bg MidnightBlue -title elm -e elm.csh &')
+*FvwmButtons(Title pine, Icon mail2.xpm, \
+             Action 'Exec "Pine" xterm \
+                     -ls -sb -ls -geometry 80x48 -fg cornsilk2 -bg MidnightBlue -title pine -e pine.csh &')
 *FvwmButtons(Title xfm, Icon folders.xpm, \
              Action 'Exec "Xfm" xfm -title "File Manager" &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \

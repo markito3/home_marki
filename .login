@@ -79,6 +79,7 @@ alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
 alias hangup sudo /usr/sbin/dip -k
 alias hgrep "history | grep -i"
 #alias irc ~patois/bin/HP-UX/irc
+alias lprdup "cat /home/marki/misc/prologue_duplex.txt \!* | lpr"
 alias lps 'lpsta $LPDEST'
 alias lpsta "lpstat -r -a\!* -p\!* -o\!*"
 alias lpcolor "lp -dpscolor1"

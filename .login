@@ -6,7 +6,7 @@ setenv CLAS_ROOT /home/claslib
 if ($HOST == claspc2.jlab.org || $HOST == marki.jlab.org) then
     set host=`~marki/bin/short_host.perl`
 else
-    set host=`perl -e 'if ($ENV{HOST} =~ /^gp-/) {print "claslap2\n";} else {print "other";}'`
+    set host=`perl -e 'if ($ENV{HOST} =~ /^gp-/ || $ENV{HOST} eq 'localhost') {print "claslap2\n";} else {print "other";}'`
     echo host = $host
     if ($host == other) then
 	setenv CLAS_ROOT /group/clas

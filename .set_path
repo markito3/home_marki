@@ -13,7 +13,7 @@ else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
 else if ($HOST == claspc2.cebaf.gov) then
   eval `~marki/bin/addpath.perl /usr/local/src/jdk/bin /site/bin /usr/openwin/bin /usr/games`
 else if ($HOST == claslap2.cebaf.gov) then
-  eval `~marki/bin/addpath.perl /usr/games`
+  eval `~marki/bin/addpath.perl /usr/games /usr/sbin`
 else if ($OSNAME == AIX) then
   eval `~marki/bin/delpath.perl . /usr/local/bin`
   eval `~marki/bin/addpath.perl /site/bin /usr/local/bin`

@@ -275,7 +275,8 @@ AddToMenu "Linux" "Linux Shells" Title
 + "ifarml1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml1" -bg DeepPink4 -e slogin -C ifarml1.cebaf.gov -l $USER &
 + "ifarml1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml1" -bg chocolate4 -e slogin -C ifarml1.cebaf.gov -l claslib &
 + "ifarml2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml2" -bg chartreuse4 -e slogin -C ifarml2.cebaf.gov -l $USER &
-+ "localhost, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@localhost" -bg chocolate4 -e slogin -C localhost.localdomain -l claslib &
++ "ifarml2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml2" -bg SlateBlue4 -e slogin -C ifarml2.cebaf.gov -l claslib &
++ "marki, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@marki" -bg chocolate4 -e slogin -C marki.cebaf.gov -l claslib &
 
 AddToMenu "Sun" "Sun Shells" Title
 + "clon00%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon00" -bg firebrick4 -e slogin -C clon00.cebaf.gov -l $USER &

@@ -50,6 +50,7 @@ alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias beam_current ssh -n clas10 -l clasrun "'"setup_epics '>&' /dev/null ';' '$APP'/general/strip/strip_beam_simple.csh"'"
+alias clas_big "rm -f ~/clas_big.txt ; find /u/group/ -path '/u/group/.snapshot' -prune -o -path '/u/group/clas' -prune -o -group clas -size +2000k -exec ls -ld {} \; > ~/clas_big.txt"
 alias colors "more /usr/lib/X11/rgb.txt"
 alias control "ssh -n -l root 0 control-panel >& /dev/null &"
 alias crib "less /home/marki/misc/crib.txt"

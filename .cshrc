@@ -77,7 +77,9 @@ else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon0
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
   eval `~marki/bin/addpath.perl /usr/site2/emacs/bin /site/bin`
 else if ($HOST == claspc2.cebaf.gov) then
-  eval `~marki/bin/addpath.perl /usr/local/src/jdk/bin /usr/openwin/bin`
+  eval `~marki/bin/addpath.perl /usr/local/src/jdk/bin /usr/openwin/bin /usr/games`
+else if ($HOST == claslap2.cebaf.gov) then
+  eval `~marki/bin/addpath.perl /usr/games`
 else if ($OSNAME == AIX) then
   eval `~marki/bin/delpath.perl . /usr/local/bin`
   eval `~marki/bin/addpath.perl /site/bin /usr/local/bin`

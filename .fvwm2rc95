@@ -277,6 +277,7 @@ AddToMenu "Sun" "Sun Shells" Title
 + "jlabs1, claslib%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "claslib@jlabs1" -bg firebrick -fg cornsilk2 -e slogin jlabs1.cebaf.gov -l claslib &
 + "jlabs2%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs2" -bg corel4 -fg cornsilk2 -e slogin jlabs2.cebaf.gov -l $USER &
 + "jlabs3%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs3" -bg sienna4 -fg cornsilk2 -e slogin jlabs3.cebaf.gov -l $USER &
++ "jlabs4%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs4" -bg DarkGoldenrod4 -fg cornsilk2 -e slogin jlabs4.cebaf.gov -l $USER &
 
 AddToMenu "Shells" "Shells" Title
 + "Xterm%mini-term.xpm%"	Exec xterm -sb -sl 500 -j -ls &

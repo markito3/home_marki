@@ -604,7 +604,7 @@ Key Escape      A       C       WindowList
 
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
-                     -ls -sb -bg DarkSlateGray -fg cornsilk2 -title "xterm" &')
+                     -ls -sb -bg grey30 -fg cornsilk2 -title "xterm" &')
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
                      -ls -sb -ls -geometry 80x48 -fg cornsilk2 -bg MidnightBlue -title pine -e pine.csh &')

@@ -1,8 +1,8 @@
 #DELETED-98/03/24#dummy	last, first, dummy	dummy
-#DELETED-97/12/14#kasumi	Ito, Sharon Kasumi	kasumi@hooked.net
+dave_a	Abbott, David	abbottd@jlab.org
 alex_d	Alex Dzierba	dzierba@indiana.edu
 burin	Asavapibhop, Burin	burin@jlab.org
-dave_a	Atwood, David	atwood@jlab.org
+david_a	Atwood, David	atwood@jlab.org
 auger	Auger, Thierry	auger@jlab.org
 thierry	Auger, Thierry	thauger@phnx7.saclay.cea.fr
 paul_b	Banta, Paul	banta@jlab.org
@@ -14,6 +14,7 @@ ian	Bird, Ian G.	igb@jlab.org
 marvin	Blecher, Marvin	blecherm@vtinte.phys.vt.edu
 sergei	Boiarinov, Sergei	boiarino@jlab.org
 peter_b	Bonneau, Peter	bonneau@jlab.org
+valerie_b	Bookwalter, Valerie	bookwalt@jlab.org
 will	Brooks, Will	brooksw@jlab.org
 doug	Bryman, Doug	doug@sitka.triumf.ca
 volker	Burkert, Volker	burkert@jlab.org
@@ -24,6 +25,8 @@ jie	Chen, Jie	chen@jlab.org
 steve_c	Christo, Steve	christo@jlab.org
 ioc_users	CLAS IOC Users	
    marki@JLAB.ORG, mccormic@JLAB.ORG,     mVINEYAR@richmond.edu, madre@JLAB.ORG,     JENKINS@JLAB.ORG, tang@JLAB.ORG, philips@gwis2.circ.gwu.edu,     freyberg@JLAB.ORG, patois@jlab.org, auger@jlab.org, staylor@jlab.org,     cole@apollo.phys.virginia.edu, tung@jlab.org, ficenec@jlab.org,     higgins@jlab.org, mjohnson@jlab.org, giovanetti@jlab.org, beard@jlab.org
+clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
+   joe_m,mike_j,mike_n,richard_t,vardan,will)
 clas_offline	CLAS Offline Email List	clas_offline@jlab.org
 slow_list	CLAS Slow Controls Email List	clas_slow_control@jlab.org
 pam	Colburn, Pamela	psamc@aol.com
@@ -46,6 +49,7 @@ latifa	Elouadrhiri, Latifa	latifa@jlab.org
 tech-talk	EPICS tech-talk	tech-talk@aps.anl.gov
 sue	Ewing, Sue	ewing@jlab.org
 seb	Fabbro, Sebastien	fabbro@jlab.org
+laurent	Farhi, Laurent	farhi@jlab.org
 lawrence	Ferbee Jr., Lawrence	ferbee@jlab.org
 rob_f	Feuerbach, Robert	Robert Feuerbach <feuerbac@ernest.phys.cmu.edu>
 john_f	Ficenec, John	ficenec@jlab.org
@@ -70,10 +74,15 @@ sharon	Ito, Sharon Kasumi	kasumi@knives.com
 george_j	Jacobs, George	jacobsg@jlab.org
 ed_j	Jastrzembski, Ed	jastrzembski@jlab.org
 dave_j	Jenkins, David	jenkins@jlab.org
+jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
+   burkert@jlab.org,cords@jlab.org,domingo@jlab.org,elton@jlab.org,
+   fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
+   mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,vardan,
+   weygand@jlab.org,whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
 mike_j	Johnson, Michael	mjohnson@jlab.org
 kevin_g	Kevin Giovannetti	giovanetti@jlab.org
 amy	Klein, Amy C.	AKlein@Mathematica-Mpr.com
-franz	Klein, Franz Josef	fklein@jlab.org
+franz	Klein, Franz	fklein@jlab.org
 akira	Konaka, Akira	konaka@sitka.triumf.ca
 andy	Kowalski, Andy	kowalski@jlab.org
 francois_l	Lamarche, Francois	francoisl@lecroy.com
@@ -100,56 +109,6 @@ luc	Murphy, Luc	murphyl@jlab.org
 mike_n	Necaise, Mike	necaise@jlab.org
 neutral	Neutral K Decays	
    doug@sitka.triumf.ca,konaka@sitka.triumf.ca,blecherm@vtinte.phys.vt.edu,gibaut@vtinte.phys.vt.edu,kinoshita@vpihe4.phys.vt.edu,littenberg@bnlk04.phy.bnl.gov,mcfarlan@jlab.org,marki@jlab.org
-allena	Opper, Allena	opper@helios.phy.ohiou.edu
-kl_interested	parties interested in K_L --> pi0 neutrino antineutrino	
-   Domingo@jlab.org,Doughty@jlab.org,latifa@jlab.org,Ent@jlab.org,hcf@jlab.org,   Finn@jlab.org,Freyberg@jlab.org,Isgur@jlab.org,Jastrzembski@jlab.org,   Leemann@jlab.org,McFarlan@jlab.org,Majewski@jlab.org,Mecking@jlab.org,   Mestayer@jlab.org,Nanda@jlab.org,bogdan@jlab.org,Ouimette@jlab.org,   Pricej@jlab.org,Salgado@jlab.org,elton@jlab.org,Stapleton@jlab.org,   Stoler@jlab.org,Witkowsk@jlab.org,BogdanW@jlab.org,Wolin@jlab.org,   eckhause@wmheg.physics.wm.edu,dzb@kuhep4.phsx.ukans.edu
-yannick	Patois, Yannick	patois@jlab.org
-sasha	Philips, Sasha	philips@gwis2.circ.gwu.edu
-sandy	Philpott, Sandy	philpott@jlab.org
-janet	Prater, Janet	prater@jlab.org
-john_p	Price, John	pricej@jlab.org
-sandy_p	Prior, Sandy	prior@jlab.org
-liming	Qin, Liming	liming@physics.odu.edu
-peter_r	Riley, Peter Alan	hhupar@juno.com
-marco_r	Ripani, Marco	ripani@ge.infn.it
-patrizia	Rossi, Patrizia	rossi@jlab.org
-francois_r	Roudot, Francois	roudot@jlab.org
-james	Shaheen, James Victor	jvs1234@aol.com
-elton	Smith, Elton	elton@jlab.org
-cole	Smith, L. Cole	cole@apollo.phys.virginia.edu
-aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
-stepan	Stepanyan, Stepan	stepanyan@jlab.org
-mary_beth	Stewart, Mary Beth	stewartm@jlab.org
-paul_s	Stoler, Paul	stoler@jlab.org
-johnny	Tang, Johnny	tang@jlab.org
-simon	Taylor, Simon	staylor@jlab.org
-dave_t	Tedeschi, David	tedeschi@sc.edu
-robin_t	Thomas, Robin	thomar3@rpi.edu
-richard_t	Thompson, Richard	richardt@jlab.org
-mike_t	Tiefenback, Michael	tiefen@jlab.org
-sandra	Troian, Sandra M.	stroian@phoenix.princeton.edu
-sandrulla	Troian, Sandra M.	stroian@phoenix.princeton.edu
-ty	Tung, T.-Y.	tung@jlab.org
-jan	Tyler, Jan	tyler@jlab.org
-mike_v	Vineyard, Michael	mvineyar@richmond.edu
-alex_v	Vlassov, Alexander	vlassov@jlab.org
-volleyball_list	Volleyball Email List	
-   lacy@cebaf.gov, augustine@cebaf.gov, nichols@cebaf.gov, hanson@cebaf.gov,         mahoney@cebaf.gov, mtorres@cebaf.gov, jordan@cebaf.gov,         marki@cebaf.gov, harwood@cebaf.gov, arnold@cebaf.gov,         hokansson_em@nns.com
-dave_w	Wetherholt, David	wether@jlab.org
-dennis_w	Weygand, Dennis P.	weygand@jlab.org
-karen_w	White, Karen	karen@jlab.org
-celia	Whitlatch, Celia	whitlatc@jlab.org
-elliott	Wolin, Elliott	wolin@jlab.org
-steve_w	Wood, Steve	saw@jlab.org
-amrit	Yegneswaran, Amrit	yeg@jlab.org
-junho	Yun, Junho	jyun@jlab.org
-clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
-   joe_m,mike_j,mike_n,richard_t,vardan,will)
-jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
-   burkert@jlab.org,cords@jlab.org,domingo@jlab.org,elton@jlab.org,
-   fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
-   mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,weygand@jlab.org,
-   whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
 offline_group	Offline Group	(marki@CEBAF.GOV,WOLIN@CEBAF.GOV,
    JZHAO@mitlns.mit.edu,cmeyer@ernest.phys.cmu.edu,vlassov@CEBAF.GOV,
    BROOKSW@CEBAF.GOV,tung@CEBAF.GOV,maurik@einstein.sr.unh.edu,
@@ -181,7 +140,52 @@ online_group	Online Group	(abbottd@jlab.org,auger@jlab.org,
    jhardie@jlab.org,larry@fsulcd.physics.fsu.edu,lcsmith@jlab.org,
    marchand@jlab.org,mjohnson@jlab.org,muguira@jlab.org,riccardi@cs.fsu.edu,
    tedeschi+@pitt.edu,wolin@jlab.org)
+allena	Opper, Allena	opper@helios.phy.ohiou.edu
+kl_interested	parties interested in K_L --> pi0 neutrino antineutrino	
+   Domingo@jlab.org,Doughty@jlab.org,latifa@jlab.org,Ent@jlab.org,hcf@jlab.org,   Finn@jlab.org,Freyberg@jlab.org,Isgur@jlab.org,Jastrzembski@jlab.org,   Leemann@jlab.org,McFarlan@jlab.org,Majewski@jlab.org,Mecking@jlab.org,   Mestayer@jlab.org,Nanda@jlab.org,bogdan@jlab.org,Ouimette@jlab.org,   Pricej@jlab.org,Salgado@jlab.org,elton@jlab.org,Stapleton@jlab.org,   Stoler@jlab.org,Witkowsk@jlab.org,BogdanW@jlab.org,Wolin@jlab.org,   eckhause@wmheg.physics.wm.edu,dzb@kuhep4.phsx.ukans.edu
+yannick	Patois, Yannick	patois@jlab.org
+sasha	Philips, Sasha	philips@gwis2.circ.gwu.edu
+sandy	Philpott, Sandy	philpott@jlab.org
+janet	Prater, Janet	prater@jlab.org
+john_p	Price, John	pricej@jlab.org
+sandy_p	Prior, Sandy	prior@jlab.org
+liming	Qin, Liming	liming@physics.odu.edu
+peter_r	Riley, Peter Alan	hhupar@juno.com
+marco_r	Ripani, Marco	ripani@ge.infn.it
+patrizia	Rossi, Patrizia	rossi@jlab.org
+francois_r	Roudot, Francois	roudot@jlab.org
+james	Shaheen, James Victor	jvs1234@aol.com
 slow_contact	slow controls detector contacts	(dhuga@gwuvm.gwu.edu,
    freyberg@jlab.org,giovanetti@dirac.physics.jmu.edu,
    gurjyan@clashp.lnf.infn.it,jenkins@vt.edu,marki@jlab.org,
    vineyard@urvax.urich.edu,wolin@jlab.org)
+elton	Smith, Elton	elton@jlab.org
+cole	Smith, L. Cole	cole@apollo.phys.virginia.edu
+aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
+stepan	Stepanyan, Stepan	stepanyan@jlab.org
+mary_beth	Stewart, Mary Beth	stewartm@jlab.org
+paul_s	Stoler, Paul	stoler@jlab.org
+johnny	Tang, Johnny	tang@jlab.org
+simon	Taylor, Simon	staylor@jlab.org
+dave_t	Tedeschi, David	tedeschi@sc.edu
+robin_t	Thomas, Robin	thomar3@rpi.edu
+richard_t	Thompson, Richard	richardt@jlab.org
+mike_t	Tiefenback, Michael	tiefen@jlab.org
+sandra	Troian, Sandra M.	stroian@phoenix.princeton.edu
+sandrulla	Troian, Sandra M.	stroian@phoenix.princeton.edu
+ty	Tung, T.-Y.	tung@jlab.org
+jan	Tyler, Jan	tyler@jlab.org
+mike_v	Vineyard, Michael	mvineyar@richmond.edu
+alex_v	Vlassov, Alexander	vlassov@jlab.org
+volleyball_list	Volleyball Email List	
+   lacy@cebaf.gov, augustine@cebaf.gov, nichols@cebaf.gov, hanson@cebaf.gov,         mahoney@cebaf.gov, mtorres@cebaf.gov, jordan@cebaf.gov,         marki@cebaf.gov, harwood@cebaf.gov, arnold@cebaf.gov,         hokansson_em@nns.com
+shannan	Walsh, Shannan	swalsh@jlab.org
+dave_w	Wetherholt, David	wether@jlab.org
+dennis_w	Weygand, Dennis P.	weygand@jlab.org
+karen_w	White, Karen	karen@jlab.org
+celia	Whitlatch, Celia	whitlatc@jlab.org
+chris_w	Witzig, Chris	witzig@bnl.gov
+elliott	Wolin, Elliott	wolin@jlab.org
+steve_w	Wood, Steve	saw@jlab.org
+amrit	Yegneswaran, Amrit	yeg@jlab.org
+junho	Yun, Junho	jyun@jlab.org

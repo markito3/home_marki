@@ -1,9 +1,23 @@
+!
+! emacs resources
+!
+emacs*Background: DarkSlateGray
+emacs*Foreground: Wheat
+emacs*pointerColor: Orchid
+emacs*cursorColor: Orchid
+emacs*bitmapIcon: on
+emacs*font: fixed
+emacs.geometry: 80x25
+!
 ! xfm
+!
 xfm*defaultEditor: textedit
 xfm*defaultViewer: textedit
+!
 ! xterm resources
+!
 xterm*scrollBar:        True
-xterm*saveLines:        300
+xterm*saveLines:        1000
 xterm*loginShell:       True
 xterm*font1: lucidasanstypewriter-8
 xterm*font2: lucidasanstypewriter-10

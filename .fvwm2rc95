@@ -628,9 +628,12 @@ Key Escape      A       C       WindowList
 *FvwmButtons(2x1, Title load, \
              Swallow(UseOld) "xload" 'Exec xload \
                      -nolabel -bg grey60 -update 5 -geometry -1500-1500 &')
-*FvwmButtons(Title xterm, Icon rterm.xpm, \
+*FvwmButtons(Title claspc2, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
-                     -ls -vb -sb -geometry 80x36 -title "xterm" &')
+                     -ls -vb -sb -geometry 80x36 -title "claspc2" -exec slogin claspc2 &')
+*FvwmButtons(Title claslap2, Icon rterm.xpm, \
+             Action 'Exec "XTerm" xterm \
+                     -ls -vb -sb -geometry 80x36 -title "claslap2" -exec slogin claslap2 &')
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
                -geometry 80x48 -title Pine -e pine &')

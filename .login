@@ -2,8 +2,8 @@ echo starting .login
 #
 # CLAS software
 #
-if ($HOST == claspc2.cebaf.gov || $HOST == marki.cebaf.gov \
-    || $HOST == claslap2.cebaf.gov) then
+if ($HOST == claspc2.jlab.org || $HOST == marki.jlab.org \
+    || $HOST == claslap2.jlab.org) then
     setenv CLAS_ROOT /home/claslib
     set host=`~marki/bin/short_host.perl`
 else
@@ -11,7 +11,7 @@ else
     set host=jlab
 endif
 source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
-if ($host == claspc2.cebaf.gov || $host == marki || $host == claslap2) \
+if ($host == claspc2.jlab.org || $host == marki || $host == claslap2) \
     setenv CLAS_PARMS /home/claslib/parms
 setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
@@ -65,11 +65,11 @@ alias crib "less /home/marki/misc/crib.txt"
 alias cribadd "emacs /home/marki/misc/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
-alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
+alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.jlab.org:/group/clas/clas_cvs
 alias cvs_epics setenv CVSROOT /home/epics/cvs
-alias cvs_epicsr setenv CVSROOT :ext:marki@clon01.cebaf.gov:/home/epics/cvs
+alias cvs_epicsr setenv CVSROOT :ext:marki@clon01.jlab.org:/home/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
-alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
+alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.jlab.org:/home/marki/cvs
 alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
@@ -105,9 +105,9 @@ alias lst "ls -laFt \!* | more -e"
 alias lsf "ls -aF"
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
-alias mycal 'ssh -l marki -n claspc2.cebaf.gov ical &'
-alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null &"
-alias news "xrn -nntpServer news.cebaf.gov &"
+alias mycal 'ssh -l marki -n claspc2.jlab.org ical &'
+alias netscap "netscape -install http://claspc2.jlab.org/~marki/ > & /dev/null &"
+alias news "xrn -nntpServer news.jlab.org &"
 alias po popd
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd

@@ -43,9 +43,6 @@ if ($?REMHOST ) then
     setenv DISPLAY :0
   endif
 endif
-
-# add personal man pages
-setenv MANPATH .:/apps/man:/usr/man
 #
 # font names
 #

@@ -18,8 +18,7 @@ gnuplot*axisColor: white
 !
 ! xfm resources
 !
-xfm*defaultEditor: textedit
-xfm*defaultViewer: textedit
+xfm*defaultEditor: xedit
 !
 ! xterm resources
 !

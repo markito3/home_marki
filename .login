@@ -63,6 +63,7 @@ alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
+alias dial sudo /usr/sbin/dip /usr/local/dip/dipscript
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort 'du -r | sort -k 1nr | more -e'
@@ -80,6 +81,7 @@ alias eq "x ~marki/slow/epics_questions.txt"
 alias errchk "grep -i -e error -e '\*\*'"
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
+alias hangup sudo /usr/sbin/dip -k
 alias hgrep "history | grep -i"
 #alias irc ~patois/bin/HP-UX/irc
 alias lps 'lpsta $LPDEST'
@@ -107,6 +109,7 @@ alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"
 alias vu "vuepad"
 alias wea "telnet downwind.sprl.umich.edu 3000"
+alias windows sudo /sbin/shutdown -r now
 alias xwm "rm -f /tmp/ssh-agent_wm.log ; exec ssh-agent fvwm95-2 > & /tmp/ssh-agent_wm.log"
 alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu puphed.princeton.edu bnlku7.phy.bnl.gov bnlku10.phy.bnl.gov puhep1.princeton.edu clon00 clon01 dev02 clas10"
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>

@@ -266,6 +266,7 @@ AddToMenu "Linux" "Linux Shells" Title
 + "claspc2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@claspc2" -bg salmon4 -e slogin -C claspc2.cebaf.gov -l claslib &
 + "ifarml1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml1" -bg DeepPink4 -e slogin -C ifarml1.cebaf.gov -l $USER &
 + "ifarml1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml1" -bg chocolate4 -e slogin -C ifarml1.cebaf.gov -l claslib &
++ "ifarml2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml2" -bg chartreuse4 -e slogin -C ifarml2.cebaf.gov -l $USER &
 + "localhost, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@localhost" -bg chocolate4 -e slogin -C localhost.localdomain -l claslib &
 
 AddToMenu "Sun" "Sun Shells" Title
@@ -368,7 +369,7 @@ AddToMenu "Games" "Games" Title
 +              "Xvier" Exec exec xvier &
 
 AddToMenu "Applications" "Applications" Title
-+ "EPICS Alarm Handlers%mini-bomb.xpm%"	Exec ssh -n clas10 alh.csh >& /dev/null&
++ "EPICS Alarm Handlers%mini-bomb.xpm%"	Exec ssh -n clas10 alh.csh >& /dev/null &
 + "Emacs%mini-edit.xpm%"	Exec emacs -bg brown4 &
 + "Ghostview%mini-gv.xpm%"	Exec ghostview &
 + "Xview%mini-xv.xpm%"		Exec xv &

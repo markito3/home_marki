@@ -110,7 +110,8 @@ alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ;
 alias pu "pushd"
 alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
-alias setup_epics "source /home/epics/R3.13.0.beta11/scripts/setup_epics"
+alias setup_epics \
+    source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics
 alias shenv "printenv | grep -i"
 alias soup xv /home/marki/misc/soup.gif
 alias spe "source ~marki/bin/spe"

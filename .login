@@ -56,6 +56,7 @@ alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_
 alias cvs_epics setenv CVSROOT /apps/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
+alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
 alias dial sudo /usr/sbin/dip /usr/local/dip/dipscript_336

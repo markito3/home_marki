@@ -18,25 +18,20 @@ else if ($HOST == jlaba1 || $HOST == jlaba2 || $HOST == ifarma1) then
   setenv CERN /site/cernlib/rs_aix41
 else if ($HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
   setenv CERN /site/cernlib/pc_linux
-else if ($HOST == claspc2.cebaf.gov) then
+else if ($HOST == claspc2.jlab.org) then
   setenv CERN /home/cern
-else if ($HOST == marki.cebaf.gov) then
+else if ($HOST == marki.jlab.org) then
   setenv CERN /home/cern/cernlib
 else
   setenv CERN /dummy_file_system
 endif
 setenv FTP /site/ftp/pub/marki
 setenv MISC $HOME/misc
-if ($HOST == localhost.localdomain) then
-  setenv SCR /home/scratch/marki
-else
-  setenv SCR /scratch/marki
-endif
-setenv EPB /usr/site2/epics_physics/hallb
+setenv SCR /scratch/marki
 
 # Define your default printer
 setenv LPDEST phyhp9
-if ($HOST != marki.cebaf.gov) setenv PRINTER phyhp9
+if ($HOST != marki.jlab.org) setenv PRINTER phyhp9
 #
 # setups
 #

@@ -35,7 +35,7 @@ else if ($HOST == jlabs3) then
 endif
 
 # add personal man pages
-# setenv MANPATH /usr/site2/gnu/man:/usr/site2/emacs/man:/usr/man:/usr/contrib/man:/usr/local/man:/usr/site4/egs4/man:/home/marki/man
+setenv MANPATH .:/apps/man
 
 # fonts
 
@@ -87,7 +87,8 @@ alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
 alias hangup sudo /etc/ppp/ppp-off
 alias hgrep "history | grep -i"
-#alias irc ~patois/bin/HP-UX/irc
+alias hits 'cat /var/log/httpd/access_log | grep -v node | grep -v claspc2 | grep -v "\.gif" | grep -v "\.jpg" | grep -v "\.net" | grep -v "\.com"'
+alias logbook pushd /usr/local/src/logbook \; ./logbook \; popd
 alias lprdup "cat /home/marki/misc/prologue_duplex.txt \!* | lpr"
 alias lps 'lpsta $LPDEST'
 alias lpsta "lpstat -r -a\!* -p\!* -o\!*"
@@ -111,7 +112,8 @@ alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias shenv "printenv | grep -i"
 alias soup xv /home/marki/misc/soup.gif
-alias sstaff ssh jlaba2.cebaf.gov staff
+alias staff "grep -i \!* /tmp/staff.txt"
+alias sstaff ssh jlaba2 staff
 alias suterm "xterm -e su &"
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"

@@ -2,8 +2,7 @@
 # path
 #
 if ($OSNAME == HP-UX) then
-  eval `~marki/bin/addpath.pl /apps/tex/bin /apps/emacs/19.34b/bin \
-    /apps/make/bin /apps/bin /site/bin /opt/fortran/bin`
+  eval `~marki/bin/addpath.pl /apps/tex/bin /apps/emacs/19.34b/bin /apps/make/bin /apps/bin /site/bin /opt/fortran/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == ifarms1 || \
   $HOST == ifarms2) then
     eval `~marki/bin/delpath.pl /usr/local/bin`

@@ -51,14 +51,6 @@ else
 endif
 setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
-# CLAS
-#
-if ($HOST == claspc2.jlab.org || $HOST == claslap2.jlab.org) then
-    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/`short_host.perl`.cshrc
-else
-    alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
-endif
-#
 # Miscellaneous environment variables
 #
 setenv CLAS_TOOLS /group/clas/tools

@@ -56,6 +56,11 @@ alias colors "more /usr/lib/X11/rgb.txt"
 alias crib "less $MISC/crib.txt"
 alias cribadd "x $MISC/crib.txt"
 alias cribe "less $HOME/slow/epics_crib.txt"
+alias cvs_clas setenv CVSROOT /apps/clas/u1/clas_cvs
+alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/apps/clas/u1/clas_cvs
+alias cvs_epics setenv CVSROOT /apps/epics/cvs
+alias cvs_my setenv CVSROOT /home/marki/cvs
+alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"

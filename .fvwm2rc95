@@ -645,7 +645,7 @@ Key Escape      A       C       WindowList
 *FvwmButtons(Title ical, Icon desk.xpm, \
              Action 'Exec "Calendar" ical &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \
-             Action 'Exec "Emacs" emacs -geometry 80x36 -fn $fontLarge -bg brown4 &')
+             Action 'Exec "Emacs" emacs -geometry 80x36 -bg brown4 &')
 *FvwmButtons(Title xcalc, Icon rcalc.xpm, \
              Action 'Exec "Calculator" xcalc &')
 *FvwmButtons(Title xview, Icon xv.xpm, \

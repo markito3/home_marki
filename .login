@@ -88,11 +88,7 @@ alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_epics \
     source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics
 alias shenv "printenv | grep -i"
-alias soup xv /home/marki/misc/soup.gif
 alias spe "source ~marki/bin/spe"
-if ($HOST == claspc2.cebaf.gov) alias staff "grep -i \!* /tmp/staff.txt"
-alias sstaff ssh jlaba2 staff
-alias suterm "xterm -e su &"
 alias todo "emacs ~/misc/stuff/lists/todo.txt &"
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"

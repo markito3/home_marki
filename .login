@@ -22,15 +22,15 @@ endif
 
 # adjust the path
 if ($HOST == jlabh1) then
-  eval `/home/marki/bin/addpath.pl /usr/contrib/bin/X11`
+  eval `/home/marki/bin/addpath.perl /usr/contrib/bin/X11`
   #setenv PATH `/home/marki/bin/addpath /site/bin`
   #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
   #setenv PATH `/home/marki/bin/addpath .`
 else if ($HOST == clas10) then
-  eval `/home/marki/bin/addpath.pl /home/marki/bin`
+  eval `/home/marki/bin/addpath.perl /home/marki/bin`
   #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
 else if ($HOST == jlabs3) then
-  eval `/home/marki/bin/addpath.pl /home/marki/bin`
+  eval `/home/marki/bin/addpath.perl /home/marki/bin`
   rehash
 endif
 
@@ -140,9 +140,12 @@ alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-
 #
 if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain \
-	|| $HOST == claslap2.cebaf.gov) \
+	|| $HOST == claslap2.cebaf.gov) then
 	setenv CLAS_ROOT /home/claslib
-    set host=`short_host.perl`
+        set host=`short_host.perl`
+    else
+        set host=jlab
+    endif
     source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
 	setenv CLAS_PARMS /home/claslib/parms

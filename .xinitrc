@@ -1,6 +1,6 @@
 #!/bin/sh
+# $Id: .xinitrc,v 1.10 2000/09/07 17:56:04 marki Exp $
 xhost + >& /dev/null
-xmodmap .xmodmaprc
 # secure shell
 ssh-add >& /dev/null &
 # window manager

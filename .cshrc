@@ -50,7 +50,7 @@ endif
 #
 # CERN Libraries
 #
-if ($HOST == ifarml1 || $HOST == ifarml2) then
+if ($OSNAME == SunOS || $OSNAME == Linux) then
     setenv CERN_LEVEL 97a
 else
     setenv CERN_LEVEL 96a
@@ -76,9 +76,10 @@ alias spe "source ~marki/bin/spe"
 #
 eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == ifarmh1 || $HOST == ifarmh2 || $HOST == ifarmh3 || $HOST == ifarmh4 || $HOST == ifarmh5) then
-  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin /opt/fortran/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
-  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
+    eval `~marki/bin/delpath.perl /usr/local/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
 else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then

@@ -66,6 +66,10 @@ endif
 #
 setenv WINGZ3 /usr/local/src/Wingz3
 #
+# path
+#
+source .set_path
+#
 # umask
 #
 umask 2

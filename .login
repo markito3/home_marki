@@ -15,7 +15,6 @@ if ($host == claspc2.jlab.org || $host == marki || $host == claslap2) \
     setenv CLAS_PARMS /home/claslib/parms
 setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
-source .set_path
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
 set prompt="%m:%C> "  # prompt set to machine:current directory

@@ -1,15 +1,23 @@
 #
-# $Id: .login,v 1.82 2004/01/06 16:02:47 marki Exp $
+# $Id: .login,v 1.83 2004/01/28 15:31:17 marki Exp $
 #
 echo starting .login
 #
 # CLAS software
 #
-set hosttype=`perl -e 'if ($ENV{HOST} =~ /^gp-/ || $ENV{HOST} =~ /^varc-/ || $ENV{HOST} =~ /^jlab/ || $ENV{HOST} =~ /^farm/ || $ENV{HOST} =~ /^ifarm/) {print "jlab";} else {print "marki";}'`
+if (-e ~/.marki) then
+    set hosttype=marki
+else if (-e .jlab) then
+    set hosttype=jlab
+else
+    set hosttype=undefined
+endif
 echo hosttype = $hosttype
-setenv CLAS_ROOT /group/clas
-source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
-setenv TOP_DIR /scratch/$USER/top_dir
+if ($hosttype != 'undefined') then
+    setenv CLAS_ROOT /group/clas
+    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
+    setenv TOP_DIR /scratch/$USER/top_dir
+endif
 #
 # set up the terminal
 #

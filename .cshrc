@@ -67,9 +67,6 @@ if ($HOST == clas10) then
   alias spe "source ~marki/bin/spe"
 endif
 #
-        alias nt "new_terminal"
-        alias xbiff "~mccormic/bin/xbiff++"
-#
 # path
 #
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlaba1 || $HOST == jlaba2) then

@@ -117,13 +117,12 @@ alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
 alias xtb "xterm -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8 &"
 alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1 &"
 #
-# recsis
-#
-#alias setup_recsis "source /home/marki/bin/setup_recsis"
-#
 # CLAS software
 #
-#if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04) source ~marki/clas/setup_clas
+if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04) then
+    setup_clas
+endif
+setenv TOP_DIR ~/work
 #
 # info
 #
@@ -137,4 +136,4 @@ date
 #
 # finished
 #
-echo "marki's .login done"
+echo ".login done"

@@ -1,10 +1,3 @@
-volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
-   Henry Robertson <robertsn@jlab.org>,"Karen C. Hokansson" <kchok@jlab.org>,
-   Lawrence Ferbee <ferbee@jlab.org>,Leigh Harwood <harwood@jlab.org>,
-   marki@jlab.org,mary johnson <maryjane@jlab.org>,
-   Renee Ito <reneeab@yahoo.com>,Sherri Thomas <sthomas@jlab.org>,
-   Sue Witherspoon <withers@jlab.org>,Tim Whitlatch <whitey@jlab.org>,
-   Walter Lacy <lacy@jlab.org>)
 dave_a	Abbott, David	abbottd@jlab.org
 steve_a	Adler, Stephen	adler@bnlku2.phy.bnl.gov
 alex_d	Alex Dzierba	dzierba@indiana.edu
@@ -32,11 +25,8 @@ linda	Ceraul, Linda	ceraul@jlab.org
 penny	Champine, Penny	champine@jlab.org
 jie	Chen, Jie	chen@jlab.org
 steve_c	Christo, Steve	christo@jlab.org
-cops	CLAS COP's	(arne,elton,mac,marki,stepan,volker)
 ioc_users	CLAS IOC Users	
    marki@JLAB.ORG, mccormic@JLAB.ORG,     mVINEYAR@richmond.edu, madre@JLAB.ORG,     JENKINS@JLAB.ORG, tang@JLAB.ORG, philips@gwis2.circ.gwu.edu,     freyberg@JLAB.ORG, patois@jlab.org, auger@jlab.org, staylor@jlab.org,     cole@apollo.phys.virginia.edu, tung@jlab.org, ficenec@jlab.org,     higgins@jlab.org, mjohnson@jlab.org, giovanetti@jlab.org, beard@jlab.org
-clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
-   joe_m,mike_j,mike_k,mike_n,richard_t,stepan,vardan,will)
 clas_offline	CLAS Offline Email List	clas_offline@jlab.org
 slow_list	CLAS Slow Controls Email List	clas_slow_control@jlab.org
 pam	Colburn, Pamela	psamc@aol.com
@@ -89,14 +79,6 @@ sharon	Ito, Sharon Kasumi	kasumi@knives.com
 george_j	Jacobs, George	jacobsg@jlab.org
 ed_j	Jastrzembski, Ed	jastrzembski@jlab.org
 dave_j	Jenkins, David	jenkins@jlab.org
-jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
-   burkert@jlab.org,cords@jlab.org,domingo@jlab.org,elton@jlab.org,
-   fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
-   mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,vardan,
-   weygand@jlab.org,whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
-websters	JLab Web Policy Team	(casalino@jlab.org,ithomas@jlab.org,
-   "Karen C. Hokansson" <kchok@jlab.org>,marki@jlab.org,oyer@jlab.org,
-   philpott@jlab.org,reece@jlab.org,waite@jlab.org,ware@jlab.org)
 mike_j	Johnson, Michael	mjohnson@jlab.org
 kyungseon	Joo, Kyungseon	kjoo@jlab.org
 dave_k	Kashy, David	kashy@jlab.org
@@ -133,37 +115,6 @@ luc	Murphy, Luc	murphyl@jlab.org
 mike_n	Necaise, Mike	necaise@jlab.org
 neutral	Neutral K Decays	
    doug@sitka.triumf.ca,konaka@sitka.triumf.ca,blecherm@vtinte.phys.vt.edu,gibaut@vtinte.phys.vt.edu,kinoshita@vpihe4.phys.vt.edu,littenberg@bnlk04.phy.bnl.gov,mcfarlan@jlab.org,marki@jlab.org
-offline_group	Offline Group	(marki@CEBAF.GOV,WOLIN@CEBAF.GOV,
-   JZHAO@mitlns.mit.edu,cmeyer@ernest.phys.cmu.edu,vlassov@CEBAF.GOV,
-   BROOKSW@CEBAF.GOV,tung@CEBAF.GOV,maurik@einstein.sr.unh.edu,
-   gilfoyle@urich.edu,richardt@CEBAF.GOV,cole@apollo.phys.Virginia.EDU,
-   riccardi@scri.fsu.edu,tedeschi+@pitt.edu,CARMAN@CEBAF.GOV,
-   rcm4y@landau4.phys.virginia.edu,liming@physics.odu.edu,pricej@CEBAF.GOV,
-   burin@charon.cebaf.gov,roudot@CEBAF.GOV,yeg@CEBAF.GOV,manak@CEBAF.GOV,
-   weygand@CEBAF.GOV,feuerbac@ernest.phys.cmu.edu,philips@gwis2.circ.gwu.edu,
-   avakian@hermes.desy.de,muguira@CEBAF.GOV,yun@physics.odu.edu,
-   mueller@blakey.phyast.pitt.edu,KUHN@CEBAF.GOV,MESTAYER@cebaf.gov,
-   kmikhail@CEBAF.GOV,griff@CEBAF.GOV,cords@CEBAF.GOV,freyberg@CEBAF.GOV,
-   RITCHIE@eta.la.asu.edu,vvsap@aiacehp.ge.infn.it,ficenec@CEBAF.GOV,
-   berdoz@ernest.phys.cmu.edu,heddle@CEBAF.GOV,caldwell@CEBAF.GOV,
-   cummij@rpi.edu,mcnabb+@andrew.cmu.edu,DYTMAN@vms.cis.pitt.edu,
-   battaglieri@ge.infn.it,dytman+@pitt.edu,miskimen@phast.umass.edu,
-   murphyl@CEBAF.GOV,staylor@CEBAF.GOV,maniatty@CEBAF.GOV,skabelin@CEBAF.GOV,
-   maniattb@cs.rpi.edu,kossov@CEBAF.GOV,bogdan@CEBAF.GOV,guillo@CEBAF.GOV,
-   kynam@CEBAF.GOV,biselli@aiacehp2.ge.infn.it,fedro@clashp.lnf.infn.it,
-   necaise@CEBAF.GOV,dodge@physics.odu.edu,anciant@phnx7.saclay.cea.fr,
-   rust@physics.odu.edu,opper@akopper.phy.ohiou.edu,farhi@CEBAF.GOV,
-   nichoj2@rpi.edu,weinstei@euler.physics.odu.edu,opper@akopper.phy.ohiou.edu,
-   hovanes@CEBAF.GOV,longhi@cua.edu,foehl@CEBAF.GOV,cetina@gwis2.circ.gwu.edu,
-   gavalian@CEBAF.GOV,mcaleer@CEBAF.GOV,kramerl@CEBAF.GOV,bisela@rpi.edu,
-   odonnell@ouala3.phy.ohiou.edu,mjohnson@CEBAF.GOV,
-   mehmetb@euler.physics.odu.edu)
-online_group	Online Group	(abbottd@jlab.org,auger@jlab.org,
-   barrow@jlab.org,boiarino@jlab.org,cords@jlab.org,doughty@jlab.org,
-   giovanetti@jlab.org,heddle@jlab.org,heyes@jlab.org,jficenec@vt.edu,
-   jhardie@jlab.org,larry@fsulcd.physics.fsu.edu,lcsmith@jlab.org,
-   marchand@jlab.org,mjohnson@jlab.org,muguira@jlab.org,riccardi@cs.fsu.edu,
-   tedeschi+@pitt.edu,wolin@jlab.org)
 allena	Opper, Allena	opper@helios.phy.ohiou.edu
 kl_interested	parties interested in K_L --> pi0 neutrino antineutrino	
    Domingo@jlab.org,Doughty@jlab.org,latifa@jlab.org,Ent@jlab.org,hcf@jlab.org,   Finn@jlab.org,Freyberg@jlab.org,Isgur@jlab.org,Jastrzembski@jlab.org,   Leemann@jlab.org,McFarlan@jlab.org,Majewski@jlab.org,Mecking@jlab.org,   Mestayer@jlab.org,Nanda@jlab.org,bogdan@jlab.org,Ouimette@jlab.org,   Pricej@jlab.org,Salgado@jlab.org,elton@jlab.org,Stapleton@jlab.org,   Stoler@jlab.org,Witkowsk@jlab.org,BogdanW@jlab.org,Wolin@jlab.org,   eckhause@wmheg.physics.wm.edu,dzb@kuhep4.phsx.ukans.edu
@@ -182,10 +133,6 @@ federico	Ronchetti, Federico
 patrizia	Rossi, Patrizia	rossi@jlab.org
 francois_r	Roudot, Francois	roudot@jlab.org
 james	Shaheen, James Victor	jvshaheen@aol.com
-slow_contact	slow controls detector contacts	(dhuga@gwuvm.gwu.edu,
-   freyberg@jlab.org,giovanetti@dirac.physics.jmu.edu,
-   gurjyan@clashp.lnf.infn.it,jenkins@vt.edu,marki@jlab.org,
-   vineyard@urvax.urich.edu,wolin@jlab.org)
 elton	Smith, Elton	elton@jlab.org
 cole	Smith, L. Cole	cole@apollo.phys.virginia.edu
 aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
@@ -219,3 +166,56 @@ steve_w	Wood, Steve	saw@jlab.org
 rozelle	Wright, Rozelle	rwright@lanl.gov
 amrit	Yegneswaran, Amrit	yeg@jlab.org
 junho	Yun, Junho	jyun@jlab.org
+volleyball		(Celia Whitlatch <whitlatc@jlab.org>,
+   Henry Robertson <robertsn@jlab.org>,"Karen C. Hokansson" <kchok@jlab.org>,
+   Lawrence Ferbee <ferbee@jlab.org>,Leigh Harwood <harwood@jlab.org>,
+   marki@jlab.org,mary johnson <maryjane@jlab.org>,
+   Renee Ito <reneeab@yahoo.com>,Sherri Thomas <sthomas@jlab.org>,
+   Sue Witherspoon <withers@jlab.org>,Tim Whitlatch <whitey@jlab.org>,
+   Walter Lacy <lacy@jlab.org>)
+cops	CLAS COP's	(arne,elton,mac,marki,stepan,volker)
+clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
+   joe_m,mike_j,mike_k,mike_n,richard_t,stepan,vardan,will)
+jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
+   burkert@jlab.org,cords@jlab.org,domingo@jlab.org,elton@jlab.org,
+   fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
+   mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,vardan,
+   weygand@jlab.org,whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
+websters	JLab Web Policy Team	(casalino@jlab.org,ithomas@jlab.org,
+   "Karen C. Hokansson" <kchok@jlab.org>,marki@jlab.org,oyer@jlab.org,
+   philpott@jlab.org,reece@jlab.org,waite@jlab.org,ware@jlab.org)
+offline_group	Offline Group	(marki@CEBAF.GOV,WOLIN@CEBAF.GOV,
+   JZHAO@mitlns.mit.edu,cmeyer@ernest.phys.cmu.edu,vlassov@CEBAF.GOV,
+   BROOKSW@CEBAF.GOV,tung@CEBAF.GOV,maurik@einstein.sr.unh.edu,
+   gilfoyle@urich.edu,richardt@CEBAF.GOV,cole@apollo.phys.Virginia.EDU,
+   riccardi@scri.fsu.edu,tedeschi+@pitt.edu,CARMAN@CEBAF.GOV,
+   rcm4y@landau4.phys.virginia.edu,liming@physics.odu.edu,pricej@CEBAF.GOV,
+   burin@charon.cebaf.gov,roudot@CEBAF.GOV,yeg@CEBAF.GOV,manak@CEBAF.GOV,
+   weygand@CEBAF.GOV,feuerbac@ernest.phys.cmu.edu,philips@gwis2.circ.gwu.edu,
+   avakian@hermes.desy.de,muguira@CEBAF.GOV,yun@physics.odu.edu,
+   mueller@blakey.phyast.pitt.edu,KUHN@CEBAF.GOV,MESTAYER@cebaf.gov,
+   kmikhail@CEBAF.GOV,griff@CEBAF.GOV,cords@CEBAF.GOV,freyberg@CEBAF.GOV,
+   RITCHIE@eta.la.asu.edu,vvsap@aiacehp.ge.infn.it,ficenec@CEBAF.GOV,
+   berdoz@ernest.phys.cmu.edu,heddle@CEBAF.GOV,caldwell@CEBAF.GOV,
+   cummij@rpi.edu,mcnabb+@andrew.cmu.edu,DYTMAN@vms.cis.pitt.edu,
+   battaglieri@ge.infn.it,dytman+@pitt.edu,miskimen@phast.umass.edu,
+   murphyl@CEBAF.GOV,staylor@CEBAF.GOV,maniatty@CEBAF.GOV,skabelin@CEBAF.GOV,
+   maniattb@cs.rpi.edu,kossov@CEBAF.GOV,bogdan@CEBAF.GOV,guillo@CEBAF.GOV,
+   kynam@CEBAF.GOV,biselli@aiacehp2.ge.infn.it,fedro@clashp.lnf.infn.it,
+   necaise@CEBAF.GOV,dodge@physics.odu.edu,anciant@phnx7.saclay.cea.fr,
+   rust@physics.odu.edu,opper@akopper.phy.ohiou.edu,farhi@CEBAF.GOV,
+   nichoj2@rpi.edu,weinstei@euler.physics.odu.edu,opper@akopper.phy.ohiou.edu,
+   hovanes@CEBAF.GOV,longhi@cua.edu,foehl@CEBAF.GOV,cetina@gwis2.circ.gwu.edu,
+   gavalian@CEBAF.GOV,mcaleer@CEBAF.GOV,kramerl@CEBAF.GOV,bisela@rpi.edu,
+   odonnell@ouala3.phy.ohiou.edu,mjohnson@CEBAF.GOV,
+   mehmetb@euler.physics.odu.edu)
+online_group	Online Group	(abbottd@jlab.org,auger@jlab.org,
+   barrow@jlab.org,boiarino@jlab.org,cords@jlab.org,doughty@jlab.org,
+   giovanetti@jlab.org,heddle@jlab.org,heyes@jlab.org,jficenec@vt.edu,
+   jhardie@jlab.org,larry@fsulcd.physics.fsu.edu,lcsmith@jlab.org,
+   marchand@jlab.org,mjohnson@jlab.org,muguira@jlab.org,riccardi@cs.fsu.edu,
+   tedeschi+@pitt.edu,wolin@jlab.org)
+slow_contact	slow controls detector contacts	(dhuga@gwuvm.gwu.edu,
+   freyberg@jlab.org,giovanetti@dirac.physics.jmu.edu,
+   gurjyan@clashp.lnf.infn.it,jenkins@vt.edu,marki@jlab.org,
+   vineyard@urvax.urich.edu,wolin@jlab.org)

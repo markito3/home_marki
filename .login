@@ -13,11 +13,11 @@ else
 	set host=jlab
     endif
 endif
-source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
-echo CLAS_BUILD = $CLAS_BUILD
-if ($host == claspc2.jlab.org || $host == marki || $host == claslap2) \
-    setenv CLAS_PARMS /home/claslib/parms
-echo CLAS_PARMS = $CLAS_PARMS
+if ($HOST != claspc14.jlab.org) then
+    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
+    echo CLAS_BUILD = $CLAS_BUILD
+    echo CLAS_PARMS = $CLAS_PARMS
+endif
 setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
 #
@@ -62,7 +62,7 @@ source .alias
 #
 # primex
 #
-if ($HOST != marki.jlab.org) then
+if ($HOST != marki.jlab.org && $HOST != claspc14.jlab.org) then
     source /group/primex/scripts/primex_jlab.cshrc
 endif
 #

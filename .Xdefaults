@@ -47,7 +47,7 @@ XTerm*saveLines:	1500
 nxterm*saveLines:	1500
 rxvt*saveLines:	        1500
 
-XTerm*cursorColor:	blue
+XTerm*cursorColor:	grey
 XTerm*scrollBar:	true
 nxterm*cursorColor:	blue
 nxterm*scrollBar:	true

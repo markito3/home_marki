@@ -58,8 +58,8 @@ alias cribadd "emacs /home/marki/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
-alias cvs_epics setenv CVSROOT /apps/epics/cvs
-alias cvs_epicsr setenv CVSROOT :ext:marki@clas10.cebaf.gov:/apps/epics/cvs
+alias cvs_epics setenv CVSROOT /home/epics/cvs
+alias cvs_epicsr setenv CVSROOT :ext:marki@clon01.cebaf.gov:/home/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"

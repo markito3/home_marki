@@ -70,8 +70,7 @@ alias setup_epics \
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias todo "emacs ~/misc/stuff/lists/todo.txt &"
-alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
-alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"
+alias top_clear "ls -R $TOP_DIR ; rm -rf $TOP_DIR ; mkdir $TOP_DIR"
 alias turnoff sudo /sbin/shutdown -h now
 alias vu "vuepad"
 alias wea "telnet downwind.sprl.umich.edu 3000"

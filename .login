@@ -58,7 +58,7 @@ alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
-alias dial sudo /usr/sbin/dip /usr/local/dip/dipscript
+alias dial sudo /usr/sbin/dip /usr/local/dip/dipscript_336
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort 'du -r | sort -k 1nr | more -e'
@@ -116,6 +116,7 @@ alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
 alias xn "emacs -nw"
 alias xr "chmod -w \!* ; emacs -name \!* \!* ; chmod +w \!* &"
 alias xstart "rm -f /tmp/ssh-agent.log ; exec ssh-agent startx > & /tmp/ssh-agent.log"
+alias xstartd "dial ; xstart"
 alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
 alias xtb "xterm -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8 &"
 alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1 &"

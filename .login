@@ -30,7 +30,7 @@ alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias colors "more /usr/lib/X11/rgb.txt"
 alias control "ssh -n -l root 0 control-panel >& /dev/null &"
 alias crib "less /home/marki/misc/crib.txt"
-alias cribadd "emacs /home/marki/crib.txt &"
+alias cribadd "emacs /home/marki/misc/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
@@ -51,14 +51,8 @@ alias dusort du -r \| sort -k 1nr
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias emb "emacs -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8"
-alias en "ps -u marki | grep emacs | wc"
-alias en1 "enscript -MLetter -i0.5i"
-alias en1d "enscript -MLetter -DDuplex:true -i0.5i"
-alias en2 "enscript -MLetter -2r"
-alias en2d "enscript -MLetter -2r -DDuplex:true"
-alias enslide "enscript -MLetter -f Courier18"
-alias enscrip "enscript -MLetter -p enscript.tmp -i0.5i"
-alias eq "x ~marki/slow/epics_questions.txt"
+alias enp enscript -r # portrait
+alias ens enscript -f Courier8 # small font
 alias errchk "grep -i -e error -e '\*\*'"
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
@@ -82,8 +76,9 @@ alias manw "xterm -title '"'man \!*'"' -e man \!* &"
 alias mycal 'ssh -l marki -n claspc2.cebaf.gov ical &'
 alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null &"
 alias news "xrn -nntpServer news.cebaf.gov &"
+alias po popd
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
-alias pu "pushd"
+alias pu pushd
 alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_epics \
     source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics

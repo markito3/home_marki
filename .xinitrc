@@ -1,7 +1,11 @@
 #!/bin/sh
 xhost + >& /dev/null
 xmodmap .xmodmaprc
-ical &
+echo HOST = /$HOST/
+if [ $HOST != localhost.localdomain ]
+then
+    ical &
+fi
 ssh-add >& /dev/null &
 #
 rm -f /tmp/fvwm95-2.log

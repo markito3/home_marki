@@ -18,6 +18,8 @@ else if ($HOST == jlaba1 || $HOST == jlaba2) then
   setenv CERN /site/cernlib/rs_aix32
 else if ($HOST == ifarml1) then
   setenv CERN /site/cernlib/pc_linux
+else if ($HOST == claspc2.cebaf.gov) then
+  setenv CERN /home/cern
 else
   setenv CERN /dummy_file_system
 endif

@@ -49,23 +49,12 @@ setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
 # CLAS
 #
-unset CVSROOT_SAVE
-if ($?CVSROOT) then
-  set CVSROOT_SAVE=$CVSROOT
-endif
-#if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04 && $HOST != claspc2.cebaf.gov && $HOST != claspc1.cebaf.gov && $HOST != localhost.localdomain) source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
-if ($?CVSROOT_SAVE) then
-  setenv CVSROOT $CVSROOT_SAVE
-else
-  unsetenv CVSROOT
-endif
+alias setup_clas source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
 #
 # EPICS
 #
-if ($HOST == clas10) then
-  alias setup_epics "source /apps/epics/setup/setup_epics"
-  alias spe "source ~marki/bin/spe"
-endif
+alias setup_epics "source /apps/epics/setup/setup_epics"
+alias spe "source ~marki/bin/spe"
 #
 # path
 #

@@ -125,6 +125,8 @@ alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-
 # CLAS software
 #
 if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
+    if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
+	setenv CLAS_BUILD /home/claslib/builds/PRODUCTION
     setup_clas
 endif
 setenv TOP_DIR ~/work

@@ -65,7 +65,9 @@ else
 endif
 date
 # set term size variables
-eval `resize`
+if ($HOST != jlabs1) then
+  eval `resize`
+endif
 #
 # finished
 #

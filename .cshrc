@@ -16,7 +16,7 @@ else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs
   setenv CERN /site/cernlib/sun4_solaris2
 else if ($HOST == jlaba1 || $HOST == jlaba2) then
   setenv CERN /site/cernlib/rs_aix32
-else if ($HOST == ifarml1) then
+else if ($HOST == ifarml1.cebaf.gov) then
   setenv CERN /site/cernlib/pc_linux
 else if ($HOST == claspc2.cebaf.gov) then
   setenv CERN /home/cern
@@ -50,7 +50,7 @@ endif
 #
 # CERN Libraries
 #
-if ($HOST == ifarml1) then
+if ($HOST == ifarml1.cebaf.gov) then
     setenv CERN_LEVEL 97a
 else
     setenv CERN_LEVEL 96a
@@ -67,6 +67,8 @@ else if ($HOST == localhost.localdomain) then
 else
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/jlab.cshrc
 endif
+setup_clas
+setenv TOP_DIR /home/marki/work
 #
 # EPICS
 #

@@ -63,7 +63,7 @@ if ($HOST == claspc2.cebaf.gov) then
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/claspc2.cshrc
 else if ($HOST == localhost.localdomain) then
     alias setup_clas \
-	source /home/clas/builds/PRODUCTION/packages/cms/marki.cshrc
+	source /home/claslib/builds/PRODUCTION/packages/cms/marki.cshrc
 else
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/jlab.cshrc
 endif

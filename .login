@@ -23,6 +23,12 @@ endif
 # add personal man pages
 setenv MANPATH .:/apps/man:/usr/man
 #
+# JLab aliases
+#
+alias setup 'set s_args=(\!*); source /site/bin/setup'
+alias unsetup 'set u_args=(\!*); source /site/bin/unsetup'
+alias use source \` /site/bin/use '\!*' \` \&\& \\rm -f /tmp/use.$$
+#
 # private aliases
 #
 alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'

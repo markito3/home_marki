@@ -65,6 +65,10 @@ else
     alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 endif
 #
+# Miscellaneous environment variables
+#
+setenv WINGZ3 /usr/local/src/Wingz3
+#
 # path
 #
 if ($OSNAME == HP-UX && $HOST != clas10) then
@@ -77,7 +81,7 @@ else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon0
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
   eval `~marki/bin/addpath.perl /usr/site2/emacs/bin /site/bin`
 else if ($HOST == claspc2.cebaf.gov) then
-  eval `~marki/bin/addpath.perl /usr/local/src/jdk/bin /usr/openwin/bin /usr/games`
+  eval `~marki/bin/addpath.perl /usr/local/src/jdk/bin /site/bin /usr/openwin/bin /usr/games`
 else if ($HOST == claslap2.cebaf.gov) then
   eval `~marki/bin/addpath.perl /usr/games`
 else if ($OSNAME == AIX) then

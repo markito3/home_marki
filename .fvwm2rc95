@@ -368,6 +368,7 @@ AddToMenu "Games" "Games" Title
 +              "Xvier" Exec exec xvier &
 
 AddToMenu "Applications" "Applications" Title
++ "EPICS Alarm Handlers%mini-bomb.xpm%"	Exec ssh -n clas10 alh.csh >& /dev/null&
 + "Emacs%mini-edit.xpm%"	Exec emacs -bg brown4 &
 + "Ghostview%mini-gv.xpm%"	Exec ghostview &
 + "Xview%mini-xv.xpm%"		Exec xv &

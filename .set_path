@@ -14,6 +14,9 @@ else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || \
 else if ($HOST == claspc2.jlab.org) then
   eval `~marki/bin/addpath.pl /home/claslib/builds/PRODUCTION/packages/scripts /home/claslib/tools/caldb /home/claslib/tools/misc /site/bin \
     /usr/local/src/jdk/bin /usr/openwin/bin /usr/games`
+else if ($HOST == claspc14.jlab.org) then
+  eval `~marki/bin/addpath.pl -e /site/bin /apps/bin`
+  eval `~marki/bin/addpath.pl /usr/local/clas/tools/caldb /usr/local/clas/tools/misc`
 else if ($HOST == claslap2.jlab.org) then
   eval `~marki/bin/addpath.pl /home/claslib/builds/PRODUCTION/bin/LinuxRH6 /home/claslib/builds/PRODUCTION/packages/scripts /usr/local/bin /usr/games /usr/sbin`
 else if ($OSNAME == Linux) then

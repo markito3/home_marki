@@ -2,13 +2,16 @@ echo starting .login
 #
 # CLAS software
 #
-if ($HOST == claspc2.jlab.org || $HOST == marki.jlab.org \
-    || $HOST == claslap2.jlab.org) then
-    setenv CLAS_ROOT /home/claslib
+setenv CLAS_ROOT /home/claslib
+if ($HOST == claspc2.jlab.org || $HOST == marki.jlab.org) then
     set host=`~marki/bin/short_host.perl`
 else
-    setenv CLAS_ROOT /group/clas
-    set host=jlab
+    set host=`perl -e 'if ($ENV{HOST} =~ /^gp-/) {print "claslap2\n";} else {print "other";}'`
+    echo host = $host
+    if ($host == other) then
+	setenv CLAS_ROOT /group/clas
+	set host=jlab
+    endif
 endif
 source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
 echo CLAS_BUILD = $CLAS_BUILD

@@ -30,3 +30,4 @@ work*
 dead.letter
 .pinerc
 .acrorc
+.mysql_history

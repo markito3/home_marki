@@ -629,7 +629,7 @@ Key Escape      A       C       WindowList
              -padding 0 -geometry -1500-1500 &')
 *FvwmButtons(2x1, Title load, \
              Swallow(UseOld) "xload" 'Exec xload \
-                     -nolabel -bg grey60 -update 5 -geometry -1500-1500 &')
+                     -nolabel -bg grey60 -hl grey -update 5 -geometry -1500-1500 &')
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
                      -ls -vb -sb -geometry 80x36 -title "xterm" &')

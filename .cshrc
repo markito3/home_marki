@@ -64,6 +64,7 @@ endif
 #
 # Miscellaneous environment variables
 #
+setenv CLAS_TOOLS /group/clas/tools
 setenv WINGZ3 /usr/local/src/Wingz3
 #
 # path

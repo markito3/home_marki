@@ -53,7 +53,7 @@ endif
 if ($OSNAME == SunOS || ($OSNAME == Linux && $HOST != claspc2.cebaf.gov)) then
     setenv CERN_LEVEL 97a
 else
-    setenv CERN_LEVEL 96a
+    setenv CERN_LEVEL 99
 endif
 setenv CERN_ROOT $CERN/$CERN_LEVEL
 #

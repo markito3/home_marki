@@ -642,7 +642,7 @@ Key Escape      A       C       WindowList
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
                -geometry 80x48 -bg MidnightBlue -title Pine -e pine &')
-*FvwmButtons(Title ical, Icon datebook.xpm, \
+*FvwmButtons(Title ical, Icon desk.xpm, \
              Action 'Exec "Calendar" ical &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \
              Action 'Exec "Emacs" emacs -geometry 80x36 -fn $fontLarge -bg brown4 &')

@@ -49,8 +49,8 @@ alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias beam_current ssh -n clas10 -l clasrun "'"setup_epics '>&' /dev/null ';' '$APP'/general/strip/strip_beam_simple.csh"'"
 alias colors "more /usr/lib/X11/rgb.txt"
-alias crib "less $MISC/crib.txt"
-alias cribadd "emacs $MISC/crib.txt &"
+alias crib "less /home/marki/misc/crib.txt"
+alias cribadd "emacs /home/marki/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
@@ -102,7 +102,6 @@ alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ;
 alias pu "pushd"
 alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
-alias sgi "more $MISC/sgi_info.txt"
 alias shenv "printenv | grep -i"
 alias sstaff ssh jlaba2 staff
 alias suterm "xterm -e su &"

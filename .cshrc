@@ -53,8 +53,8 @@ setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
 # CLAS
 #
-if ($HOST == claspc2.jlab.org || $HOST == localhost.localdomain) then
-    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/claspc2.cshrc
+if ($HOST == claspc2.jlab.org || $HOST == claslap2.jlab.org) then
+    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/`short_host.perl`.cshrc
 else
     alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 endif

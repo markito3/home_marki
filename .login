@@ -102,7 +102,7 @@ alias rxt "remsh \!* -n 'setenv DISPLAY clasxt25:0; xterm -ls -vb -n $USER@\!*' 
 alias sd "setenv DISPLAY \!*':0.0'"
 alias sgi "more $MISC/sgi_info.txt"
 alias shenv "printenv | grep -i"
-alias staff rsh jlabs1 staff
+#alias staff rsh jlabs1 staff
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"
 alias vu "vuepad"

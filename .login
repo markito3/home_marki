@@ -11,11 +11,15 @@ else
     set host=jlab
 endif
 source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
+echo CLAS_BUILD = $CLAS_BUILD
 if ($host == claspc2.jlab.org || $host == marki || $host == claslap2) \
     setenv CLAS_PARMS /home/claslib/parms
+echo CLAS_PARMS = $CLAS_PARMS
 setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
-#set up the terminal
+#
+# set up the terminal
+#
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
 set prompt="%m:%C:\!> "  # prompt set to machine:current directory
 

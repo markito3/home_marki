@@ -276,6 +276,7 @@ AddToMenu "Sun" "Sun Shells" Title
 + "clon01%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon01" -bg ForestGreen -e slogin -C clon01.jlab.org -l $USER &
 + "clon01, clasrun%mini-term.xpm%"  Exec xterm -j -ls -title "clasrun@clon01" -bg red -e slogin -C clon01.jlab.org -l clasrun &
 + "clon01, epics%mini-term.xpm%"  Exec xterm -j -ls -title "epics@clon01" -bg VioletRed4 -e slogin -C clon01.jlab.org -l epics &
++ "clon01, primex%mini-term.xpm%"  Exec xterm -j -ls -title "primex@clon01" -bg tan4 -e slogin -C clon01.jlab.org -l primex &
 + "clon02%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon02" -bg chartreuse4 -e slogin -C clon02.jlab.org -l $USER &
 + "clon03%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon03" -bg DarkOrange4 -e slogin -C clon03.jlab.org -l $USER &
 + "clon04%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@clon04" -bg brown4 -e slogin -C clon04.jlab.org -l $USER &

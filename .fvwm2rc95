@@ -641,9 +641,9 @@ Key Escape      A       C       WindowList
                      -ls -vb -sb -geometry 80x36 -title "xterm" &')
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
-               -geometry 80x48 -bg MidnightBlue -title pine -e pine &')
-*FvwmButtons(Title xfm, Icon folders.xpm, \
-             Action 'Exec "Xfm" xfm -title "File Manager" &') 
+               -geometry 80x48 -bg MidnightBlue -title Pine -e pine &')
+*FvwmButtons(Title ical, Icon datebook.xpm, \
+             Action 'Exec "Calendar" ical &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \
              Action 'Exec "Emacs" emacs -geometry 80x36 -fn $fontLarge -bg brown4 &')
 *FvwmButtons(Title xcalc, Icon rcalc.xpm, \

@@ -99,8 +99,7 @@ alias lsd "ls -F \!* | grep /"
 alias lsl "ls -laF \!* | more -e"
 alias lss "ls -laF \!* | sort -k5nr | more -e"
 alias lst "ls -laFt \!* | more -e"
-alias lsx "ls -aF \!* | grep \*"
-alias lsf "ls -F" # stick this after the other ls's
+alias lsf "ls -aF"
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
 alias mycal 'ssh -l marki -n claspc2.cebaf.gov ical &'

@@ -36,7 +36,7 @@ setenv EPB /usr/site2/epics_physics/hallb
 
 # Define your default printer
 setenv LPDEST cb113q
-if ($HOST != localhost.localdomain) setenv PRINTER cb113q
+if ($HOST != localhost.localdomain) setenv PRINTER phyhp9
 #
 # setups
 #
@@ -59,12 +59,10 @@ setenv CERN_ROOT $CERN/$CERN_LEVEL
 #
 # CLAS
 #
-if ($HOST == claspc2.cebaf.gov) then
-    alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/claspc2.cshrc
-else if ($HOST == localhost.localdomain) then
-    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/marki.cshrc
+if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) then
+    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/claspc2.cshrc
 else
-    alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/jlab.cshrc
+    alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 endif
 #
 # EPICS

@@ -32,3 +32,5 @@ dead.letter
 .acrorc
 .mysql_history
 .calendar.*
+silo_remove
+.rnlast

@@ -29,6 +29,7 @@ alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e le
 alias del rm -i
 alias dial sudo /etc/ppp/ppp-on
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
+alias dismount_floppy umount /mnt/floppy
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort du -r \| sort -k 1nr
 alias ecrib "less ~marki/slow/epics_crib.txt"
@@ -56,6 +57,7 @@ alias lst "ls -laFt \!* | more -e"
 alias lsf "ls -aF"
 alias lw "xterm -title \!* -e less \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
+alias mount_floppy mount -t msdos /dev/fd0 /mnt/floppy
 alias mycal 'ssh -l marki -n claspc2.jlab.org ical &'
 alias netscap "netscape -install http://claspc2.jlab.org/~marki/ > & /dev/null &"
 alias network_start /etc/rc.d/init.d/network start eth0

@@ -103,6 +103,7 @@ alias shenv "printenv | grep -i"
 alias rstaff rsh jlaba2 staff
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"
+alias turnoff sudo /sbin/shutdown -h now
 alias vu "vuepad"
 alias wea "telnet downwind.sprl.umich.edu 3000"
 alias windows sudo /sbin/shutdown -r now

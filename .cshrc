@@ -67,7 +67,6 @@ else if ($HOST == localhost.localdomain) then
 else
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/jlab.cshrc
 endif
-setup_clas
 setenv TOP_DIR /home/marki/work
 #
 # EPICS

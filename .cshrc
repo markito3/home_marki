@@ -50,8 +50,10 @@ endif
 #
 # CERN Libraries
 #
-if ($OSNAME == SunOS || ($OSNAME == Linux && $HOST != claspc2.cebaf.gov)) then
+if ($OSNAME == SunOS) then
     setenv CERN_LEVEL 97a
+else if ($HOST == ifarml2 || $HOST == ifarml3) then
+    setenv CERN_LEVEL 98a
 else
     setenv CERN_LEVEL 99
 endif

@@ -49,7 +49,7 @@ alias add \
   grep -i \!* ~/misc/stuff/lists/slow_list.txt; \
   grep -i \!* ~/.elm/aliases.text; \
   grep -i \!* ~/misc/stuff/lists/address.tex'
-alias addadd 'x ~/misc/stuff/lists/address.tex'
+alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -quit"
 alias colors "more /usr/lib/X11/rgb.txt"

@@ -116,6 +116,7 @@ alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu p
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
 alias xn "emacs -nw"
 alias xr "chmod -w \!* ; emacs -name \!* \!* ; chmod +w \!* &"
+alias xstart "rm -f /tmp/ssh-agent.log ; exec ssh-agent startx > & /tmp/ssh-agent.log"
 alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
 alias xtb "xterm -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8 &"
 alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1 &"

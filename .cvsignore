@@ -6,12 +6,16 @@
 .calendar
 .cvspass
 .ddd
+.gnome
+.gnome_private
 .history
 .lyx
+.mysql_history
 .netscape
 .pine-debug*
 .ssh
 .trash
+.xauth
 .xfm
 Xrootenv*
 higz_windows.dat

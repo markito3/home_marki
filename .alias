@@ -10,6 +10,8 @@ alias use source \` /site/bin/use '\!*' \` \&\& \\rm -f /tmp/use.$$
 alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'
 alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
+# browse directory
+alias bd 'find . -type f -exec echo ======== \; -print -exec echo -------- \; -exec cat {} \; | less'
 alias colors "more /usr/lib/X11/rgb.txt"
 alias control "ssh -n -l root 0 control-panel >& /dev/null &"
 alias crib "less /home/marki/misc/crib.txt"

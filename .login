@@ -1,19 +1,15 @@
+#
+# $Id: .login,v 1.81 2003/11/02 20:10:56 marki Exp $
+#
 echo starting .login
 #
 # CLAS software
 #
 set hosttype=`perl -e 'if ($ENV{HOST} =~ /^gp-/ || $ENV{HOST} =~ /^varc-/ || $ENV{HOST} =~ /^jlab/ || $ENV{HOST} =~ /^farm/ || $ENV{HOST} =~ /^ifarm/) {print "jlab";} else {print "marki";}'`
 echo hosttype = $hosttype
-if ($hosttype == jlab) then
-    setenv CLAS_ROOT /group/clas
-else
-    setenv CLAS_ROOT /home/claslib
-endif
+setenv CLAS_ROOT /group/clas
 source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$hosttype.cshrc
-echo CLAS_BUILD = $CLAS_BUILD
-echo CLAS_PARMS = $CLAS_PARMS
 setenv TOP_DIR /scratch/$USER/top_dir
-echo TOP_DIR = $TOP_DIR
 #
 # set up the terminal
 #
@@ -53,7 +49,7 @@ source .alias
 #
 # primex
 #
-if ($HOST != marki.jlab.org && $HOST != claspc14.jlab.org) then
+if ($hosttype == jlab) then
     source /group/primex/scripts/primex_jlab.cshrc
 endif
 #

@@ -638,14 +638,14 @@ Key Escape      A       C       WindowList
                      -nolabel -bg grey60 -update 5 -geometry -1500-1500 &')
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
-                     -ls -vb -sb -title "xterm" &')
+                     -ls -vb -sb -geometry 80x36 -title "xterm" &')
 *FvwmButtons(Title pine, Icon mail2.xpm, \
              Action 'Exec "Pine" xterm \
                -geometry 80x48 -bg MidnightBlue -title pine -e pine &')
 *FvwmButtons(Title xfm, Icon folders.xpm, \
              Action 'Exec "Xfm" xfm -title "File Manager" &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \
-             Action 'Exec "Emacs" emacs -bg brown4 &')
+             Action 'Exec "Emacs" emacs -geometry 80x36 -fn $fontLarge -bg brown4 &')
 *FvwmButtons(Title xcalc, Icon rcalc.xpm, \
              Action 'Exec "Calculator" xcalc &')
 *FvwmButtons(Title xview, Icon xv.xpm, \

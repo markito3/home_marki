@@ -12,7 +12,7 @@ setenv OSNAME `/bin/uname -s`
 setenv EDITOR emacs
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == ifarmh1 || $HOST == ifarmh2 || $HOST == ifarmh3 || $HOST == ifarmh4 || $HOST == ifarmh5) then
   setenv CERN /site/cernlib/hp700_ux90
-else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
+else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 || $HOST == clon10) then
   setenv CERN /site/cernlib/sun4_solaris2
 else if ($HOST == jlaba1 || $HOST == jlaba2) then
   setenv CERN /site/cernlib/rs_aix32
@@ -78,7 +78,7 @@ if ($OSNAME == HP-UX) then
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
     eval `~marki/bin/delpath.perl /usr/local/bin`
   eval `~marki/bin/addpath.perl $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
-else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
+else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 || $HOST == clon10) then
   eval `~marki/bin/addpath.perl $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
   eval `~marki/bin/addpath.perl /usr/site2/emacs/bin /site/bin`

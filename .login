@@ -43,12 +43,7 @@ setenv SMALL courb14
 
 # private aliases
 
-alias add \
-  'grep -i \!* ~/misc/stuff/lists/dc_list.txt; \
-  grep -i \!* ~/misc/stuff/lists/kl_list.txt; \
-  grep -i \!* ~/misc/stuff/lists/slow_list.txt; \
-  grep -i \!* ~/.elm/aliases.text; \
-  grep -i \!* ~/misc/stuff/lists/address.tex'
+alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'
 alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"

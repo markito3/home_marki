@@ -21,6 +21,10 @@ echo CLAS_PARMS = $CLAS_PARMS
 setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
 #
+# primex
+#
+source /group/primex/scripts/primex_jlab.cshrc
+#
 # set up the terminal
 #
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs

@@ -42,9 +42,9 @@ setenv MANPATH .:/apps/man:/usr/man
 setenv BIG courb24
 setenv MEDIUM courb18
 setenv SMALL courb14
-
+#
 # private aliases
-
+#
 alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'
 alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
 alias addless 'less ~/misc/stuff/lists/address.tex'
@@ -110,8 +110,10 @@ alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ;
 alias pu "pushd"
 alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
+alias setup_epics "source /home/epics/R3.13.0.beta11/scripts/setup_epics"
 alias shenv "printenv | grep -i"
 alias soup xv /home/marki/misc/soup.gif
+alias spe "source ~marki/bin/spe"
 alias staff "grep -i \!* /tmp/staff.txt"
 alias sstaff ssh jlaba2 staff
 alias suterm "xterm -e su &"

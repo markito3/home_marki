@@ -35,7 +35,7 @@ endif
 setenv EPB /usr/site2/epics_physics/hallb
 
 # Define your default printer
-setenv LPDEST cb113q
+setenv LPDEST phyhp9
 if ($HOST != localhost.localdomain) setenv PRINTER phyhp9
 #
 # setups

@@ -20,7 +20,7 @@ else if ($HOST == ifarml1 || $HOST == ifarml2 || $HOST == ifarml3) then
   setenv CERN /site/cernlib/pc_linux
 else if ($HOST == claspc2.cebaf.gov) then
   setenv CERN /home/cern
-else if ($HOST == localhost.localdomain) then
+else if ($HOST == marki.cebaf.gov) then
   setenv CERN /home/cern/cernlib
 else
   setenv CERN /dummy_file_system

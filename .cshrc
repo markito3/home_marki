@@ -27,8 +27,8 @@ else
 endif
 setenv FTP /site/ftp/pub/marki
 setenv MISC $HOME/misc
-if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
-  setenv SCR /scratch2/marki
+if ($HOST == localhost.localdomain) then
+  setenv SCR /home/scratch/marki
 else
   setenv SCR /scratch/marki
 endif
@@ -62,8 +62,7 @@ setenv CERN_ROOT $CERN/$CERN_LEVEL
 if ($HOST == claspc2.cebaf.gov) then
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/claspc2.cshrc
 else if ($HOST == localhost.localdomain) then
-    alias setup_clas \
-	source /home/claslib/builds/PRODUCTION/packages/cms/marki.cshrc
+    alias setup_clas source /home/claslib/builds/PRODUCTION/packages/cms/marki.cshrc
 else
     alias setup_clas source /group/clas/builds/DEVELOPMENT/packages/cms/jlab.cshrc
 endif

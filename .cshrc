@@ -63,7 +63,11 @@ setenv HV_LOCATION /apps/clas/u1/Hv/Hv
 #
 # CLAS
 #
-alias setup_clas source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
+if ($HOST == claspc2.cebaf.gov) then
+    alias setup_clas source /apps/clas/u1/builds/PRODUCTION/packages/cms/claspc2.cshrc
+else
+    alias setup_clas source /apps/clas/u1/builds/PRODUCTION/packages/cms/jlab.cshrc
+endif
 #
 # EPICS
 #

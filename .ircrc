@@ -1,0 +1,679 @@
+# IRC setup for poker playing; last revised 6 June 1995
+#
+# IMPORTANT:
+# Known to work under ircII version 2.2.9 (type /version in IRC to check).
+#
+# Lines like this one beginning with "#" are comments ignored by irc.
+# This file, after you edit it, should be named .ircrc (note the leading
+# period) in your home directory so that irc will automatically load it.
+# The only thing you have to edit is your password just below.  You might
+# also want to edit the initial defaults for beeping, just a little more
+# below.
+
+# Edit the password.  The password is used by the pwait (be put on waiting
+# list when game is full) and play (start playing) commands.
+
+assign password moe
+
+# The following two commands affect whether your terminal will beep
+# when you receive a private message.
+
+alias msgloud ^assign msgBeep 1
+alias msgquiet ^assign msgBeep 0
+
+# Whichever of the two following lines does NOT have a "#" is the default:
+msgloud
+#msgquiet
+
+# The following two commands affect whether your terminal will beep
+# when it is your turn to act.
+
+alias actloud ^assign actBeep 1
+alias actquiet ^assign actBeep 0
+
+# Whichever of the two following lines does NOT have a "#" is the default:
+actloud
+#actquiet
+
+# Displays last raiser, hole cards, board cards, pot size, and number of
+# players in hand on terminal status line; provides irc commands that send
+# messages directly to the poker server which require no parsing by the
+# client and which do not appear on other players' terminals.  You can
+# play irc poker without using this file or one like it, but a poker
+# .ircrc makes playing MUCH easier!
+
+# irc is the internet chat/talk system with provision for automatons
+# ("bots") to provide various services.  The poker server uses irc to deal
+# real-time poker games to internet users.  At this writing one or more
+# poker games are available -- i.e., have several people playing -- almost
+# all the time except (usually) some portions of the morning (USA time).
+# Texas Hold 'Em is currently the most popular game, followed by Omaha
+# Hi-Low Split.  There are also freeze-out tournaments going on a
+# fairly regular basis.
+#
+# To connect to the irc poker server, use the following shell command:
+#              irc your_nickname 128.2.198.36
+# where your_nickname is replaced by the unique name by which you wish
+# to be known to other poker players.  It cannot be longer than 9
+# characters (and preferably shorter than that).  If you use a name
+# that is already taken, the poker server will ask you for another.
+#
+# If you're new to irc and want to learn the basics or more about it,
+# note that it has an extensive on-line help facility; enter /help
+# for its help menu.
+
+# The maintainer of the poker server software is:
+#                    Todd W. Mummert
+#                  <mummert+@cs.cmu.edu>
+# The file you're reading is due to various authors.  At the date
+# shown above, it is maintained by maurer@nova.stanford.edu, but he
+# claims no credit for the good stuff here.
+# Updates are available via:
+# ftp://ftp.csua.berkeley.edu/pub/rec.gambling/poker/ircrc.poker
+# See also the WWW server by Todd Mummert:
+# http://www.cs.cmu.edu:8001/afs/cs/user/mummert/public/www/ircbot.html
+# and the IRC Poker Database by Michael Maurer:
+# http://www-star.stanford.edu/~maurer/r.g/
+
+# What this file provides is the definition of custom irc commands
+# by use of the irc alias command.
+# EVERY COMMAND DEFINED HEREIN MUST BE ENTERED WITH A LEADING
+# SLASH ("/") WHEN YOU TYPE IT AT YOUR TERMINAL.
+# Commands are defined in the form:
+# alias command definition_of_command
+# You type /command to enter the command.  In some cases you follow
+# the command with arguments, e.g., in a pot-limit game: /raise 100
+# Anything you type without a leading "/" is shown on the terminal
+# of everyone else on the irc channel.  So if you have questions
+# about the mechanics of the game, just ask and someone will likely
+# answer.
+
+# Summary of frequently-used commands.  Commands NOT defined in this
+# script file, i.e., built-in irc commands, are shown with "##" in
+# the left margin.
+#
+# To see what games are available:
+##  /list
+# To go to a game (required for other stuff to work correctly):
+#   /holdem                     10-20 Hold 'Em
+#   /holdem2                    20-40 Hold 'Em
+#   /holdem3                    50-100 Hold 'Em
+#   /omaha                      10-20 Omaha High-Low Split 8 or Better
+#   /7stud                      10-20 7-Stud High-Low Split 8 or Better
+#   /nolimit                    50-100 No-limit Hold 'Em
+#   /poker                      Dealer's Choice
+#   /tourney                    No-limit Hold 'Em tournaments
+#   /ptourney                   Pot-limit Hold 'Em tournaments
+#   /tomaha                     Pot-limit Omaha tournaments
+# To start playing:
+#   /play
+# To enter a game (usually a tournament) from another channel:
+#   /seatme <name_of_bot>       Note: name of dealer/bot, not channel name    
+# Playing actions (can be entered in advance of your turn):
+#   /check
+#   /fold
+#   /call                       Call whatever the bet is to you
+#   /call <maximum_amount>      If more than maximum_amount to you, fold
+#   /raise                      Used in limit game
+#   /raise <amount_of_raise>    Used in pot- or no-limit game
+#   /bet                        Used in limit game
+#   /bet <amount_of_bet>        Used in pot- or no-limit game
+#   /make <amount>              Bet/raise to make the total bet <amount>
+#   /rpot                       Raise the maximum in pot limit
+#   /rmin                       Raise the minimum in pot- or no-limit
+#   /undo                       Cancel previously-sent advanced action
+# If the game is full:
+#   /pwait                      Put yourself on the waiting list
+#   /unwait                     Remove yourself from the waiting list
+# Game information and control:
+#   /actloud                    Beep when it is your turn to act
+#   /actquiet                   Don't beep when it is your turn (default)
+#   /status                     Show current status of this hand
+#   /remind                     Send canned message to next-to-act
+#   /kik <nickname_of_player>   Remove player from game
+#   /rank                       Show your average bets won per hand
+#   /top                        Show top 10 bankrolls 
+#   /top2                       Show top 10 average bets won per hand
+#   /deal <game_number>         Deal a new hand (used in dealer's choice)
+# Tournament control:
+#   /blind <amount>             Set amount of small blind (1/2 big blind)
+#   /double <seconds>           Set duration of rounds in seconds
+#   /double <number> hands      Set duration of rounds in number of hands
+#   /bankroll <amount>          Set starting bankroll of each player
+#   /start                      Start the tournament
+#   /vacation                   Leave table temporarily -- "auto-fold"
+#   /vacation <nick>            Send player <nick> on vacation
+#   /back                       Return from vacation to active play
+# Tournament information and historical statistics.  Each of the commands
+# in this section is really a command to Michael Maurer's tournament
+# observer automaton.  Each except /tstatus will work only if you are on
+# the tournament channel via one of the "go to a game" commands above
+# (currently, /tourney or /tomaha):
+#   /tstatus <name_of_channel>  Show status of tournament on specified channel
+#                               --leading "#" in channel name is optional;
+#                               --channel is remembered for subsequent use
+#                                 with following version until you go to
+#                                 another channel with a "go to game" command
+#   /tstatus                    Channel defaults from a previous /tstatus
+#                               command; otherwise it's the current channel.
+#   /tlineup                    Shows rankings of players in the current
+#                               tournament.  Works like /tstatus.
+#   /tstats                     Show your tournament history statistics
+#   /tstats <nick>              Show statistics for player <nick>
+#   /ttop3 [sched]              Show top winners as if percentage payout
+#                                 to top finishers (default 50 30 20)
+#   Each of the following commands can be followed by a number
+#   indicating the number of players to be shown; the default is 10:
+#   /ttopp                      Show top players by power rating
+#   /ttop                       Show top tournament money winners
+#   /ttop2 [min]                Show top tournament percentage winners
+#                                 default for min is 20 tournaments
+#   /ttop4                      Show top winners as if 2nd place wins 1 buy-in
+#   /tdregs                     Show "worst players of all time"
+# Private messages:
+##  /msg <nickname_of_user> <text_of_msg>
+##  /msg , <text_of_msg>        To user who last sent you a /msg
+##  /msg . <text_of_msg>        To user to whom you last sent a /msg
+#   /msgloud                    Beep on receipt of private message (default)
+#   /msgquiet                   Don't beep on receipt of private message
+# Combination commands affecting beeps:
+#   /loud                       Combination of actloud and msgloud commands
+#   /quiet                      Combination of actquiet and msgquiet commands
+# To quit playing (If playing, ALWAYS use before leaving or signing off):
+#   /pquit                      Quit the game
+#   /iquit                      Quit the game and reset status line
+# To leave the game (channel) you're attending:
+##  /leave *
+# To sign off irc (quit the irc client process), either of:
+##  /quit
+##  /signoff
+
+# Following are commands to go to the various games -- in irc terms,
+# channels on which games are played.  They do not cause you to join the
+# game, as you might want to first watch for a while.  To join a game, use
+# the play command defined further below.  When you join a game for the
+# first time, you are given a bankroll of $1000 in limit games and $5000 in
+# pot/no limit. If you go broke, just rejoin the game and you'll get another
+# bankroll (and a bankruptcy recorded in your statistics).  The money is, of
+# course, entirely virtual.  The only reward for winning is to one's ego --
+# this is aided by various rankings and statistics kept by the poker server.
+
+# YOU MUST USE ONE OF THE FOLLOWING COMMANDS (example: /holdem) TO GO
+# TO THE CHANNEL (GAME) IN ORDER FOR THE OTHER STUFF HERE TO WORK.  DO
+# NOT USE THE IRC /JOIN COMMAND TO GO TO A POKER GAME.  ONCE ON A CHANNEL,
+# START PLAYING BY ENTERING THE COMMAND: /play
+
+# The lineup of available games may change from time to time.  To create
+# a command to go to a new game, define a new command in the following
+# form, where you replace <angle bracket items> with the appropriate
+# word:
+#
+# alias <new_command> go_game <channel_name> <dealer/bot_name>
+#
+# Use the /list command to see the games currently available.  Use
+# the command /who <channel_name> to see who is on a given channel,
+# including the name of the dealer/bot for that channel.
+
+alias holdem go_game #holdem HBot
+alias holdem1 go_game #holdem1 HBot1
+alias holdem2 go_game #holdem2 HBot2
+alias holdem3 go_game #holdem3 HBot3
+alias omaha go_game #omaha OBot
+alias poker go_game #poker DBot
+alias nolimit go_game #nolimit NLBot
+alias 7stud go_game #7stud SBot
+
+alias chinese1a go_chinese #chinese1a CPBot1a
+alias chinese1b go_chinese #chinese1b CPBot1b
+alias chinese1c go_chinese #chinese1c CPBot1c
+alias chinese1d go_chinese #chinese1d CPBot1d
+alias chinese2  go_chinese #chinese2  CPBot2
+alias chinese3  go_chinese #chinese3  CPBot3
+alias chineseDC go_chinese #chineseDC CPBotDC
+
+# Tournaments are special kinds of games.  Each player starts with the
+# same size bankroll.  The blinds double periodically.  A player who goes
+# broke is eliminated -- cannot play any longer in the current
+# tournament.  The tournament is over when one player has won all of
+# the money.  You must join a tournament (enter the /play command)
+# before the start of the tournament.
+
+alias tourney go_game #tourney TBot
+alias ptourney go_game #ptourney PTBot
+alias tomaha go_game #tomaha OTBot
+
+# To see what games are being played, enter the irc command /list
+# Subtract at least 1 from the number of Users listed to
+# get actual players, as the count shown includes at least the
+# dealer ("bot") which is a not a real person and may include
+# people (or computer programs!) who are just watching.
+
+# Redefine p to send a private message to the poker server, bypassing
+# client parsing:
+alias p quote privmsg $bot :p
+
+# Following are the poker commands.  You can set up local keyboard
+# macros to issue these commands (with a leading "/").  Or if you're stuck
+# with having to type, you can create new aliases with shorter command names.
+# For example, you could remove the "#" from the following line...
+# alias ch check
+# and then enter /ch when you want to check.  To avoid conflict with
+# built-in commands, aliases you define should be at least two letters
+# long.  The order in which you define your aliases with respect to
+# other aliases used in their definition doesn't matter, since the
+# defined commands are not evaluated until they are used.
+
+# The various action commands can be issued in advance of your turn to
+# act.  If you change your mind before action reaches you, issue the
+# undo command.
+
+alias undo p undo
+alias check p check
+alias fold p fold
+
+# The call command can be followed by an amount.  If no amount is
+# provided, it means call whatever the bet is to you.  If you include
+# an amount, it means call up to the specified amount, or else fold
+# if the bet to you is larger.  Thus, for example, you can decide in
+# advance how many raises (if any) you're willing to call in a limit
+# game.  If you're the big blind, you could enter "call 0" to check if
+# there are no raises or to fold otherwise.
+
+alias call p call
+
+# Three raises are allowed per round, except:  no player is denied the
+# opportunity to make at least one raise, and when two players remain
+# there is  no limit on number of raises.
+
+alias raise p raise
+
+# Note that the poker bot doesn't understand "bet" in the sense of
+# an opening bet; it knows only raises (from 0) when you're first to act
+# or it's checked to you. Thus we define a bet command:
+
+alias bet p raise
+
+# In pot- or no-limit games, the bet or raise commands can be followed by
+# an amount (e.g., "raise 100").  In pot-limit games, the commands can be
+# followed by the word "pot" to raise the maximum, which is the size of
+# the pot after calling the outstanding bet, if any:
+
+# Raise the maximum in a pot-limit game:
+
+alias rpot raise pot
+
+# The make command is used in no- or pot-limit games to bet or raise
+# an amount such that the total bet to a player who hasn't yet acted
+# is a certain amount.  E.g, if it's $50 to you and you "/make 125"
+# that's equivalent to "/raise 75".
+
+alias make p make
+
+# Show the current status of the game (players, bankrolls, button
+# position, who's folded, etc.).  Bankrolls and position are shown
+# automatically at the start of each hand; this command is typically
+# used during a hand -- perhaps by someone who just arrived, to see
+# how many people on the channel are actually playing:
+
+alias status p status
+
+# Deal a new game. In dealer's choice, can be followed by a game number
+# (see games command further below).  Otherwise it is not usually used
+# explicitly (see autodeal command further below):
+alias deal p deal
+
+# For use in pot- or no-limit -- bet/raise the minimum amount,
+# i.e., the amount of the previous bet or raise, or if no betting
+# yet on this round then the amount of the last blind.
+
+alias rmin p raise $min_raise
+
+# The following two commands would be needed only if your terminal
+# doesn't provide a status line.  They display, respectively, your
+# hole cards and the up-cards on the board:
+
+alias cards p cards
+alias board p board
+
+# Send a canned reminder message to the player whose turn it is:
+
+alias remind p remind
+
+# kik nick removes the player with nickname nick from the game.  Used
+# when a player seems to have disappeared.  The poker bot will wait
+# forever for a player to act, even if the player has been disconnected
+# or has signed off (without first quitting the game).  Spelling avoids
+# conflict with irc kick command:
+
+alias kik p kick
+
+# The following shows you how you're doing relative to other players:
+
+alias rank p rank
+
+# The following two provide statistics for the top-ranked players:
+
+alias top p top
+alias top2 p top2
+
+# Keep all of your cards (stand pat) in a draw game:
+
+alias pat p toss
+
+# Specify which cards to discard/replace in a draw game -- follow with
+# the cards (e.g., Js 4c 3h) you want to replace:
+
+alias draw p toss
+
+# What game am I playing?  --Useful in dealer's choice:
+
+alias game p game
+
+# What games are available? --Useful in dealer's choice; shows game
+# numbers for use with the deal command.  Spelling avoids conflict
+# with irc list command:
+
+alias games p list
+
+# Join a game:
+
+alias play p join $password
+
+# Join a game (usually a tournament) from another channel.  The /seatme
+# command must be followed by the name of the dealer/bot for the game to
+# be joined.  Tournament entries have a limited time window, since you
+# can join only after a previous tournament has ended and before the
+# one you want to enter begins.  You can use /tstatus <name_of_channel>
+# while on another channel to check the status of a tournament in
+# progress.  When the the status is "no tournament in progress" you
+# can enter /seatme <name_of_dealer/bot> to quickly enter the next
+# tournament.  If you sense there's no rush, however, you can just
+# go to the tournament channel (currently, with /tourney or /tomaha)
+# and then enter the /play command.
+
+alias seatme quote privmsg $0 :p join $password
+
+# Get on the waiting list for a game that is currently full.  The
+# leading "p" avoids conflict with the irc wait command:
+
+alias pwait p wait $password
+
+# Take yourself off the waiting list:
+
+alias unwait p unwait
+
+# Change your waiting list password (follow command with new password):
+
+alias password p password
+
+# Quit a game.  If you're in a game, please issue one of the following
+# two commands before leaving the channel. The spellings avoid conflict
+# with the irc quit command, which unceremoniously quits the irc
+# program:
+
+alias pquit p quit
+
+# Note:  to quit and show a reason, enter "p quit <reason>" (without
+# a slash).  E.g., enter "p quit brb" for a bathroom break.
+
+# Quit a game and reset your terminal status line to normal non-poker
+# format.
+
+alias iquit doquit
+
+# Display the poker server's current help file.  At this writing
+# it consists only of a list of commands.  The spelling avoids
+# conflict with the irc help command:
+alias phelp p help
+
+# You might want to edit the part after "say" to suit your taste:
+
+alias time say Time, please. <thinking...>
+
+# or you can just enter something like "hmm..." (without a slash).
+
+# autodeal automatically generates a deal command after the end of
+# each game.  noautodeal cancels such generation.  For typical play
+# in games other than dealer's choice at least one player should enter
+# the autodeal command.  However, generation of autodeal is
+# automatic in this script file for all games except dealer's choice
+# unless you issue /noautodeal.
+
+alias autodeal ^assign auto_deal 1
+alias noautodeal ^assign -auto_deal
+
+# The following commands affect whether your terminal will beep on
+# both private messages and your turn to act.  They are a short-hand
+# for a combination the actloud + msgloud or actquiet + msgquiet commands:
+
+alias loud actloud msgloud
+alias quiet actquiet msgquiet
+
+# Following are tournament control commands.  See the command summary
+# near the start of this file.
+
+alias blind p blind
+alias double p double
+alias bankroll p bankroll
+alias start p start
+alias vacation p vacation
+alias back p back
+
+# Here are special commands for Chinese Poker.
+alias byrank p byrank
+alias bysuit p bysuit
+alias back p back
+alias middle p middle
+alias front p front
+alias setting p setting
+alias stakes p stakes
+alias pset p set
+alias punset p unset
+alias surr p surrender
+alias surrender p surrender
+#alias call p call
+#alias undo p undo
+
+# This is the end of the "documentation" in this file.  The rest of
+# the file implements the status line display and some of the commands
+# shown above or commands used internally by those commands.
+
+set novice off
+
+^on -msg "*" if (msgBeep) {^set beep_on_msg msg} {^set beep_on_msg -msg}
+
+alias sit_down {
+   ^on #^public -5 "*"
+   ^on #-public -5 "$bot * blinds *" get_last_blind $$*
+   ^on #-public -5 "$bot * bets *" get_min_raise $$*
+   ^on #-public -5 "$bot * raises *" get_min_raise $$*
+   ^on #^public -10 "*"
+   ^on #-public -10 "$bot * wins *" if (!game_over) {game_over_actions}
+   ^on #-public -15 "*" ^set beep_on_msg -public
+   ^on #-public -15 "$bot * $N is next*" if (actBeep) {^set beep_on_msg public}
+   ^assign playing 1
+}
+
+alias get_up {
+   ^on #-public -5 -"$bot * blinds *"
+   ^on #-public -5 -"$bot * bets *"
+   ^on #-public -5 -"$bot * raises *"
+   ^on #-public -10 -"$bot * wins *"
+   ^on #-public -15 -"*"
+   ^on #-public -15 -"$bot * $N is next*"
+   ^assign pocket (Watching)
+   ^assign playing 0
+}
+
+alias go_game {
+   ^assign bot $1
+   ^assign channel $0
+   join $channel
+   poker_format
+   {noautodeal}
+   if ([$0] != [#poker]) {autodeal}
+   ^assign playing 0
+   ^assign Obs ${[Ob]##[$strip(# $channel)]}
+   ^assign -tchan
+}
+
+alias go_chinese {
+   ^assign bot $1
+   ^assign channel $0
+   join $channel
+   {noautodeal}
+   chinese_format
+}
+
+alias get_last_blind {
+   get_min_raise $*
+   ^assign last_blind $min_raise
+}
+
+alias get_min_raise {
+   ^assign min_raise $mid(1 $rindex(0123456789 $4) $4)
+}
+
+alias new_game_actions {
+   ^set status_format %X  Board: %U  %>Pot: %Y Players: %Z/$4
+   ^set status_user   Preflop...
+   ^set status_user3  $4
+   ^assign min_raise 1
+   ^assign last_blind 1
+   ^set status_user1 No raiser  $pocket
+   ^assign game_over 0
+}
+
+alias game_over_actions {
+   if (auto_deal) {deal}
+   ^assign game_over 1
+}
+
+alias poker_format {
+   ^set status_format %X  Board: %U  %>Pot: %Y Players: %Z/??
+   ^set status_user  ??
+   ^assign pocket (Watching)
+   ^set status_user1 No raiser  (Watching)
+   ^set status_user2 $$??
+   ^set status_user3 ??
+   ^on #^public 10 "*"
+   ^on #-public 10 "$bot * Board:*" burn_n_turn $$*
+   ^on #^public 20 "*"
+   ^on #-public 20 "$bot * Pot is now*$$*" set_pot $$*
+   ^on #-public 20 "$bot *now have * player* hand*" players_in $$*
+   ^on #^public 30 "*"
+   ^on #-public 30 "$bot * raises *" ^set status_user1 $$[9]2  $$pocket
+   ^on #-public 30 "$bot * Game #*" new_game_actions $$*
+   ^on #-public 30 "$bot * has joined *" if ([$2] == [$N]) {sit_down}
+   ^on #^public 40 "*"
+   ^on #-public 40 "$bot * has quit." if ([$2] == [$N]) {get_up}
+   ^on #^public 50 "*"
+   ^on #-notice 50 "$bot Board:*" ^set status_user $$mid(5 512 $2-)
+   ^on #-notice -10 "$bot Your hole card*" hole_cards $$*
+   ^on #-public -10 "$bot *|* $N*" ^set status_user $$mid(46 12 $1-)
+}
+
+alias chinese_format {
+   ^set status_format %N%C %>%X  %Z
+   ^set status_user1 Watching
+   ^set status_user2 (No cards)
+   ^set status_user3 \$??/point.
+   ^on #^public 7 "*"
+   ^on #-public 7 "$bot * $N has joined*" ^set status_user1 Waiting for deal
+   ^on #-public 7 "$bot * $N has quit*" ^set status_user1 Watching
+   ^on #-public 7 "$bot * wins*" ^set status_user1 Waiting for deal
+   ^on #-public 7 "$bot * $N has*" ^set status_user2 (No cards)
+   ^on #-public 7 "$bot * Game #*" ^set status_user1 Not Set
+   ^on #-public 7 "$bot * $N picks up*" ^set status_user1 Not Set
+   ^on #-public 7 "$bot * $N is set*" ^set status_user1 Set
+   ^on #-public 7 "$bot * $N is playing*" ^set status_user3 $$8
+}
+
+alias players_in {
+   ^set status_user3 $7
+   if (([$2] == [$N]) && ([$3] == [quits.])) {get_up}
+}
+
+alias hole_cards {
+   ^assign pocket Cards: $5-
+   ^set status_user1 No raiser  $pocket
+   if (!playing) {sit_down}
+}
+
+alias burn_n_turn {
+   ^assign min_raise $last_blind
+   ^set status_user $mid(5 512 $3-)
+}
+
+alias set_pot {
+    if ([$7] == [all])
+        {^set status_user2 $strip(. $12)}
+        {^set status_user2 $strip(. $8)}
+}
+
+alias pObs quote privmsg $Obs :p
+
+alias tstatus {
+    if ([$0])
+      {
+       ^assign tchan $0
+       quote privmsg ${[Ob]##[$strip(# $0)]} :p status
+      }
+      { if ([$tchan]) {tstatus $tchan} {pObs status} }
+}
+
+alias tlineup {
+    if ([$0])
+      {
+       ^assign tchan $0
+       quote privmsg ${[Ob]##[$strip(# $0)]} :p lineup
+      }
+      { if ([$tchan]) {tlineup $tchan} {pObs lineup} }
+}
+
+alias tstats pObs stats
+alias ttopp pObs topp
+alias ttop pObs top
+alias ttop2 pObs top2
+alias ttop3 pObs top3
+alias ttop4 pObs top4
+alias tdregs pObs dregs
+
+eval assign save_status_user $status_user
+
+alias normal_format {
+   ^on #-public 10 -"$bot * Board:*"
+   ^on #-public 20 -"$bot * Pot is now*$$*"
+   ^on #-public 20 -"$bot *now have * player* hand*"
+   ^on #-public 30 -"$bot * raises *"
+   ^on #-public 30 -"$bot * Game #*"
+   ^on #-public 30 -"$bot * has joined *"
+   ^on #-public 40 -"$bot * has quit."
+   ^on #-notice 50 -"$bot Board:*"
+   ^on #-notice -10 -"$bot Your hole card*"
+   ^on #-public -10 -"$bot *|* $N*"
+
+   ^on #-public 7 -"$bot * $N has joined*"
+   ^on #-public 7 -"$bot * $N has quit*"
+   ^on #-public 7 -"$bot * wins*"
+   ^on #-public 7 -"$bot * $N has*"
+   ^on #-public 7 -"$bot * Game #*"
+   ^on #-public 7 -"$bot * $N picks up*"
+   ^on #-public 7 -"$bot * $N is set*"
+   ^on #-public 7 -"$bot * $N is playing*"
+
+   ^set status_user $save_status_user 
+   ^set status_user1  
+   ^set status_user2  
+   ^set status_user3  
+   ^set status_format  
+   ^set status_format %T[%R] %*%@%N %S%H%Q%A%C%+%I%O%M%U %W
+}
+
+alias doquit {
+   ^assign -min_raise
+   ^assign -last_blind
+   ^assign -playing
+   normal_format
+   pquit
+}

@@ -128,7 +128,7 @@ alias xwm "rm -f /tmp/ssh-agent_wm.log ; exec ssh-agent fvwm95-2 > & /tmp/ssh-ag
 alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu puphed.princeton.edu bnlku7.phy.bnl.gov bnlku10.phy.bnl.gov puhep1.princeton.edu clon00 clon01 dev02 clas10"
 alias xload_hp "ssh -n \!* /usr/contrib/bin/X11/xload > & /dev/null &"
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
-alias xstart "rm -f /tmp/ssh-agent.log ; exec ssh-agent startx > & /tmp/ssh-agent.log"
+alias xstart "rm -rf /tmp/ssh-agent.log /tmp/ssh-$USER ; exec ssh-agent startx > & /tmp/ssh-agent.log"
 alias xstartd "dial ; xstart"
 alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
 #

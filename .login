@@ -142,7 +142,8 @@ if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain \
 	|| $HOST == claslap2.cebaf.gov) \
 	setenv CLAS_ROOT /home/claslib
-    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/claslap2.cshrc
+    set host=`short_host.perl`
+    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
 	setenv CLAS_PARMS /home/claslib/parms
 endif

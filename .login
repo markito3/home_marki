@@ -62,7 +62,9 @@ source .alias
 #
 # primex
 #
-source /group/primex/scripts/primex_jlab.cshrc
+if ($HOST != marki.jlab.org) then
+    source /group/primex/scripts/primex_jlab.cshrc
+endif
 #
 # info
 #
@@ -74,9 +76,7 @@ else
 endif
 date
 # set term size variables
-if ($HOST != jlabs1) then
-  eval `resize`
-endif
+eval `resize`
 #
 # finished
 #

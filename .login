@@ -1,4 +1,5 @@
 echo starting .login
+source .set_path
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
 set prompt="%m:%C> "  # prompt set to machine:current directory
@@ -79,6 +80,7 @@ alias news "xrn -nntpServer news.cebaf.gov &"
 alias po popd
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd
+alias pw "xterm -title \!* -e pico -v \!* &"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_epics \
     source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics

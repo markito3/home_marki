@@ -19,9 +19,10 @@ else if ($HOST == claspc2.jlab.org) then
     /usr/local/src/jdk/bin /usr/openwin/bin /usr/games`
 else if ($HOST == claslap2.jlab.org) then
   eval `~marki/bin/addpath.pl /home/claslib/builds/PRODUCTION/bin/LinuxRH6 /home/claslib/builds/PRODUCTION/packages/scripts /usr/local/bin /usr/games /usr/sbin`
+else if ($OSNAME == Linux) then
+  eval `~marki/bin/addpath.pl /group/clas/builds/PRODUCTION/packages/scripts /group/clas/tools/misc`
 else if ($OSNAME == AIX) then
   eval `~marki/bin/delpath.pl . /usr/local/bin`
   eval `~marki/bin/addpath.pl /site/bin /usr/local/bin`
 endif
 eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin`
-

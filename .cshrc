@@ -68,6 +68,7 @@ alias spe "source ~marki/bin/spe"
 #
 # path
 #
+eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlaba1 || $HOST == jlaba2) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3) then

@@ -1,4 +1,3 @@
-#!/bin/csh
 echo starting .login
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
@@ -20,37 +19,14 @@ if ($?REMHOST ) then
   endif
 endif
 
-# adjust the path
-if ($HOST == jlabh1) then
-  eval `/home/marki/bin/addpath.perl /usr/contrib/bin/X11`
-  #setenv PATH `/home/marki/bin/addpath /site/bin`
-  #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
-  #setenv PATH `/home/marki/bin/addpath .`
-else if ($HOST == clas10) then
-  eval `/home/marki/bin/addpath.perl /home/marki/bin`
-  #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
-else if ($HOST == jlabs3) then
-  eval `/home/marki/bin/addpath.perl /home/marki/bin`
-  rehash
-endif
-
 # add personal man pages
 setenv MANPATH .:/apps/man:/usr/man
-
-# fonts
-
-setenv BIG courb24
-setenv MEDIUM courb18
-setenv SMALL courb14
 #
 # private aliases
 #
 alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'
 alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
-alias addless 'less ~/misc/stuff/lists/address.tex'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
-alias beam_current ssh -n clas10 -l clasrun "'"setup_epics '>&' /dev/null ';' '$APP'/general/strip/strip_beam_simple.csh"'"
-alias clas_big "rm -f ~/clas_big.txt ; find /u/group/ -path '/u/group/.snapshot' -prune -o -path '/u/group/clas' -prune -o -group clas -size +2000k -exec ls -ld {} \; > ~/clas_big.txt"
 alias colors "more /usr/lib/X11/rgb.txt"
 alias control "ssh -n -l root 0 control-panel >& /dev/null &"
 alias crib "less /home/marki/misc/crib.txt"
@@ -138,8 +114,8 @@ alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-
 #
 # CLAS software
 #
-if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
-    if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain \
+if ($HOST != clas10) then
+    if ($HOST == claspc2.cebaf.gov || $HOST == marki.cebaf.gov \
 	|| $HOST == claslap2.cebaf.gov) then
 	setenv CLAS_ROOT /home/claslib
         set host=`short_host.perl`

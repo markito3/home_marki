@@ -121,10 +121,9 @@ alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-
 #
 # CLAS software
 #
-if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04) then
-    setup_clas
-endif
+setup_clas
 setenv TOP_DIR ~/work
+echo TOP_DIR = $TOP_DIR
 #
 # info
 #

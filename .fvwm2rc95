@@ -604,6 +604,12 @@ Key Escape      A       C       WindowList
 
 # Define the buttons to use.....
 
+*FvwmButtons(Title xclock, Icon clock.xpm, \
+             Swallow(UseOld) "xclock" 'Exec xclock -bg \#c0c0c0 \
+             -padding 0 -geometry -1500-1500 &')
+*FvwmButtons(2x1, Title load, \
+             Swallow(UseOld) "xload" 'Exec xload \
+                     -nolabel -bg grey60 -update 5 -geometry -1500-1500 &')
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
                      -ls -sb -bg grey30 -fg cornsilk2 -title "xterm" &')

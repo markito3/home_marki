@@ -6,23 +6,25 @@ emacs*Foreground: Wheat
 emacs*pointerColor: Orchid
 emacs*cursorColor: Orchid
 emacs*bitmapIcon: on
-emacs*font: fixed
+!emacs*font: fixed
 emacs.geometry: 80x25
 !
 ! gnuplot resources
 !
 gnuplot*background: black
-gnuplot*textColor: white
+gnuplot*textColor: wheat
 gnuplot*borderColor: white
 gnuplot*axisColor: white
 !
-! xfm
+! xfm resources
 !
 xfm*defaultEditor: textedit
 xfm*defaultViewer: textedit
 !
 ! xterm resources
 !
+xterm*background: black
+xterm*foreground: wheat
 xterm*scrollBar:        True
 xterm*saveLines:        1000
 xterm*loginShell:       True

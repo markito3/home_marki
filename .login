@@ -70,7 +70,7 @@ alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e le
 alias dial sudo /etc/ppp/ppp-on
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
-alias dusort 'du -r | sort -k 1nr | more -e'
+alias dusort du -r \| sort -k 1nr
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias emb "emacs -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8"

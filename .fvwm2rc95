@@ -253,27 +253,27 @@ AddToMenu "Shells" "Shells" Title
 + "Large Xterm	(10x20 font)%mini-term.xpm%" 	Exec xterm -sb -sl 500 -j -ls -fn 10x20 &
 + "Large Rxvt	(10x20 font)%mini-term.xpm%" 	Exec rxvt -font 10x20 -ls &
 + "Large Color Xterm	(10x20 font)%mini-term.xpm%" Exec color_xterm -sb -sl 500 -j -ls -fn 10x20 &
-+ "clas10	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clas10" -bg DarkGreen -fg cornsilk2 -e slogin clas10 -l $USER &
-+ "clas10, clasrun	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "clasrun@clas10" -bg NavyBlue -fg cornsilk2 -e slogin clas10 -l clasrun &
-+ "clas10, epicsb	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "epicsb@clas10" -bg DarkRed -fg cornsilk2 -e slogin clas10 -l epicsb &
-+ "claspc1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@claspc1" -bg OrangeRed4 -fg cornsilk2 -e slogin claspc1 -l $USER &
-+ "clon00	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clon00" -bg firebrick4 -fg cornsilk2 -e slogin clon00 -l $USER &
-+ "clon00, clasrun	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "clasrun@clon00" -bg DarkSlateGray -fg cornsilk2 -e slogin clon00 -l clasrun &
-+ "clon01	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clon01" -bg ForestGreen -fg cornsilk2 -e slogin clon01 -l $USER &
-+ "clon02	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clon02" -bg chartreuse4 -fg cornsilk2 -e slogin clon02 -l $USER &
-+ "clon03	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clon03" -bg DarkOrange4 -fg cornsilk2 -e slogin clon03 -l $USER &
-+ "clon04	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@clon04" -bg brown4 -fg cornsilk2 -e slogin clon04 -l $USER &
-+ "db1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@db1" -bg SaddleBrown -fg cornsilk2 -e slogin db1 -l $USER &
-+ "ifarml1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@ifarml1" -bg DeepPink4 -fg cornsilk2 -e slogin ifarml1 -l $USER &
-+ "jlaba1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlaba1" -bg orange4 -fg cornsilk2 -e slogin jlaba1 -l $USER &
-+ "jlaba2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlaba2" -bg tomato4 -fg cornsilk2 -e slogin jlaba2 -l $USER &
-+ "jlabh1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabh1" -bg blue2 -fg cornsilk2 -e slogin jlabh1 -l $USER &
-+ "jlabh2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabh2" -bg green2 -fg cornsilk2 -e slogin jlabh2 -l $USER &
-+ "jlabh3	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabh3" -bg red2 -fg cornsilk2 -e slogin jlabh3 -l $USER &
-+ "jlabh4	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabh4" -bg DarkOliveGreen -fg cornsilk2 -e slogin jlabh4 -l $USER &
-+ "jlabs1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabs1" -bg firebrick -fg cornsilk2 -e slogin jlabs1 -l $USER &
-+ "jlabs2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabs2" -bg corel4 -fg cornsilk2 -e slogin jlabs2 -l $USER &
-+ "jlabs3	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fn 9x15bold -fb 7x14bold -title "$USER@jlabs3" -bg sienna4 -fg cornsilk2 -e slogin jlabs3 -l $USER &
++ "clas10	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -fb 7x14bold -title "$USER@clas10" -e slogin clas10.cebaf.gov -l $USER &
++ "clas10, clasrun	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "clasrun@clas10" -e slogin clas10.cebaf.gov -l clasrun &
++ "clas10, epicsb	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "epicsb@clas10" -e slogin clas10.cebaf.gov -l epicsb &
++ "claspc1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@claspc1" -e slogin claspc1.cebaf.gov -l $USER &
++ "clon00	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@clon00" -bg salmon4 -fg cornsilk2 -e slogin clon00.cebaf.gov -l $USER &
++ "clon00, clasrun	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "clasrun@clon00" -bg DarkRed -fg cornsilk2 -e slogin clon00.cebaf.gov -l clasrun &
++ "clon01	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@clon01" -e slogin clon01.cebaf.gov -l $USER &
++ "clon02	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@clon02" -e slogin clon02.cebaf.gov -l $USER &
++ "clon03	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@clon03" -e slogin clon03.cebaf.gov -l $USER &
++ "clon04	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@clon04" -e slogin clon04.cebaf.gov -l $USER &
++ "db1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@db1" -e slogin db1.cebaf.gov -l $USER &
++ "ifarml1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@ifarml1" -e slogin ifarml1.cebaf.gov -l $USER &
++ "jlaba1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlaba1" -e slogin jlaba1.cebaf.gov -l $USER &
++ "jlaba2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlaba2" -e slogin jlaba2.cebaf.gov -l $USER &
++ "jlabh1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh1" -bg DarkGreen -fg cornsilk2 -e slogin jlabh1.cebaf.gov -l $USER &
++ "jlabh2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh2" -e slogin jlabh2.cebaf.gov -l $USER &
++ "jlabh3	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh3" -e slogin jlabh3.cebaf.gov -l $USER &
++ "jlabh4	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh4" -e slogin jlabh4.cebaf.gov -l $USER &
++ "jlabs1	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs1" -e slogin jlabs1.cebaf.gov -l $USER &
++ "jlabs2	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs2" -e slogin jlabs2.cebaf.gov -l $USER &
++ "jlabs3	(10x20 font)%mini-term.xpm%"    Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabs3" -e slogin jlabs3.cebaf.gov -l $USER &
 
 AddToMenu "Screensaver" "Screensaver" Title
 + "Bat%mini-bball.xpm%"		Exec xlock -nolock -nice 0 -mode bat &
@@ -598,10 +598,10 @@ Key Escape      A       C       WindowList
                      -nolabel -bg grey60 -update 5 -geometry -1500-1500 &')
 *FvwmButtons(Title xterm, Icon rterm.xpm, \
              Action 'Exec "XTerm" xterm \
-                     -ls -sb -fn 8x13 -bg DarkSlateGray -fg cornsilk2 -title "xterm" &')
+                     -ls -sb -bg DarkSlateGray -fg cornsilk2 -title "xterm" &')
 *FvwmButtons(Title elm, Icon mail2.xpm, \
              Action 'Exec "Elm" xterm \
-                     -ls -sb -fn 9x15 -ls -geometry 80x48 -fg cornsilk2 -bg MidnightBlue -title elm -e elm.csh &')
+                     -ls -sb -ls -geometry 80x48 -fg cornsilk2 -bg MidnightBlue -title elm -e elm.csh &')
 *FvwmButtons(Title xfm, Icon folders.xpm, \
              Action 'Exec "Xfm" xfm -title "File Manager" &') 
 *FvwmButtons(Title emacs, Icon lemacs.xpm, \
@@ -656,4 +656,4 @@ Style "FvwmTaskBar" NoTitle,BorderWidth 4,HandleWidth 4,Sticky,StaysOnTop,Window
 #*FvwmTaskBarClockFormat %I:%M%p
 #*FvwmTaskBarHighlightFocus
 #*FvwmTaskBarAutoHide
-*FvwmTaskBarMailCommand Exec color_xterm -T Mail -ls -fn 8x13 -e pine -i
+*FvwmTaskBarMailCommand Exec color_xterm -T Mail -ls -e pine -i

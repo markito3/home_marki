@@ -21,6 +21,7 @@ alias cvs_epics setenv CVSROOT /home/epics/cvs
 alias cvs_epicsr setenv CVSROOT :ext:marki@clon01.jlab.org:/home/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.jlab.org:/home/marki/cvs
+alias cvs_primexr setenv CVSROOT marki@cvs.jlab.org:/group/primex/CVS_REPOSITORY
 alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"

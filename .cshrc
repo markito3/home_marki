@@ -12,7 +12,7 @@ setenv OSNAME `/bin/uname -s`
 setenv EDITOR emacs
 if ($HOST == jlabh1 || $HOST == jlabh2) then
   setenv CERN /site/cernlib/hp700_ux90
-else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3) then
+else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
   setenv CERN /site/cernlib/sun4_solaris2
 else if ($HOST == jlaba1 || $HOST == jlaba2) then
   setenv CERN /site/cernlib/rs_aix32

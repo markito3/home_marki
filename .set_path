@@ -26,3 +26,7 @@ else if ($OSNAME == AIX) then
   eval `~marki/bin/addpath.pl /site/bin /usr/local/bin`
 endif
 eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin`
+if ($CLAS_TOOLS != '') then
+  eval `~marki/bin/addpath.pl . $CLAS_TOOLS/misc $CLAS_TOOLS/status $CLAS_TOOLS/caldb`
+endif
+

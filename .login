@@ -108,7 +108,7 @@ alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null 
 alias news "xrn -nntpServer news.cebaf.gov &"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu "pushd"
-alias rm "rm -i"
+alias rmi "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_epics \
     source /home/epics/R3.13.0.beta11/epicsB/prod/scripts/setup_epics

@@ -61,7 +61,7 @@ alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\
 alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
   "-e === | less"
 alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e less $cwfile.tmp &'
-alias dial sudo /usr/sbin/dip /usr/local/dip/dipscript_336
+alias dial sudo /etc/ppp/ppp-on
 alias disk "bdf | grep -i -e scr -e kbytes -e user9"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort 'du -r | sort -k 1nr | more -e'
@@ -79,7 +79,7 @@ alias eq "x ~marki/slow/epics_questions.txt"
 alias errchk "grep -i -e error -e '\*\*'"
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
-alias hangup sudo /usr/sbin/dip -k
+alias hangup sudo /etc/ppp/ppp-off
 alias hgrep "history | grep -i"
 #alias irc ~patois/bin/HP-UX/irc
 alias lprdup "cat /home/marki/misc/prologue_duplex.txt \!* | lpr"

@@ -75,7 +75,7 @@ alias spe "source ~marki/bin/spe"
 # path
 #
 eval `~marki/bin/addpath.perl $CERN_ROOT/bin`
-if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == ifarmh1 || $HOST == ifarmh2 || $HOST == ifarmh3 || $HOST == ifarmh4 || $HOST == ifarmh5 || $HOST == jlaba1 || $HOST == jlaba2) then
+if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4 || $HOST == ifarmh1 || $HOST == ifarmh2 || $HOST == ifarmh3 || $HOST == ifarmh4 || $HOST == ifarmh5) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT/bin /apps/tex/bin /apps/emacs/19.34b/bin /apps/gnu/bin /apps/bin /site/bin`
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
@@ -87,6 +87,9 @@ else if ($HOST == clas10) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
 else if ($HOST == claspc2.cebaf.gov) then
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME  /usr/openwin/bin`
+else if ($HOST == jlaba1 || $HOST == jlaba2) then
+  eval `~marki/bin/delpath.perl /usr/local/bin`
+  eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME /usr/local/bin`
 else
   eval `~marki/bin/addpath.perl . $HOME/bin $HOME/bin/$OSNAME`
 endif

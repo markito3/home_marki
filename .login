@@ -1,0 +1,138 @@
+#!/bin/csh
+echo starting .login
+#set up the terminal
+stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
+set prompt="%m:%C> "  # prompt set to machine:current directory
+eval `resize`
+
+# Set up shell environment:
+set autolist
+
+# Set the default X server.
+
+if ($?REMHOST ) then
+  if ($REMOTEHOST != "") then
+    setenv DISPLAY "$REMOTEHOST":0
+  else
+    setenv DISPLAY :0
+  endif
+endif
+
+# adjust the path
+if ($HOST == jlabh1) then
+  eval `/home/marki/bin/addpath.pl /usr/contrib/bin/X11`
+  #setenv PATH `/home/marki/bin/addpath /site/bin`
+  #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
+  #setenv PATH `/home/marki/bin/addpath .`
+else if ($HOST == clas10) then
+  eval `/home/marki/bin/addpath.pl /home/marki/bin`
+  #setenv PATH `/home/marki/bin/addpath /home/marki/bin`
+else if ($HOST == jlabs3) then
+  eval `/home/marki/bin/addpath.pl /home/marki/bin`
+  rehash
+endif
+
+# add personal man pages
+# setenv MANPATH /usr/site2/gnu/man:/usr/site2/emacs/man:/usr/man:/usr/contrib/man:/usr/local/man:/usr/site4/egs4/man:/home/marki/man
+
+# fonts
+
+setenv BIG courb24
+setenv MEDIUM courb18
+setenv SMALL courb14
+
+# private aliases
+
+alias add \
+  'grep -i \!* ~/misc/stuff/lists/dc_list.txt; \
+  grep -i \!* ~/misc/stuff/lists/kl_list.txt; \
+  grep -i \!* ~/misc/stuff/lists/slow_list.txt; \
+  grep -i \!* ~/.elm/aliases.text; \
+  grep -i \!* ~/misc/stuff/lists/address.tex'
+alias addadd 'x ~/misc/stuff/lists/address.tex'
+alias addless 'less ~/misc/stuff/lists/address.tex'
+alias bckgnd "xv -root -rmode 5 -maxpect -quit"
+alias colors "more /usr/lib/X11/rgb.txt"
+alias crib "less $MISC/crib.txt"
+alias cribadd "x $MISC/crib.txt"
+alias cribe "less $HOME/slow/epics_crib.txt"
+alias cvstag "cvs log | grep -e release -e Working -e 'total revisions' " \
+  "-e === | less"
+alias disk "bdf | grep -i -e scr -e kbytes -e user9"
+alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
+alias dusort 'du -r | sort -k 1nr | more -e'
+alias ecrib "less ~marki/slow/epics_crib.txt"
+alias ecribadd "x ~marki/slow/epics_crib.txt"
+alias egrep "printenv | grep -i"
+alias emb "emacs -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8"
+alias en "ps -u marki | grep emacs | wc"
+alias en1 "enscript -MLetter -i0.5i"
+alias en1d "enscript -MLetter -DDuplex:true -i0.5i"
+alias en2 "enscript -MLetter -2r"
+alias en2d "enscript -MLetter -2r -DDuplex:true"
+alias enslide "enscript -MLetter -f Courier18"
+alias enscrip "enscript -MLetter -p enscript.tmp -i0.5i"
+alias eq "x ~marki/slow/epics_questions.txt"
+alias errchk "grep -i -e error -e '\*\*'"
+alias gr "grep -i"
+alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more -e"
+alias hgrep "history | grep -i"
+#alias irc ~patois/bin/HP-UX/irc
+alias lps 'lpsta $LPDEST'
+alias lpsta "lpstat -r -a\!* -p\!* -o\!*"
+alias lpcolor "lp -dpscolor1"
+alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more -e"
+alias lsb "ls -RalF | sort -k 5nr | more -e"
+alias lsd "'ls' -F \!* | grep /"
+alias lsl "ls -laF \!* | more -e"
+alias lss "ls -laF \!* | sort -k5nr | more -e"
+alias lst "ls -laFt \!* | more -e"
+alias lsx "'ls' -aF \!* | grep \*"
+alias ls "ls -F" # stick this after the other ls's
+alias ncd "setenv DISPLAY clasxt25:0"
+alias netscape "/apps/netscape/netscape -install http://www.cebaf.gov/ > & /dev/null &"
+alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
+alias pu "pushd"
+alias rm "rm -i"
+alias rxt "remsh \!* -n 'setenv DISPLAY clasxt25:0; xterm -ls -vb -n $USER@\!*' &"
+alias sd "setenv DISPLAY \!*':0.0'"
+alias sgi "more $MISC/sgi_info.txt"
+alias staff rsh jlabs1 staff
+alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
+alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"
+alias vu "vuepad"
+alias wea "telnet downwind.sprl.umich.edu 3000"
+alias x "emacs -geometry 80x36 -fn $MEDIUM -name \!* \!* &"
+alias xc "emacs_color"
+alias xcb "emacs_color_big"
+#alias xf "emacs_color_big_fortran"
+alias xf "emacs -geometry 73x36 -fn $BIG -name \!* \!* &"
+alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu puphed.princeton.edu bnlku7.phy.bnl.gov bnlku10.phy.bnl.gov puhep1.princeton.edu clon00 clon01 dev02 clas10"
+alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
+alias xn "emacs -nw"
+alias xr "chmod -w \!* ; emacs -name \!* \!* ; chmod +w \!* &"
+alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
+alias xtb "xterm -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8 &"
+alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1 &"
+#
+# recsis
+#
+#alias setup_recsis "source /home/marki/bin/setup_recsis"
+#
+# CLAS software
+#
+#if ($HOST != clon00 && $HOST != clon01 && $HOST != clon02 && $HOST != clon03 && $HOST != clon04) source ~marki/clas/setup_clas
+#
+# info
+#
+who
+if ($?DISPLAY) then
+  echo DISPLAY = $DISPLAY
+else
+  echo DISPLAY not defined
+endif
+date
+#
+# finished
+#
+echo "marki's .login done"

@@ -69,7 +69,7 @@ setenv WINGZ3 /usr/local/src/Wingz3
 #
 # path
 #
-source .set_path
+source ~marki/.set_path
 #
 # umask
 #

@@ -21,4 +21,6 @@ misc
 nsmail
 obj
 re*.rzn
-work
+work*
+.mh_profile
+dead.letter

@@ -1,4 +1,20 @@
 echo starting .login
+#
+# CLAS software
+#
+if ($HOST == claspc2.cebaf.gov || $HOST == marki.cebaf.gov \
+    || $HOST == claslap2.cebaf.gov) then
+    setenv CLAS_ROOT /home/claslib
+    set host=`~marki/bin/short_host.perl`
+else
+    setenv CLAS_ROOT /group/clas
+    set host=jlab
+endif
+source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
+if ($host == claspc2.cebaf.gov || $host == marki || $host == claslap2) \
+    setenv CLAS_PARMS /home/claslib/parms
+setenv TOP_DIR /scratch/$USER/top_dir
+echo TOP_DIR = $TOP_DIR
 source .set_path
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
@@ -22,6 +38,15 @@ endif
 
 # add personal man pages
 setenv MANPATH .:/apps/man:/usr/man
+#
+# font names
+#
+setenv fontUnreadable lucidasanstypewriter-8
+setenv fontTiny lucidasanstypewriter-10
+setenv fontSmall lucidasanstypewriter-12
+setenv fontMedium lucidasanstypewriter-14
+setenv fontLarge lucidasanstypewriter-18
+setenv fontHuge lucidasanstypewriter-24
 #
 # JLab aliases
 #
@@ -103,31 +128,9 @@ alias xwm "rm -f /tmp/ssh-agent_wm.log ; exec ssh-agent fvwm95-2 > & /tmp/ssh-ag
 alias xh "xhost cebaf1 cebaf2 cebafb cebafe cebafh opspare viper.princeton.edu puphed.princeton.edu bnlku7.phy.bnl.gov bnlku10.phy.bnl.gov puhep1.princeton.edu clon00 clon01 dev02 clas10"
 alias xload_hp "ssh -n \!* /usr/contrib/bin/X11/xload > & /dev/null &"
 alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
-alias xn "emacs -nw"
-alias xr "chmod -w \!* ; emacs -name \!* \!* ; chmod +w \!* &"
 alias xstart "rm -f /tmp/ssh-agent.log ; exec ssh-agent startx > & /tmp/ssh-agent.log"
 alias xstartd "dial ; xstart"
 alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"
-alias xtb "xterm -fn -adobe-courier-bold-r-normal--24-240-75-75-m-150-hp-roman8 &"
-alias xtbnl "xterm -fn -adobe-courier-bold-r-normal--18-180-75-75-m-110-iso8859-1 &"
-#
-# CLAS software
-#
-if ($HOST != clas10) then
-    if ($HOST == claspc2.cebaf.gov || $HOST == marki.cebaf.gov \
-	|| $HOST == claslap2.cebaf.gov) then
-	setenv CLAS_ROOT /home/claslib
-        set host=`short_host.perl`
-    else
-        setenv CLAS_ROOT /group/clas
-        set host=jlab
-    endif
-    source $CLAS_ROOT/builds/PRODUCTION/packages/cms/$host.cshrc
-    if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
-	setenv CLAS_PARMS /home/claslib/parms
-endif
-setenv TOP_DIR /scratch/$USER/top_dir
-echo TOP_DIR = $TOP_DIR
 #
 # info
 #

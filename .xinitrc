@@ -1,7 +1,6 @@
 #!/bin/sh
 xhost + >& /dev/null
 xmodmap .xmodmaprc
-echo HOST = /$HOST/
 # secure shell
 ssh-add >& /dev/null &
 # window manager

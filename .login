@@ -17,7 +17,7 @@ setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
 #set up the terminal
 stty erase "^?" kill "^U" intr "^C" eof "^D" susp "^Z" hupcl ixon ixoff tostop -tabs
-set prompt="%m:%C> "  # prompt set to machine:current directory
+set prompt="%m:%C:\!% "  # prompt set to machine:current directory
 
 # Set up shell environment:
 set autolist

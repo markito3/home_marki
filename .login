@@ -109,7 +109,7 @@ alias rm "rm -i"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias shenv "printenv | grep -i"
 alias soup xv /home/marki/misc/soup.gif
-alias sstaff ssh jlaba2 staff
+alias sstaff ssh jlaba2.cebaf.gov staff
 alias suterm "xterm -e su &"
 alias topm "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head"
 alias tsadd "x $HOME/misc/stuff/lists/timesheet.txt"

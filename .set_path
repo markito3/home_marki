@@ -6,9 +6,7 @@ if ($OSNAME == HP-UX) then
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == ifarms1 || \
   $HOST == ifarms2) then
     eval `~marki/bin/delpath.pl /usr/local/bin`
-  eval `~marki/bin/addpath.pl $CLAS_TOOLS/misc $CERN_ROOT /usr/local/bin \
-    /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin \
-    /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
+  eval `~marki/bin/addpath.pl /group/clas/tools/misc $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
 else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || \
   $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 \
   || $HOST == clon10) then

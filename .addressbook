@@ -68,6 +68,7 @@ john_f	Ficenec, John	ficenec@jlab.org
 tony_f	Forest, Tony	forest@physics.odu.edu
 arne	Freyberger, Arne	freyberg@jlab.org
 valera	Frolov, Valera	frolov@jlab.org
+herb_f	Funsten, Herbert	funsten@jlab.org
 jenny_g	Gabb, Jennifer	gabb@jlab.org
 rob_g	Gardner, Rob	gardner@lexus.physics.indiana.edu
 gerry_g	Gilfoyle, Gerard P.	ggilfoyl@richmond.edu		(804) 289-8255
@@ -93,8 +94,12 @@ jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
    fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
    mecking@jlab.org,mestayer@jlab.org,stepanyan@jlab.org,vardan,
    weygand@jlab.org,whitney@jlab.org,wolin@jlab.org,yeg@jlab.org)
+websters	JLab Web Policy Team	(casalino@jlab.org,ithomas@jlab.org,
+   "Karen C. Hokansson" <kchok@jlab.org>,marki@jlab.org,oyer@jlab.org,
+   philpott@jlab.org,reece@jlab.org,waite@jlab.org,ware@jlab.org)
 mike_j	Johnson, Michael	mjohnson@jlab.org
 kyungseon	Joo, Kyungseon	kjoo@jlab.org
+dave_k	Kashy, David	kashy@jlab.org
 kevin_g	Kevin Giovannetti	giovanetti@jlab.org
 amy	Klein, Amy C.	AKlein@Mathematica-Mpr.com
 franz	Klein, Franz	fklein@jlab.org
@@ -169,8 +174,11 @@ janet	Prater, Janet	prater@jlab.org
 john_p	Price, John	pricej@jlab.org
 sandy_p	Prior, Sandy	prior@jlab.org
 liming	Qin, Liming	liming@physics.odu.edu
+greg_r	Ricardi, Greg	riccardi@scri.fsu.edu
 peter_r	Riley, Peter Alan	hhupar@juno.com
 marco_r	Ripani, Marco	ripani@ge.infn.it
+federico	Ronchetti, Federico	
+   Federico Ronchetti <fedro@pcaiace1.lnf.infn.it>
 patrizia	Rossi, Patrizia	rossi@jlab.org
 francois_r	Roudot, Francois	roudot@jlab.org
 james	Shaheen, James Victor	jvshaheen@aol.com
@@ -184,6 +192,7 @@ aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
 stepan	Stepanyan, Stepan	stepanyan@jlab.org
 mary_beth	Stewart, Mary Beth	stewartm@jlab.org
 paul_s	Stoler, Paul	stoler@jlab.org
+mauro	Taiuti, Mauro	taiuti@genova.infn.it
 johnny	Tang, Johnny	tang@jlab.org
 simon	Taylor, Simon	staylor@jlab.org
 dave_t	Tedeschi, David	tedeschi@sc.edu
@@ -207,5 +216,6 @@ celia	Whitlatch, Celia	whitlatc@jlab.org
 chris_w	Witzig, Chris	witzig@bnl.gov
 elliott	Wolin, Elliott	wolin@jlab.org
 steve_w	Wood, Steve	saw@jlab.org
+rozelle	Wright, Rozelle	rwright@lanl.gov
 amrit	Yegneswaran, Amrit	yeg@jlab.org
 junho	Yun, Junho	jyun@jlab.org

@@ -1,6 +1,7 @@
 #!/bin/sh
 xhost + >& /dev/null
 xmodmap .xmodmaprc
+ical &
 ssh-add >& /dev/null &
 #
 rm -f /tmp/fvwm95-2.log

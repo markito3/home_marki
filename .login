@@ -25,6 +25,8 @@ set prompt="%m:%C:\!> "  # prompt set to machine:current directory
 
 # Set up shell environment:
 set autolist
+set history=1000
+set savehist=(1000 merge)
 
 # no core dump
 limit coredumpsize 0

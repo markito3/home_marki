@@ -93,6 +93,7 @@ alias lsx "'ls' -aF \!* | grep \*"
 alias ls "ls -F" # stick this after the other ls's
 alias ncd "setenv DISPLAY clasxt25:0"
 alias netscape "/apps/netscape/netscape -install http://www.cebaf.gov/ > & /dev/null &"
+alias news "xrn -nntpServer news.cebaf.gov &"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu "pushd"
 alias rm "rm -i"

@@ -252,7 +252,7 @@ AddToMenu "HP" "HP Shells" Title
 + "jlabh1%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh1" -bg blue2 -fg cornsilk2 -e slogin -C jlabh1.cebaf.gov -l $USER &
 + "jlabh2%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh2" -bg RoyalBlue4 -fg cornsilk2 -e slogin -C jlabh2.cebaf.gov -l $USER &
 + "jlabh3%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh3" -bg red2 -fg cornsilk2 -e slogin -C jlabh3.cebaf.gov -l $USER &
-+ "jlabh3, claslib%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "claslib@jlabh3" -bg green2 -fg cornsilk2 -e slogin -C jlabh3.cebaf.gov -l claslib &
++ "jlabh3, claslib%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "claslib@jlabh3" -bg IndianRed4 -fg cornsilk2 -e slogin -C jlabh3.cebaf.gov -l claslib &
 + "jlabh4%mini-term.xpm%"  Exec xterm -sb -sl 1000 -j -ls -title "$USER@jlabh4" -bg DarkOliveGreen -fg cornsilk2 -e slogin -C jlabh4.cebaf.gov -l $USER &
 
 AddToMenu "IBM" "IBM Shells" Title

@@ -256,7 +256,7 @@ AddToMenu "HP" "HP Shells" Title
 + "jlabh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabh4" -bg DarkOliveGreen -e slogin -C jlabh4.cebaf.gov -l $USER &
 + "ifarmh1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh1" -bg DarkBlue -e slogin -C ifarmh1.cebaf.gov -l $USER &
 + "ifarmh2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh2" -bg green4 -e slogin -C ifarmh2.cebaf.gov -l $USER &
-+ "ifarmh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh3" -bg green3 -e slogin -C ifarmh3.cebaf.gov -l $USER &
++ "ifarmh3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh3" -bg chartreuse4 -e slogin -C ifarmh3.cebaf.gov -l $USER &
 + "ifarmh4%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh4" -bg red3 -e slogin -C ifarmh4.cebaf.gov -l $USER &
 + "ifarmh5%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarmh5" -bg SpringGreen4 -e slogin -C ifarmh5.cebaf.gov -l $USER &
 

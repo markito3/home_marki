@@ -1,5 +1,3 @@
-		
-		
 allena	Allena Opper	opper@helios.phy.ohiou.edu
 burin	Asavapibhop, Burin	burin@jlab.org
 dave_a	Atwood, David	atwood@jlab.org
@@ -31,10 +29,14 @@ dieter	Cords, Dieter	cords@jlab.org
 carol_jo	Crannell, Carol Jo	CRANNELL@achamp.gsfc.nasa.gov
 chris_c	Cuevas, Chris	cuevas@jlab.org
 dad	Dad	tji567@msn.com
+larry_d	Dennis, Larry	larry@fsulcd.physics.fsu.edu
 diann	Dicesare, Diann	dicesare@jlab.org
 antonio	Didomenico, Antonio	didomenico@roma1.infn.it
 john_d	Domingo, John J.	domingo@jlab.org
 dave_d	Doughty, David	doughty@jlab.org
+steve_d	Dytman, Steven	DYTMAN@vms.cis.pitt.edu
+hovanes	Egiyan, Hovanes	hovanes@jlab.org		
+   x5856, MS 16B, Bldg/Room 16/33
 latifa	Elouadrhiri, Latifa	latifa@jlab.org
 tech-talk	EPICS tech-talk	tech-talk@aps.anl.gov
 sue	Ewing, Sue	ewing@jlab.org
@@ -45,12 +47,14 @@ john_f	Ficenec, John	ficenec@jlab.org
 arne	Freyberger, Arne	freyberg@jlab.org
 valera	Frolov, Valera	frolov@jlab.org
 rob_g	Gardner, Rob	gardner@lexus.physics.indiana.edu
+gerry_g	Gilfoyle, Gerard P.	ggilfoyl@richmond.edu		(804) 289-8255
 javier	Gomez, Javier	gomez@jlab.org
 mike_g	Green, Mike	mikeg@infi-net.com
 vardan	Gyurjyan, Vardan	gurjyan@jlab.org
-john_h	Hardie, John	jhardie@jlab.org
+john_h	Hardie, John	jhardie@pcs.cnu.edu
 dave_h	Heddle, David	heddle@jlab.org
 graham	Heyes, Graham	heyes@jlab.org
+ken_h	Hicks, Kenneth	HICKS@ouvaxa.cats.ohiou.edu
 scott_h	Higgins, C. Scott	higgins@jlab.org
 karen_h	Hokansson, Karen	kchok@jlab.org
 maurik	Holtrop, Maurik	maurik@einstein.sr.unh.edu
@@ -61,17 +65,20 @@ george_j	Jacobs, George	jacobsg@jlab.org
 ed_j	Jastrzembski, Ed	jastrzembski@jlab.org
 dave_j	Jenkins, David	jenkins@jlab.org
 jlab_shifters	JLab Shift Takers	
-   mecking@jlab.org,   mestayer@jlab.org, elton@jlab.org, marki@jlab.org, manak@jlab.org,    weygand@jlab.org, brooksw@jlab.org, wolin@jlab.org, burkert@jlab.org,    yeg@jlab.org, bogdan@jlab.org, freyberg@jlab.org, whitney@jlab.org,    cords@jlab.org, domingo@jlab.org
+   mecking@jlab.org,   mestayer@jlab.org, elton@jlab.org, marki@jlab.org, manak@jlab.org,    weygand@jlab.org, brooksw@jlab.org, wolin@jlab.org, burkert@jlab.org,    yeg@jlab.org, bogdan@jlab.org, freyberg@jlab.org, whitney@jlab.org,    cords@jlab.org, domingo@jlab.org, fklein@jlab.org
 mike_j	Johnson, Michael	mjohnson@jlab.org
 amy	Klein, Amy C.	AKlein@Mathematica-Mpr.com
+franz	Klein, Franz Josef	fklein@jlab.org
 akira	Konaka, Akira	konaka@sitka.triumf.ca
 andy	Kowalski, Andy	kowalski@jlab.org
 francois_l	Lamarche, Francois	francoisl@lecroy.com
 dummy	last, first, dummy	dummy
 laur	Littenberg, Laurence	litt@bnlku2.phy.bnl.gov
+alberto_l	Longhi, Alberto	longhi@jlab.org
 costy	Loukachine, Konstantin	costy@jlab.org
 bonnie	Madre, Bonnie	madre@jlab.org
 joe_m	Manak, Joseph	manak@jlab.org
+bill_m	Maniatty, William	maniattb@cs.rpi.edu
 maniatty	Maniatty, William	maniattb@cs.rpi.edu
 claude	Marchand, Claude	marchand@phnx7.saclay.cea.fr
 dan_m	Marlow, Daniel R.	marlow@viper.princeton.edu
@@ -85,6 +92,7 @@ bob_m	Michaels, Robert	rom@jlab.org
 ralph	Minehart, Ralph C.	rcm4y@landau4.phys.virginia.edu
 ja	Muguira, James A.	muguira@jlab.org
 luc	Murphy, Luc	murphyl@jlab.org
+mike_n	Necaise, Mike	necaise@jlab.org
 neutral	Neutral K Decays	
    doug@sitka.triumf.ca,konaka@sitka.triumf.ca,blecherm@vtinte.phys.vt.edu,gibaut@vtinte.phys.vt.edu,kinoshita@vpihe4.phys.vt.edu,littenberg@bnlk04.phy.bnl.gov,mcfarlan@jlab.org,marki@jlab.org
 kl_interested	parties interested in K_L --> pi0 neutrino antineutrino	

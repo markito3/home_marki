@@ -77,7 +77,7 @@ if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlaba1 || $HOST == jlaba2) th
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3) then
   eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb`
 else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then
-  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin`
+  eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($HOST == cebafb || $HOST == cebafe || $HOST == cebafh) then
   eval `~marki/bin/addpath.pl . $HOME/bin $HOME/bin/$OSNAME  $CERN_ROOT/bin /usr/site2/emacs/bin /site/bin`
 else if ($HOST == clas10) then

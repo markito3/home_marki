@@ -9,7 +9,7 @@ set savehist=1000
 
 setenv OSNAME `/bin/uname -s`
 
-setenv EDITOR "emacs -nw"
+setenv EDITOR emacs
 if ($HOST == jlabh1 || $HOST == jlabh2 || $HOST == jlabh3 || $HOST == jlabh4) then
   setenv CERN /site/cernlib/hp700_ux90
 else if ($HOST == jlabs1 || $HOST == jlabs2 || $HOST == jlabs3 || $HOST == jlabs4 || $HOST == clon00 || $HOST == clon01 || $HOST == clon02 || $HOST == clon03 || $HOST == clon04) then

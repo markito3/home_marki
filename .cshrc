@@ -29,10 +29,6 @@ endif
 setenv FTP /site/ftp/pub/marki
 setenv MISC $HOME/misc
 setenv SCR /scratch/marki
-
-# Define your default printer
-setenv LPDEST phyhp9
-if ($HOST != marki.jlab.org) setenv PRINTER phyhp9
 #
 # setups
 #

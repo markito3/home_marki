@@ -58,6 +58,7 @@ alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
 alias cvs_epics setenv CVSROOT /apps/epics/cvs
+alias cvs_epicsr setenv CVSROOT :ext:marki@clas10.cebaf.gov:/apps/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
 alias cvslogw "rm -f cvslog_\!*.tmp ; cvs log \!* > cvslog_\!*.tmp ; lw cvslog_\!*.tmp"
@@ -137,7 +138,7 @@ if ($HOST != clas10 && $HOST != claspc1.cebaf.gov) then
     if ($HOST == claspc2.cebaf.gov || $HOST == localhost.localdomain) \
 	setenv CLAS_PARMS /home/claslib/parms
 endif
-setenv TOP_DIR ~/work
+setenv TOP_DIR /scratch/$USER/top_dir
 echo TOP_DIR = $TOP_DIR
 #
 # info

@@ -268,6 +268,7 @@ AddToMenu "Linux" "Linux Shells" Title
 + "ifarml2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml2" -bg chartreuse4 -e slogin -C ifarml2.jlab.org -l $USER &
 + "ifarml2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml2" -bg SlateBlue4 -e slogin -C ifarml2.jlab.org -l claslib &
 + "ifarml3%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarml3" -bg SeaGreen -e slogin -C ifarml3.jlab.org -l $USER &
++ "ifarml3, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@ifarml3" -bg SlateBlue4 -e slogin -C ifarml3.jlab.org -l claslib &
 + "marki, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@marki" -bg chocolate4 -e slogin -C marki.jlab.org -l claslib &
 
 AddToMenu "Sun" "Sun Shells" Title
@@ -287,8 +288,8 @@ AddToMenu "Sun" "Sun Shells" Title
 + "ifarms1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms1" -bg sienna4 -e slogin -C ifarms1.jlab.org -l $USER &
 + "ifarms2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@ifarms2" -bg sienna4 -e slogin -C ifarms2.jlab.org -l $USER &
 + "jlabs1%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs1" -bg firebrick -e slogin -C jlabs1.jlab.org -l $USER &
-+ "jlabs1, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabs1" -bg firebrick -e slogin -C jlabs1.jlab.org -l claslib &
 + "jlabs2%mini-term.xpm%"  Exec xterm -j -ls -title "$USER@jlabs2" -bg coral4 -e slogin -C jlabs2.jlab.org -l $USER &
++ "jlabs2, claslib%mini-term.xpm%"  Exec xterm -j -ls -title "claslib@jlabs2" -bg firebrick -e slogin -C jlabs2.jlab.org -l claslib &
 
 AddToMenu "IOC" "IOC Consoles" Title
 + "clasgas%mini-term.xpm%"  Exec xterm -j -ls -title "clasgas" -bg grey25 -e rlogin clasgas &

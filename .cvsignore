@@ -34,3 +34,5 @@ dead.letter
 .calendar.*
 silo_remove
 .rnlast
+.rnsoft
+.user.rdb

@@ -1,3 +1,4 @@
+#DELETED-00/10/09#shannan	Walsh, Shannan	swalsh@jlab.org
 dave_a	Abbott, David	abbottd@jlab.org
 steve_a	Adler, Stephen	adler@bnlku2.phy.bnl.gov
 alex_d	Alex Dzierba	dzierba@indiana.edu
@@ -5,6 +6,7 @@ burin	Asavapibhop, Burin	burin@jlab.org
 david_a	Atwood, David	atwood@jlab.org
 auger	Auger, Thierry	auger@jlab.org
 thierry	Auger, Thierry	thauger@phnx7.saclay.cea.fr
+harout	Avakian, Harout	Harout Avakian <avakian@hermes.desy.de>
 paul_b	Banta, Paul	banta@jlab.org
 steve_b	Barrow, Steve	barrow@jlab.org
 dzb	Besson, David Z.	dzb@kuhep4.phsx.ukans.edu
@@ -62,6 +64,7 @@ arne	Freyberger, Arne	freyberg@jlab.org
 valera	Frolov, Valera	frolov@jlab.org
 herb_f	Funsten, Herbert	funsten@jlab.org
 jenny_g	Gabb, Jennifer	gabb@jlab.org
+michel_g	Garcon, M.	"M. Garcon" <garcon@hep.saclay.cea.fr>
 rob_g	Gardner, Rob	gardner@lexus.physics.indiana.edu
 ashot	Gasparian, Ashot	gasparan@jlab.org
 gerry_g	Gilfoyle, Gerard P.	ggilfoyl@richmond.edu		(804) 289-8255
@@ -146,6 +149,7 @@ aleksei	Stavinski, Aleksei	STAVINSK@jlab.org
 stepan	Stepanyan, Stepan	stepanyan@jlab.org
 mary_beth	Stewart, Mary Beth	stewartm@jlab.org
 paul_s	Stoler, Paul	stoler@jlab.org
+riad	Suleiman, Riad	suleiman@jlab.org
 mauro	Taiuti, Mauro	taiuti@genova.infn.it
 johnny	Tang, Johnny	tang@jlab.org
 simon	Taylor, Simon	staylor@jlab.org
@@ -162,7 +166,6 @@ mike_v	Vineyard, Michael	mvineyar@richmond.edu
 alex_v	Vlassov, Alexander	vlassov@jlab.org
 volleyball_list	Volleyball Email List	
    lacy@cebaf.gov, augustine@cebaf.gov, nichols@cebaf.gov, hanson@cebaf.gov,         mahoney@cebaf.gov, mtorres@cebaf.gov, jordan@cebaf.gov,         marki@cebaf.gov, harwood@cebaf.gov, arnold@cebaf.gov,         hokansson_em@nns.com
-shannan	Walsh, Shannan	swalsh@jlab.org
 dave_w	Wetherholt, David	wether@jlab.org
 dennis_w	Weygand, Dennis P.	weygand@jlab.org
 karen_w	White, Karen	karen@jlab.org
@@ -187,8 +190,8 @@ cal_db_group	Calibration Database Group	(
    Larry Dennis <larry@nucott.physics.fsu.edu>,marki@jlab.org,
    Maurik Holtrop <maurik@einstein.unh.edu>,Riad Suleiman <suleiman@jlab.org>)
 cops	CLAS COP's	(arne,elton,mac,marki,stepan,volker)
-clas_linux	CLAS Linux Users	(arne,cole,dave_h,dave_t,dennis_w,
-   joe_m,mike_j,mike_k,mike_n,richard_t,stepan,vardan,will)
+clas_linux	CLAS Linux Users	(arne,cole,dave_h,mike_j,stepan,vardan,
+   will)
 jlab_shifters	JLab Shift Takers	(bogdan@jlab.org,brooksw@jlab.org,
    burkert@jlab.org,cords@jlab.org,domingo@jlab.org,elton@jlab.org,
    fklein@jlab.org,freyberg@jlab.org,manak@jlab.org,marki@jlab.org,
@@ -228,6 +231,8 @@ online_group	Online Group	(abbottd@jlab.org,auger@jlab.org,
    jhardie@jlab.org,larry@fsulcd.physics.fsu.edu,lcsmith@jlab.org,
    marchand@jlab.org,mjohnson@jlab.org,muguira@jlab.org,riccardi@cs.fsu.edu,
    tedeschi+@pitt.edu,wolin@jlab.org)
+primex_sc	PrimEx Steering Committee	(dale@pa.uky.edu,
+   danagu@jlab.org,gasparian@jlab.org,marki@jlab.org,miskimen@phast.umass.edu)
 slow_contact	slow controls detector contacts	(dhuga@gwuvm.gwu.edu,
    freyberg@jlab.org,giovanetti@dirac.physics.jmu.edu,
    gurjyan@clashp.lnf.infn.it,jenkins@vt.edu,marki@jlab.org,

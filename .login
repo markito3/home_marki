@@ -51,8 +51,8 @@ alias colors "more /usr/lib/X11/rgb.txt"
 alias crib "less $MISC/crib.txt"
 alias cribadd "emacs $MISC/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
-alias cvs_clas setenv CVSROOT /apps/clas/u1/clas_cvs
-alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/apps/clas/u1/clas_cvs
+alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
+alias cvs_clasr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/group/clas/clas_cvs
 alias cvs_epics setenv CVSROOT /apps/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT :pserver:marki@jlabs1.cebaf.gov:/home/marki/cvs
@@ -92,14 +92,11 @@ alias lst "ls -laFt \!* | more -e"
 alias lsx "'ls' -aF \!* | grep \*"
 alias ls "ls -F" # stick this after the other ls's
 alias lw "xterm -title \!* -e less \!* &"
-alias man2ps "groff -man /usr/man/man1/\!*.1 > \!*.ps"
-alias ncd "setenv DISPLAY clasxt25:0"
-alias netscape "/apps/netscape/netscape -install http://www.cebaf.gov/ > & /dev/null &"
+alias netscap "netscape -install http://claspc2.cebaf.gov/~marki/ > & /dev/null &"
 alias news "xrn -nntpServer news.cebaf.gov &"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu "pushd"
 alias rm "rm -i"
-alias rxt "remsh \!* -n 'setenv DISPLAY clasxt25:0; xterm -ls -vb -n $USER@\!*' &"
 alias sd "setenv DISPLAY \!*':0.0'"
 alias sgi "more $MISC/sgi_info.txt"
 alias shenv "printenv | grep -i"

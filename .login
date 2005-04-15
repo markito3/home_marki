@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.89 2005/01/04 19:08:25 marki Exp $
+# $Id: .login,v 1.90 2005/04/15 18:10:27 marki Exp $
 #
 echo starting .login
 #
@@ -49,6 +49,13 @@ source ~/.alias
 #
 if ($hosttype == jlab) then
     source /group/primex/scripts/primex_jlab
+endif
+#
+# java
+#
+if ($hosttype == marki) then
+    setenv JAVA_HOME /usr/java/jdk1.5.0_01
+    eval `addpath.pl $JAVA_HOME/bin`
 endif
 #
 # info

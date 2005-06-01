@@ -11,14 +11,6 @@ else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || \
   $HOST == clon03 || $HOST == clon04 || $HOST == clon05 || $HOST == clon06 \
   || $HOST == clon10) then
   eval `~marki/bin/addpath.pl $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
-else if ($HOST == claspc2.jlab.org) then
-  eval `~marki/bin/addpath.pl /home/claslib/builds/PRODUCTION/packages/scripts /home/claslib/tools/caldb /home/claslib/tools/misc /site/bin \
-    /usr/local/src/jdk/bin /usr/openwin/bin /usr/games`
-else if ($HOST == claspc14.jlab.org) then
-  eval `~marki/bin/addpath.pl -e /site/bin /apps/bin`
-  eval `~marki/bin/addpath.pl /usr/local/clas/tools/caldb /usr/local/clas/tools/misc`
-else if ($HOST == claslap2.jlab.org) then
-  eval `~marki/bin/addpath.pl /home/claslib/builds/PRODUCTION/bin/LinuxRH6 /home/claslib/builds/PRODUCTION/packages/scripts /usr/local/bin /usr/games /usr/sbin`
 else if ($OSNAME == Linux) then
   eval `~marki/bin/addpath.pl /group/clas/builds/PRODUCTION/packages/scripts /group/clas/tools/misc /apps/bin /site/bin`
 else if ($OSNAME == AIX) then

@@ -75,7 +75,7 @@ alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"
 alias todo "emacs ~/misc/stuff/lists/todo.txt &"
 #alias top_clear "ls -R \$TOP_DIR ; rm -rf \$TOP_DIR ; mkdir \$TOP_DIR"
-alias trash 'mv \!* /u/scratch/marki'
+alias trash 'mv \!* ~/.Trash'
 alias turnoff sudo /sbin/shutdown -h now
 alias update_bookmarks scp claspc14:~/.netscape/bookmarks.html ~/.netscape
 alias update_calendar scp claspc14:~/.calendar ~/claspc14.calendar

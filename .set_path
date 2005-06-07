@@ -12,7 +12,10 @@ else if ($HOST == clon00 || $HOST == clon01 || $HOST == clon02 || \
   || $HOST == clon10) then
   eval `~marki/bin/addpath.pl $CERN_ROOT /apps/gnu/bin /usr/local/bin /bin /usr/sbin /apps/bin /site/bin /usr/openwin/bin /usr/dt/bin /usr/bin/X11 /opt/SUNWspro/bin /usr/ccs/bin /usr/ucb /usr/local/gnu/bin /net/alcor/usr/local/windppc/host/sun4-solaris2/bin`
 else if ($OSNAME == Linux) then
-  eval `~marki/bin/addpath.pl /group/clas/builds/PRODUCTION/packages/scripts /group/clas/tools/misc /apps/bin /site/bin`
+  if (-e .jlab) then
+    eval `~marki/bin/addpath.pl /apps/bin /site/bin`
+  endif
+  eval `~marki/bin/addpath.pl /group/clas/builds/PRODUCTION/packages/scripts /group/clas/tools/misc`
 else if ($OSNAME == AIX) then
   eval `~marki/bin/delpath.pl . /usr/local/bin`
   eval `~marki/bin/addpath.pl /site/bin /usr/local/bin`

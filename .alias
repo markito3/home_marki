@@ -20,7 +20,7 @@ alias cribe "less $HOME/slow/epics_crib.txt"
 alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT marki@cvs.jlab.org:/group/clas/clas_cvs
 alias cvs_epics setenv CVSROOT /home/epics/cvs
-alias cvs_epicsr setenv CVSROOT :ext:marki@clon01.jlab.org:/home/epics/cvs
+alias cvs_epicsr setenv CVSROOT marki@clon01.jlab.org:/home/epics/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT marki@cvs.jlab.org:/home/marki/cvs
 alias cvs_primex setenv CVSROOT /group/primex/CVS_REPOSITORY

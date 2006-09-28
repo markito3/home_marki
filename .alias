@@ -53,7 +53,7 @@ alias lsl "ls -laF \!* | more"
 alias lss "ls -laF \!* | sort -k5nr | more"
 alias lst "ls -laFt \!* | more"
 alias lsf "ls -aF"
-alias lw "xterm -title \!* -e less \!* &"
+alias lw "xterm -fn $fontMedium -geom 80x36 -title \!* -e less -i \!* &"
 alias manw "xterm -title '"'man \!*'"' -e man \!* &"
 alias mount_floppy mount -t msdos /dev/fd0 /mnt/floppy
 alias mycal 'ssh -l marki -n claspc2.jlab.org ical &'

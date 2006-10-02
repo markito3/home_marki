@@ -61,6 +61,7 @@ alias po popd
 alias poker irc marki irc.poker.net
 alias psf ps auxw --forest | more
 alias psl ps auxwww
+alias psg "ps auxww | grep -i $1"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd
 alias sd "setenv DISPLAY \!*':0.0'"

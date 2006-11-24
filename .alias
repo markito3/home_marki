@@ -7,8 +7,8 @@ alias use source \` /site/bin/use '\!*' \` \&\& \\rm -f /tmp/use.$$
 #
 # private aliases
 #
-alias add 'grep -i \!* /home/marki/misc/stuff/lists/address.tex'
-alias addadd 'emacs ~/misc/stuff/lists/address.tex &'
+alias add 'grep -i \!* /home/marki/my/lists/address.tex'
+alias addadd 'emacs ~/my/lists/address.tex &'
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 # browse directory
 alias bd 'find . -type f -exec echo ======== \; -print -exec echo -------- \; -exec cat {} \; | less'

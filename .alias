@@ -43,7 +43,7 @@ alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias enp enscript -r # portrait
 alias ens enscript -f Courier8 # small font
 alias errchk "grep -i -e error -e '\*\*'"
-alias fgrep "find . -type f -exec grep \!* {} \; -print"
+alias findgrep "find . -type f -exec grep \!* {} \; -print"
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
 alias hgrep "history | grep -i"

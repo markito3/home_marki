@@ -5,10 +5,8 @@ set noclobber
 # Wipes out any adjustments to path by user done after initial invocation
 # of .cshrc.
 
-setenv OSNAME `/bin/uname -s`
 setenv EDITOR emacs
 setenv CVS_RSH ssh
-setenv MISC $HOME/misc
 setenv SCR /scratch/marki
 setenv HDSVN https://halldsvn.jlab.org/repos
 #

@@ -9,6 +9,7 @@ setenv EDITOR emacs
 setenv CVS_RSH ssh
 setenv SCR /scratch/marki
 setenv HDSVN https://halldsvn.jlab.org/repos
+setenv P12SVN https://phys12svn.jlab.org/repos
 #
 # path
 #

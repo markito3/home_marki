@@ -1,7 +1,16 @@
 #
-# $Id: .login,v 1.92 2008/03/11 18:10:28 marki Exp $
+# $Id: .login,v 1.93 2008/08/08 12:43:11 marki Exp $
 #
 echo starting .login
+#
+# general environment
+#
+setenv EDITOR emacs
+setenv CVS_RSH ssh
+setenv SCR /scratch/marki
+setenv HDSVN https://halldsvn.jlab.org/repos
+setenv P12SVN https://phys12svn.jlab.org/repos
+setenv GLUEX_TOP /usr/local
 #
 # CLAS software
 #

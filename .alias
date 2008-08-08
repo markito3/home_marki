@@ -31,7 +31,7 @@ alias dismount_floppy umount /mnt/floppy
 alias disp "xterm -T \!* -e view \!*"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort du -r \| sort -k 1nr
-alias e "emacs -fn lucidasanstypewriter-14 \!* &"
+alias e "emacs \!* &"
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias enp enscript -r # portrait
@@ -64,6 +64,7 @@ alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc
 alias setup_epics \
     source /home/epics/prod/epicsB/prod/scripts/setup_epics
+alias setup_gluex source $HOME/halld/build_scripts/gluex_env.csh
 alias setup_primex source /group/primex/builds/prod/scripts/primex_jlab
 alias setup_primex_marki source /usr/local/primex/builds/prod/scripts/primex_marki
 alias setup_primex_online source /usr/local/primex/builds/prod/scripts/primex_online

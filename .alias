@@ -40,6 +40,7 @@ alias errchk "grep -i -e error -e '\*\*'"
 alias findgrep "find . -type f -exec grep -i \!* {} \; -print"
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
+alias h history
 alias hgrep "history | grep -i"
 alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more"
 alias lsb "ls -RalF | sort -k 5nr | more"

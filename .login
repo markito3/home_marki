@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.93 2008/08/08 12:43:11 marki Exp $
+# $Id: .login,v 1.94 2008/08/24 22:43:49 marki Exp $
 #
 echo starting .login
 #
@@ -10,7 +10,6 @@ setenv CVS_RSH ssh
 setenv SCR /scratch/marki
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
-setenv GLUEX_TOP /usr/local
 #
 # CLAS software
 #

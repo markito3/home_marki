@@ -32,6 +32,7 @@ alias disp "xterm -T \!* -e view \!*"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort du -r \| sort -k 1nr
 alias e "emacs \!* &"
+alias er "emacs_read.sh \!* &"
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias enp enscript -r # portrait

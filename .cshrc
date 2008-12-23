@@ -9,6 +9,12 @@ source ~marki/.set_path
 #
 umask 2
 #
+# history
+#
+set history=1000
+set savehist=(1000 merge)
+set histdup=erase
+#
 # exit
 #
 exit

@@ -70,6 +70,7 @@ alias setup_gluex source $HOME/bin/setup_gluex.csh
 alias setup_primex source /group/primex/builds/prod/scripts/primex_jlab
 alias setup_primex_marki source /usr/local/primex/builds/prod/scripts/primex_marki
 alias setup_primex_online source /usr/local/primex/builds/prod/scripts/primex_online
+alias setup_root source $HOME/bin/setup_root.csh
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"

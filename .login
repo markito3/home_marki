@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.94 2008/08/24 22:43:49 marki Exp $
+# $Id: .login,v 1.95 2008/12/23 13:13:06 marki Exp $
 #
 echo starting .login
 #
@@ -32,9 +32,6 @@ set prompt="%m:%C:\!> "  # prompt set to machine:current directory
 
 # Set up shell environment:
 set autolist
-set history=1000
-set savehist=(1000 merge)
-set histdup=erase
 
 # no core dump
 limit coredumpsize 0

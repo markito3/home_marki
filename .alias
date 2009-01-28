@@ -74,16 +74,8 @@ alias setup_root source $HOME/bin/setup_root.csh
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"
-alias todo "emacs ~/misc/stuff/lists/todo.txt &"
-#alias top_clear "ls -R \$TOP_DIR ; rm -rf \$TOP_DIR ; mkdir \$TOP_DIR"
+alias svnq svn status -u
 alias trash 'mv -v \!* /scratch/marki/trash/'
 alias turnoff sudo /sbin/shutdown -h now
-alias update_bookmarks scp claspc14:~/.netscape/bookmarks.html ~/.netscape
-alias update_calendar scp claspc14:~/.calendar ~/claspc14.calendar
-alias vu "vuepad"
-alias wea "telnet downwind.sprl.umich.edu 3000"
-alias windows sudo /sbin/shutdown -r now
-alias xmm "xmodmap -e 'keycode 16 = Escape'" # make <F1> into <escape>
 alias xstart "rm -rf /tmp/ssh-agent.log /tmp/ssh-$USER ; exec ssh-agent startx > & /tmp/ssh-agent.log"
-alias xstartd "dial ; xstart"
 alias xt "xterm -ls -vb -n $USER@$HOST -title $USER@$HOST &"

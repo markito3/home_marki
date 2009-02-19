@@ -43,7 +43,10 @@ alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
 alias h history
 alias hgrep "history | grep -i"
-alias lscl "ls -Ral | grep -e '\.tmp' -e \~ -e '\.aux' -e '#' -e '\.dvi' -e 'last\.kumac' -e 'paw\.metafile' -e 'a\.out' -e 'HBOOK_FILE' -e 'core' -e '\.o' -e 'ftn' | sort -k 5nr | more"
+alias ifarml5_tunnel ssh -t -L9005:localhost:9005 jlab.jlab.org ssh -t -L9005:localhost:22 ifarml5
+alias ifarml5 slogin -p9005 localhost
+alias jlabl3_tunnel ssh -t -L9003:localhost:9003 jlab.jlab.org ssh -t -L9003:localhost:22 jlabl3
+alias jlabl3 slogin -p9003 localhost
 alias lsb "ls -RalF | sort -k 5nr | more"
 alias lsd "ls -F \!* | grep /"
 alias lsl "ls -laF \!* | more"

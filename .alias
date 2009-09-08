@@ -80,6 +80,7 @@ alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"
 alias svnq svn status -u
+alias svni "rm -f /tmp/ignore.tmp ; svn propget svn:ignore > /tmp/ignore.tmp ; emacs /tmp/ignore.tmp ; svn propset svn:ignore -F /tmp/ignore.tmp ."
 alias trash 'mv -v \!* /scratch/marki/trash/'
 alias turnoff sudo /sbin/shutdown -h now
 alias xstart "rm -rf /tmp/ssh-agent.log /tmp/ssh-$USER ; exec ssh-agent startx > & /tmp/ssh-agent.log"

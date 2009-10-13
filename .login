@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.95 2008/12/23 13:13:06 marki Exp $
+# $Id: .login,v 1.96 2009/10/13 20:38:40 marki Exp $
 #
 echo starting .login
 #
@@ -7,7 +7,7 @@ echo starting .login
 #
 setenv EDITOR emacs
 setenv CVS_RSH ssh
-setenv SCR /scratch/marki
+setenv SCR /scratch/$USER
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
 #

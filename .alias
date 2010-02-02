@@ -68,6 +68,9 @@ alias psl ps auxwww
 alias psg "ps auxww | grep -i $1"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd
+alias roentgen_ssh ssh -t -L9001:localhost:9001 jlab.jlab.org ssh -t -L9001:localhost:22 roentgen
+alias roentgen_vnc ssh -t -L5901:localhost:5901 jlab.jlab.org ssh -t -L5901:localhost:5901 roentgen
+alias roentgen slogin -p9001 localhost
 alias rstaff ssh jlabl1 staff
 alias sd "setenv DISPLAY \!*':0.0'"
 alias setup_clas source /group/clas/builds/PRODUCTION/packages/cms/jlab.cshrc

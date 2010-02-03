@@ -1,8 +1,8 @@
 #
 # private aliases
 #
-alias add 'grep -i \!* /home/marki/my/lists/address.tex'
-alias addadd 'emacs ~/my/lists/address.tex &'
+alias add 'grep -i \!* /home/marki/house/lists/address.tex'
+alias addadd 'emacs ~/house/lists/address.tex &'
 alias bcf bc /home/marki/marki/.bcrc
 alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 # browse directory

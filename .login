@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.97 2010/01/26 20:57:00 marki Exp $
+# $Id: .login,v 1.98 2010/03/12 12:49:03 marki Exp $
 #
 echo starting .login
 #
@@ -66,7 +66,6 @@ endif
 #
 # info
 #
-who
 if ($?DISPLAY) then
   echo DISPLAY = $DISPLAY
 else

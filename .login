@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.98 2010/03/12 12:49:03 marki Exp $
+# $Id: .login,v 1.99 2011/04/27 19:57:34 marki Exp $
 #
 echo starting .login
 #
@@ -10,7 +10,7 @@ setenv CVS_RSH ssh
 setenv SCR /scratch/$USER
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
-setenv HOUSE familito.homeip.net
+setenv HOUSE familito.dyndns.org
 #
 # CLAS software
 #

@@ -16,7 +16,7 @@ alias cvs_clas setenv CVSROOT /group/clas/clas_cvs
 alias cvs_clasr setenv CVSROOT marki@cvs.jlab.org:/group/clas/clas_cvs
 alias cvs_epics setenv CVSROOT /home/epics/cvs
 alias cvs_epicsr setenv CVSROOT marki@clon01.jlab.org:/home/epics/cvs
-alias cvs_house setenv CVSROOT marki@familito.homeip.net:/home/marki/cvs
+alias cvs_house setenv CVSROOT marki@familito.dyndns.org:/home/marki/cvs
 alias cvs_my setenv CVSROOT /home/marki/cvs
 alias cvs_myr setenv CVSROOT marki@cvs.jlab.org:/home/marki/cvs
 alias cvs_primex setenv CVSROOT /group/primex/CVS_REPOSITORY
@@ -83,7 +83,7 @@ alias setup_primex_online source /usr/local/primex/builds/prod/scripts/primex_on
 alias setup_root source $HOME/bin/setup_root.csh
 alias shenv "printenv | grep -i"
 alias spe "source ~marki/bin/spe"
-alias sstaff ssh -p9001 localhost staff
+alias sstaff ssh -p9003 localhost staff
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"
 alias svnq svn status -u
 alias svni "rm -f /tmp/ignore.tmp ; svn propget svn:ignore > /tmp/ignore.tmp ; emacs /tmp/ignore.tmp ; svn propset svn:ignore -F /tmp/ignore.tmp ."

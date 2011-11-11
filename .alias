@@ -87,7 +87,7 @@ alias sstaff ssh -p9003 localhost staff
 alias sterm "xterm -title \!* -n \!* -e slogin -2 \!* &"
 alias svnq svn status -u
 alias svni "rm -f /tmp/ignore.tmp ; svn propget svn:ignore > /tmp/ignore.tmp ; emacs /tmp/ignore.tmp ; svn propset svn:ignore -F /tmp/ignore.tmp ."
-alias terminal_server rdesktop -g 1024x768  -a 24 -d jlab jlabts
+alias terminal_server "xterm -e ssh -p9003 localhost rdesktop -g 1600x900 -d jlab jlabts21 &"
 alias trash 'mv -v \!* /scratch/marki/trash/'
 alias turnoff sudo /sbin/shutdown -h now
 alias xstart "rm -rf /tmp/ssh-agent.log /tmp/ssh-$USER ; exec ssh-agent startx > & /tmp/ssh-agent.log"

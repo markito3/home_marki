@@ -65,7 +65,7 @@ alias po popd
 alias poker irc marki irc.poker.net
 alias psf ps auxw --forest | more
 alias psl ps auxwww
-alias psg "ps auxww | grep -i $1"
+alias psg "ps auxww | grep -i \!* | grep -v grep"
 alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ; ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 5,5rn | head"
 alias pu pushd
 alias roentgen_ssh ssh -t -L9001:localhost:9001 jlab.jlab.org ssh -t -L9001:localhost:22 roentgen

@@ -1,5 +1,5 @@
 #
 # path
 #
-eval `~marki/bin/addpath.pl . $HOME/bin`
+eval `~/bin/addpath.pl . $HOME/bin`
 

@@ -3,7 +3,7 @@ set noclobber
 #
 # path
 #
-source ~marki/.set_path
+source ~/.set_path
 #
 # umask
 #

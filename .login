@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.100 2013/05/21 18:10:07 marki Exp $
+# $Id: .login,v 1.101 2013/08/23 23:23:21 marki Exp $
 #
 echo starting .login
 #
@@ -12,6 +12,7 @@ setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
 setenv HOUSE familito.dyndns.org
 setenv GDS /group/halld/Software
+setenv LC_ALL en_US
 #
 # CLAS software
 #

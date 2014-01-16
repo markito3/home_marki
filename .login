@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.103 2014/01/10 13:44:16 marki Exp $
+# $Id: .login,v 1.104 2014/01/16 23:41:24 marki Exp $
 #
 echo starting .login
 #
@@ -13,6 +13,17 @@ set autolist
 set history=1000
 set savehist=(1000 merge)
 set histdup=erase
+#
+# general environment
+#
+#setenv EDITOR emacs
+#setenv CVS_RSH ssh
+#setenv SCR /scratch/$USER
+setenv HDSVN https://halldsvn.jlab.org/repos
+setenv P12SVN https://phys12svn.jlab.org/repos
+#setenv HOUSE familito.dyndns.org
+#setenv GDS /group/halld/Software
+#setenv LC_ALL en_US
 #
 # aliases
 #

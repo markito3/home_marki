@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.104 2014/01/16 23:41:24 marki Exp $
+# $Id: .login,v 1.105 2014/01/20 16:44:01 marki Exp $
 #
 echo starting .login
 #
@@ -16,9 +16,9 @@ set histdup=erase
 #
 # general environment
 #
-#setenv EDITOR emacs
-#setenv CVS_RSH ssh
-#setenv SCR /scratch/$USER
+setenv EDITOR emacs
+setenv CVS_RSH ssh
+setenv SCR /scratch/$USER
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
 #setenv HOUSE familito.dyndns.org

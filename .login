@@ -1,7 +1,15 @@
 #
-# $Id: .login,v 1.110 2014/10/30 00:18:47 marki Exp $
+# $Id: .login,v 1.111 2015/02/06 17:30:19 marki Exp $
 #
 echo starting .login
+#
+# are we at jlab
+#
+if ($HOST =~ *.jlab.org) then
+    setenv AT_JLAB 1
+else
+    setenv AT_JLAB 0
+endif
 #
 # set up the terminal
 #

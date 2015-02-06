@@ -6,7 +6,7 @@ emacs*Foreground: Wheat
 emacs*pointerColor: Orchid
 emacs*cursorColor: Orchid
 emacs*bitmapIcon: on
-emacs*font: lucidasanstypewriter-14
+emacs*font: lucidasanstypewriter-12
 emacs.geometry: 80x48
 !
 ! gnuplot resources

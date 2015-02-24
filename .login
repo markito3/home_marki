@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.112 2015/02/24 01:40:08 marki Exp $
+# $Id: .login,v 1.113 2015/02/24 18:25:37 marki Exp $
 #
 echo starting .login
 #
@@ -38,7 +38,7 @@ setenv LC_ALL en_US
 #
 # aliases
 #
-source ~/.alias
+source ~marki/.alias
 #
 # info
 #

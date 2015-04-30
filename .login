@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.115 2015/03/10 18:36:59 marki Exp $
+# $Id: .login,v 1.116 2015/04/30 18:36:54 marki Exp $
 #
 echo starting .login
 #
@@ -26,13 +26,11 @@ set histdup=erase
 #
 setenv EDITOR emacs
 setenv CVS_RSH ssh
-setenv SCR /scratch/$USER
+setenv SCR /u/scratch/$USER
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
 setenv HOUSE 96.249.241.47
 setenv SOFT /group/halld/Software
-setenv BUILDS /group/halld/Software/builds
-setenv SCRIPTS /group/halld/Software/scripts
 setenv WEB /group/halld/www/halldweb/html
 setenv LC_ALL en_US
 #

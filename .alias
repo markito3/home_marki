@@ -34,7 +34,7 @@ alias disp "xterm -T \!* -e view \!*"
 alias difc 'echo \!*~ \!* ; diff \!*~ \!*'
 alias dusort du -r \| sort -k 1nr
 #alias e "emacs \!* &"
-alias e "emacsclient -c \!* > & /dev/null &"
+alias e "emc.sh \!* > & /dev/null &"
 alias edae emacs --daemon
 alias er "emacs_read.sh \!* &"
 alias ecrib "less ~marki/slow/epics_crib.txt"

@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.116 2015/04/30 18:36:54 marki Exp $
+# $Id: .login,v 1.117 2015/06/11 22:28:08 marki Exp $
 #
 echo starting .login
 #
@@ -36,18 +36,11 @@ setenv LC_ALL en_US
 #
 # aliases
 #
-source ~marki/.alias
-#
-# X default settings
-#
-xrdb -load ~/.Xdefaults
+source /home/marki/.alias
 #
 # info
 #
-date
-uname -a
-uptime
-who
+dahell.sh
 #
 # finished
 #

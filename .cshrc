@@ -12,7 +12,6 @@ endif
 # path
 #
 source ~marki/.set_path
-setenv LD_LIBRARY_PATH /usr/local/lib
 #
 # umask
 #

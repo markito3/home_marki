@@ -5,6 +5,10 @@ set noclobber
 #
 if ($HOST =~ *.jlab.org) then
     setenv AT_JLAB 1
+else if ($HOST =~ ifarm*) then
+    setenv AT_JLAB 1
+else if ($HOST =~ farm*) then
+    setenv AT_JLAB 1
 else
     setenv AT_JLAB 0
 endif

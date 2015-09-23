@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.118 2015/06/26 00:35:36 marki Exp $
+# $Id: .login,v 1.119 2015/09/23 17:06:29 marki Exp $
 #
 echo starting .login
 #
@@ -40,7 +40,7 @@ source /home/marki/.alias
 #
 # info
 #
-dahell.sh
+dahell
 #
 # finished
 #

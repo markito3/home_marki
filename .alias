@@ -28,6 +28,7 @@ alias cvsq cvs -n -q update
 alias cw 'set cwfile=`date +%s` ; \!* > & $cwfile.tmp ; xterm -title "\!*" -e less $cwfile.tmp &'
 alias cwd echo \$cwd
 alias del rm -i
+alias di dirs -v
 alias dial sudo /etc/ppp/ppp-on
 alias dismount_floppy umount /mnt/floppy
 alias disp "xterm -T \!* -e view \!*"
@@ -44,6 +45,7 @@ alias ens enscript -f Courier8 # small font
 alias errchk "grep -i -e error -e '\*\*'"
 alias ev "evince \!* > & /dev/null &"
 alias findgrep "find . -type f -exec grep -i \!* {} \; -print"
+alias gitq git status
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
 alias h history

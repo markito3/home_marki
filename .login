@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.120 2015/10/04 17:00:23 marki Exp $
+# $Id: .login,v 1.121 2015/10/22 00:48:41 marki Exp $
 #
 echo starting .login
 #
@@ -33,6 +33,8 @@ setenv HOUSE 108.39.37.191
 setenv SOFT /group/halld/Software
 setenv WEB /group/halld/www/halldweb/html
 setenv LC_ALL en_US
+setenv GH https://github.com/jeffersonlab
+setenv GHM https://github.com/markito3
 #
 # aliases
 #

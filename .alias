@@ -87,6 +87,7 @@ alias setup_epics \
     source /home/epics/prod/epicsB/prod/scripts/setup_epics
 alias setup_gluex source $HOME/bin/setup_gluex.csh
 alias setup_gluex_jlab source /group/halld/Software/build_scripts/gluex_env_jlab.csh
+alias setup_jproj source /home/marki/bin/setup_jproj.csh
 alias setup_primex source /group/primex/builds/prod/scripts/primex_jlab
 alias setup_primex_marki source /usr/local/primex/builds/prod/scripts/primex_marki
 alias setup_primex_online source /usr/local/primex/builds/prod/scripts/primex_online

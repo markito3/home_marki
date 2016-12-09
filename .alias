@@ -79,7 +79,7 @@ alias pstop "ps -efo 'user pid ppid pcpu pmem vsz comm' | sort -k 4,4rn | head ;
 alias pu pushd
 alias lorentz_ssh ssh -t -L9001:localhost:9001 jlab.jlab.org ssh -t -L9001:localhost:22 lorentz
 alias lorentz_vnc ssh -t -L5901:localhost:54061 jlab.jlab.org ssh -t -L54061:localhost:5901 lorentz
-alias gluon_vnc ssh -t -L5902:localhost:7728 hallgw ssh -t -L7728:localhost:5902 gluon47
+alias gluon_vnc ssh -t -4 -L5907:localhost:5907 hallgw ssh -t -4 -L5907:localhost:5907 gluon47
 alias lorentz slogin -p9001 localhost
 alias rstaff ssh jlabl1 staff
 alias sd "setenv DISPLAY \!*':0.0'"

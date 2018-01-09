@@ -1,6 +1,5 @@
 #
 # path
 #
-if ($AT_JLAB) eval `~marki/bin/addpath.pl /apps/bin /site/bin`
-eval `~marki/bin/addpath.pl . $HOME/bin ~marki/bin`
+eval `~marki/bin/addpath.pl . ~marki/bin`
 

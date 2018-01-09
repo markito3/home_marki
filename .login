@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.131 2017/08/30 11:56:55 marki Exp $
+# $Id: .login,v 1.132 2018/01/09 19:30:26 marki Exp $
 #
 echo starting .login
 #
@@ -14,7 +14,7 @@ else if ($HOST =~ farm*) then
 else
     setenv AT_JLAB 0
 endif
-if ($AT_JLAB) eval `~marki/bin/addpath.pl /apps/bin /site/bin`
+if ($AT_JLAB) eval `~marki/bin/addpath.pl /site/bin`
 #
 # set up the terminal
 #

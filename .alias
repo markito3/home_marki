@@ -46,7 +46,7 @@ alias errchk "grep -i -e error -e '\*\*'"
 alias ev "evince \!* > & /dev/null &"
 alias findgrep "find . -type f -exec grep -i \!* {} \; -print"
 alias forest "xterm -T Forest -e 'ps auxf | less'"
-alias gitq git status \; git branch \; git remote -v
+alias gitq git status \; git branch -vv \; git remote -v
 alias gr "grep -i"
 alias grepcache "strings ~/.netscape/cache/index.db | grep -i \!* | more"
 alias h history

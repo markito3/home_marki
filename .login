@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.133 2018/04/27 22:33:11 marki Exp $
+# $Id: .login,v 1.134 2018/09/13 14:41:21 marki Exp $
 #
 echo starting .login
 #
@@ -14,7 +14,10 @@ else if ($HOST =~ farm*) then
 else
     setenv AT_JLAB 0
 endif
-if ($AT_JLAB) eval `~marki/bin/addpath.pl /site/bin`
+if ($AT_JLAB) then
+    eval `~marki/bin/addpath.pl /site/bin`
+    source /group/halld/Software/build_scripts/gluex_env_boot_jlab.csh
+endif
 #
 # set up the terminal
 #

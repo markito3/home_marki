@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.137 2019/06/18 22:55:50 marki Exp $
+# $Id: .login,v 1.138 2019/09/26 00:22:43 marki Exp $
 #
 echo starting .login
 #
@@ -44,6 +44,10 @@ setenv LC_ALL en_US
 setenv GH https://github.com/jeffersonlab
 setenv GHM https://github.com/markito3
 setenv JPROJ ~/jproj
+#
+#
+#
+source /group/halld/Software/time-history-plots/scripts/setup.csh
 #
 # aliases
 #

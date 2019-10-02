@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.138 2019/09/26 00:22:43 marki Exp $
+# $Id: .login,v 1.139 2019/10/02 22:51:11 marki Exp $
 #
 echo starting .login
 #
@@ -17,6 +17,7 @@ endif
 if ($AT_JLAB) then
     eval `~marki/bin/addpath.pl /site/bin`
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.csh
+    source /group/halld/Software/time-history-plots/scripts/setup.csh
 endif
 #
 # set up the terminal
@@ -44,10 +45,6 @@ setenv LC_ALL en_US
 setenv GH https://github.com/jeffersonlab
 setenv GHM https://github.com/markito3
 setenv JPROJ ~/jproj
-#
-#
-#
-source /group/halld/Software/time-history-plots/scripts/setup.csh
 #
 # aliases
 #

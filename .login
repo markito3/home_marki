@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.139 2019/10/02 22:51:11 marki Exp $
+# $Id: .login,v 1.140 2019/10/02 22:53:50 marki Exp $
 #
 echo starting .login
 #
@@ -45,6 +45,7 @@ setenv LC_ALL en_US
 setenv GH https://github.com/jeffersonlab
 setenv GHM https://github.com/markito3
 setenv JPROJ ~/jproj
+addpath.pl -l /usr/local/lib
 #
 # aliases
 #

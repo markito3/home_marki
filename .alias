@@ -9,6 +9,7 @@ alias bckgnd "xv -root -rmode 5 -maxpect -owncmap -quit \!* &"
 alias bd 'find . -type f -exec echo ======== \; -print -exec echo -------- \; -exec cat {} \; | less'
 alias colors "more /usr/lib/X11/rgb.txt"
 alias control "ssh -n -l root 0 control-panel >& /dev/null &"
+alias cpv cp -v
 alias crib "less /home/marki/misc/crib.txt"
 alias cribadd "emacs /home/marki/misc/crib.txt &"
 alias cribe "less $HOME/slow/epics_crib.txt"
@@ -38,6 +39,7 @@ alias dusort du -r \| sort -k 1nr
 alias e "emc.sh \!* > & /dev/null &"
 alias edae emacs --daemon
 alias er "emacs_read.sh \!* &"
+alias er2  "emc.sh -r \!* > & /dev/null &"
 alias ecrib "less ~marki/slow/epics_crib.txt"
 alias ecribadd "x ~marki/slow/epics_crib.txt"
 alias enp enscript -r # portrait

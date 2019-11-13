@@ -84,6 +84,7 @@ alias lorentz_ssh ssh -t -L9001:localhost:9001 jlab.jlab.org ssh -t -L9001:local
 alias lorentz_vnc ssh -t -L5901:localhost:54061 jlab.jlab.org ssh -t -L54061:localhost:5901 lorentz
 alias gluon_vnc ssh -t -4 -L5907:localhost:5907 hallgw ssh -t -4 -L5907:localhost:5907 gluon47
 alias lorentz ssh -p9001 localhost
+alias renee ssh renee@192.168.1.215
 alias rstaff ssh jlabl1 staff
 alias sd "setenv DISPLAY \!*':0.0'"
 alias sdl source ~/.login

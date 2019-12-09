@@ -1,0 +1,7 @@
+ alias lorentz_ssh="ssh -t -L9001:localhost:9001 jlab.jlab.org ssh -t -L9001:localhost:22 lorentz"
+ alias cvsq="cvs -n -q import"
+ alias cvsq="cvs -n -q update"
+ alias psg="history | grep -i "
+ alias hgrep="history | grep -i "
+ alias psg="ps auxw | grep -i"
+ 

@@ -17,7 +17,8 @@ export PATH
 
 # User specific aliases and functions
 alias cvsq="cvs -n -q update"
-alias gitq="git status \; git branch -vv \; git remote -v"
+alias del="rm -iv"
+alias hg="history | grep -i"
 alias lorentz="ssh -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 jlab.jlab.org \
       ssh -t -L9001:localhost:22 lorentz"
@@ -35,6 +36,11 @@ ev() {
     echo "$1"
     evince "$1" >& /dev/null &
 }
+gitq() {
+    git status
+    git branch -vv
+    git remote -v
+}
 lst() {
     ls -laFt $1 | more
 }
@@ -43,4 +49,7 @@ lw() {
 }
 psg() {
     ps auxw | grep -i $1 | grep -v 'grep '
+}
+trash() {
+    mv -v "$@" ~/.local/share/Trash/files/
 }

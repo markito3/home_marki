@@ -41,6 +41,9 @@ gitq() {
     git branch -vv
     git remote -v
 }
+lsl() {
+    ls -laF $1 | more
+}
 lst() {
     ls -laFt $1 | more
 }

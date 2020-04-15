@@ -38,6 +38,7 @@ alias dusort du -r \| sort -k 1nr
 #alias e "emacs \!* &"
 alias e "emc.sh \!* > & /dev/null &"
 alias edae emacs --daemon
+alias enw emacs -nw
 alias er "emacs_read.sh \!* &"
 alias er2  "emc.sh -r \!* > & /dev/null &"
 alias ecrib "less ~marki/slow/epics_crib.txt"

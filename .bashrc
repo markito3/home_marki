@@ -29,6 +29,7 @@ alias cppv="cp -pv"
 alias cpv="cp -v"
 alias pu=pushd
 alias po=popd
+alias shenv="printenv | grep -i"
 e() {
     emacs $1 >& /dev/null &
 }
@@ -40,12 +41,13 @@ gitq() {
     git status
     git branch -vv
     git remote -v
+    git stash list
 }
 lsl() {
-    ls -laF $1 | more
+    ls -laF "$@" | more
 }
 lst() {
-    ls -laFt $1 | more
+    ls -laFt "$@" | more
 }
 lw() {
     xterm -T $1 -e less $1 &
@@ -56,3 +58,11 @@ psg() {
 trash() {
     mv -v "$@" ~/.local/share/Trash/files/
 }
+
+if [ `hostname` == "markdesk4.itodomain" ]
+then
+    source /usr/local/gluex_top/gluex_env_boot.sh
+else
+    echo not on markdesk4
+fi
+    

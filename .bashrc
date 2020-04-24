@@ -16,6 +16,7 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
+shopt -s direxpand
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias hg="history | grep -i"

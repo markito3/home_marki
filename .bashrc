@@ -11,6 +11,7 @@ then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
+export HISTTIMEFORMAT="%d/%m/%y %T "
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
@@ -21,10 +22,12 @@ alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias hg="history | grep -i"
 alias lorentz="ssh -p9001 localhost"
-alias lorentz_ssh="ssh -t -L9001:localhost:9001 jlab.jlab.org \
+alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
       ssh -t -L9001:localhost:22 lorentz"
-alias lorentz_vnc="ssh -t -L5901:localhost:54061 jlab.jlab.org \
+alias lorentz_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
       ssh -t -L54061:localhost:5901 lorentz"
+alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
+      ssh -t -L54062:localhost:5902 lorentz"
 alias mvv="mv -v"
 alias cppv="cp -pv"
 alias cpv="cp -v"
@@ -37,6 +40,9 @@ e() {
 ev() {
     echo "$1"
     evince "$1" >& /dev/null &
+}
+findgrep() {
+    find . -type f -exec grep -il $1 {} \; -exec echo ---------- \; -exec grep -i $1 {} \; -exec echo ========== \;
 }
 gitq() {
     git status

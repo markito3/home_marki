@@ -1,5 +1,5 @@
 #
-# $Id: .login,v 1.142 2019/12/05 22:57:09 marki Exp $
+# $Id: .login,v 1.143 2020/05/20 16:49:07 marki Exp $
 #
 echo starting .login
 #
@@ -38,7 +38,7 @@ setenv CVS_RSH ssh
 setenv SCR /u/scratch/$USER
 setenv HDSVN https://halldsvn.jlab.org/repos
 setenv P12SVN https://phys12svn.jlab.org/repos
-setenv HOUSE 70.104.193.108
+setenv HOUSE 74.110.127.14
 setenv SOFT /group/halld/Software
 setenv WEB /group/halld/www/halldweb/html
 setenv LC_ALL en_US

@@ -20,6 +20,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 shopt -s direxpand
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
+alias di="dirs -v"
 alias hg="history | grep -i"
 alias lorentz="ssh -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \

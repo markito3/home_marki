@@ -35,6 +35,7 @@ alias cpv="cp -v"
 alias pu=pushd
 alias po=popd
 alias shenv="printenv | grep -i"
+alias sshya="ssh -YA"
 e() {
     emacs $1 >& /dev/null &
 }

@@ -36,8 +36,12 @@ alias pu=pushd
 alias po=popd
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
+alias svnq="svn status -u"
 e() {
     emacs $1 >& /dev/null &
+}
+enw() {
+    emacs -nw $1 >& /dev/null &
 }
 ev() {
     echo "$1"
@@ -66,6 +70,9 @@ psg() {
 }
 trash() {
     mv -v "$@" ~/.local/share/Trash/files/
+}
+vncs() {
+    vncserver -geometry 1820x880 :$1
 }
 
 if [ `hostname` == "markdesk4.itodomain" ]

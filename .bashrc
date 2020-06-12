@@ -18,6 +18,8 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 
 # User specific aliases and functions
 shopt -s direxpand
+alias cppv="cp -pv"
+alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
@@ -30,8 +32,6 @@ alias lorentz_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
 alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
       ssh -t -L54062:localhost:5902 lorentz"
 alias mvv="mv -v"
-alias cppv="cp -pv"
-alias cpv="cp -v"
 alias pu=pushd
 alias po=popd
 alias shenv="printenv | grep -i"
@@ -41,7 +41,7 @@ e() {
     emacs $1 >& /dev/null &
 }
 enw() {
-    emacs -nw $1 >& /dev/null &
+    emacs -nw $1
 }
 ev() {
     echo "$1"

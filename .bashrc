@@ -23,6 +23,7 @@ alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
+alias gxc="singularity shell --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
 alias hg="history | grep -i"
 alias lorentz="ssh -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
@@ -79,6 +80,6 @@ if [ `hostname` == "markdesk4.itodomain" ]
 then
     source /usr/local/gluex_top/gluex_env_boot.sh
 else
-    echo not on markdesk4
+    source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
 fi
     

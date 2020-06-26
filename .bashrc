@@ -78,8 +78,10 @@ vncs() {
 
 if [ `hostname` == "markdesk4.itodomain" ]
 then
+    # echo .bashrc: on markdesk4
     source /usr/local/gluex_top/gluex_env_boot.sh
 else
+    # echo .bashrc: not on markdesk4
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
 fi
     

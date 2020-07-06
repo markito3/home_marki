@@ -16,8 +16,10 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
 shopt -s direxpand
+
+# User specific aliases and functions
+# aliases
 alias cppv="cp -pv"
 alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
@@ -25,6 +27,8 @@ alias del="rm -iv"
 alias di="dirs -v"
 alias gxc="singularity shell --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
 alias hg="history | grep -i"
+alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
+alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
 alias lorentz="ssh -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
       ssh -t -L9001:localhost:22 lorentz"
@@ -35,9 +39,13 @@ alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
 alias mvv="mv -v"
 alias pu=pushd
 alias po=popd
+alias update_container="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
+alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
+      ssh -t -L9002:localhost:22 scosg16"
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
 alias svnq="svn status -u"
+# functions
 e() {
     emacs $1 >& /dev/null &
 }

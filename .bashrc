@@ -65,6 +65,9 @@ gitq() {
     git remote -v
     git stash list
 }
+lsd() {
+    ls -laFd "$@" | more
+}
 lsl() {
     ls -laF "$@" | more
 }

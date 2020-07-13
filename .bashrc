@@ -25,7 +25,7 @@ alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
-alias gxc="singularity shell --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
+alias gxc="singularity shell --cleanenv --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
@@ -39,7 +39,7 @@ alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
 alias mvv="mv -v"
 alias pu=pushd
 alias po=popd
-alias update_container="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
+alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
 alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
       ssh -t -L9002:localhost:22 scosg16"
 alias shenv="printenv | grep -i"
@@ -90,9 +90,13 @@ vncs() {
 if [ `hostname` == "markdesk4.itodomain" ]
 then
     # echo .bashrc: on markdesk4
-    source /usr/local/gluex_top/gluex_env_boot.sh
+    if [ -d "/.singularity.d" ]
+    then
+	source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
+    else
+	source /beach/gluex_top/gluex_env_boot.sh
+    fi
 else
     # echo .bashrc: not on markdesk4
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
 fi
-    

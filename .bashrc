@@ -36,6 +36,8 @@ alias lorentz_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
       ssh -t -L54061:localhost:5901 lorentz"
 alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
       ssh -t -L54062:localhost:5902 lorentz"
+alias lorentz_vnc3="ssh -t -L5903:localhost:54063 login.jlab.org \
+      ssh -t -L54063:localhost:5903 lorentz"
 alias mvv="mv -v"
 alias pu=pushd
 alias po=popd

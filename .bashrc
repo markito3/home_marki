@@ -89,7 +89,7 @@ vncs() {
     vncserver -geometry 1820x880 :$1
 }
 
-if [ `hostname` == "markdesk4.itodomain" ]
+if [ `hostname` == "markdesk4.itodomain" -o `hostname` == "ZEEMAN" ]
 then
     # echo .bashrc: on markdesk4
     if [ -d "/.singularity.d" ]

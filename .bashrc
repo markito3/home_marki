@@ -89,7 +89,7 @@ vncs() {
     vncserver -geometry 1820x880 :$1
 }
 
-if [ `hostname` == "markdesk4.itodomain" -o `hostname` == "ZEEMAN" ]
+if [ `hostname` == "markdesk4.itodomain" ]
 then
     # echo .bashrc: on markdesk4
     if [ -d "/.singularity.d" ]
@@ -98,6 +98,9 @@ then
     else
 	source /beach/gluex_top/gluex_env_boot.sh
     fi
+elif [ `hostname` == "ZEEMAN" ]
+then
+    source /home/marki/gluex_top/gluex_env_boot.sh
 else
     # echo .bashrc: not on markdesk4
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh

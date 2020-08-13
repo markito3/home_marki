@@ -20,6 +20,7 @@ shopt -s direxpand
 
 # User specific aliases and functions
 # aliases
+alias backup_status="find /travel/backup/renee/ -maxdepth 2 -name backup_date -exec ls -l {} \;"
 alias cppv="cp -pv"
 alias cpv="cp -v"
 alias cvsq="cvs -n -q update"

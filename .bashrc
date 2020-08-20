@@ -68,6 +68,11 @@ gitq() {
     git remote -v
     git stash list
 }
+gsetup() {
+    gt=$1
+    . $gt/gluex_env_boot.sh
+    gxenv
+}
 lsd() {
     ls -laFd "$@" | more
 }
@@ -89,7 +94,10 @@ trash() {
 vncs() {
     vncserver -geometry 1820x880 :$1
 }
-
+usb_dirty_bytes() {
+    echo $((16*1024*1024)) > /proc/sys/vm/dirty_background_bytes
+    echo $((48*1024*1024)) > /proc/sys/vm/dirty_bytes
+}
 if [ `hostname` == "markdesk4.itodomain" ]
 then
     # echo .bashrc: on markdesk4

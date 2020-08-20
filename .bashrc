@@ -12,6 +12,7 @@ then
 fi
 export PATH
 export HISTTIMEFORMAT="%d/%m/%y %T "
+export HOUSE=74.110.127.14
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=

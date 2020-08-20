@@ -42,6 +42,7 @@ alias lorentz_vnc3="ssh -t -L5903:localhost:54063 login.jlab.org \
 alias mvv="mv -v"
 alias pu=pushd
 alias po=popd
+alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
 alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
       ssh -t -L9002:localhost:22 scosg16"

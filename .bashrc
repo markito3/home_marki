@@ -22,6 +22,7 @@ shopt -s direxpand
 # User specific aliases and functions
 # aliases
 alias backup_status="find /travel/backup/renee/ -maxdepth 2 -name backup_date -exec ls -l {} \;"
+alias big_xclock="xclock -digital -norender -fn -adobe-times-bold-r-normal--34-240-100-100-p-177-iso10646-1 -update 1 &"
 alias cppv="cp -pv"
 alias cpv="cp -v"
 alias cvsq="cvs -n -q update"

@@ -118,4 +118,5 @@ else
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
     export SOFT=/group/halld/Software
     export WEB=/group/halld/www/halldweb/html
+    eval `/home/marki/bin/addpath.pl -b /site/bin`
 fi

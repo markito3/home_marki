@@ -11,6 +11,7 @@ then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
 export PATH
+export BEACH=47.133.86.121
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HOUSE=74.110.127.14
 
@@ -110,6 +111,9 @@ then
     else
 	source /beach/gluex_top/gluex_env_boot.sh
     fi
+elif [ `hostname` == "beach.itodomain" ]
+then
+    source /home/gluex/gluex_top/gluex_env_boot.sh
 elif [ `hostname` == "ZEEMAN" ]
 then
     source /home/marki/gluex_top/gluex_env_boot.sh

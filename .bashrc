@@ -54,7 +54,7 @@ alias sshya="ssh -YA"
 alias svnq="svn status -u"
 # functions
 e() {
-    emacs $1 >& /dev/null &
+    emc.sh $1 >& /dev/null &
 }
 enw() {
     emacs -nw $1

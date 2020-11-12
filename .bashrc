@@ -96,7 +96,7 @@ trash() {
     mv -v "$@" ~/.local/share/Trash/files/
 }
 vncs() {
-    vncserver -geometry 1820x880 :$1
+    vncserver -geometry 2304x1296 :$1
 }
 usb_dirty_bytes() {
     echo $((16*1024*1024)) > /proc/sys/vm/dirty_background_bytes

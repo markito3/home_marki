@@ -13,7 +13,7 @@ fi
 export PATH
 export BEACH=47.133.86.121
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export HOUSE=74.110.127.14
+export HOUSE=96.249.228.231
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
@@ -111,6 +111,9 @@ then
     else
 	source /beach/gluex_top/gluex_env_boot.sh
     fi
+elif [ `hostname` == "markdesk5.itodomain" ]
+then
+    source /data/gluex/gluex_top/gluex_env_boot.sh
 elif [ `hostname` == "beach.itodomain" ]
 then
     source /home/gluex/gluex_top/gluex_env_boot.sh

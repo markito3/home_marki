@@ -12,8 +12,10 @@ then
 fi
 export PATH
 export BEACH=47.133.86.121
+export HDSVN=https://halldsvn.jlab.org/repos
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HOUSE=96.249.228.231
+export P12SVN=https://phys12svn.jlab.org/repos
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=

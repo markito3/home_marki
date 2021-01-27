@@ -25,6 +25,7 @@ shopt -s direxpand
 # User specific aliases and functions
 # aliases
 alias backup_status="find /travel/backup/renee/ -maxdepth 2 -name backup_date -exec ls -l {} \;"
+alias bcf="bc /home/marki/marki/.bcrc"
 alias big_xclock="LC_ALL=C xclock -digital -norender -strftime '%a %b %d %l:%M %p' -fn -*-*-*-r-*--34-*-*-*-p-*-*-* &"
 alias cppv="cp -pv"
 alias cpv="cp -v"
@@ -35,7 +36,7 @@ alias gxc="singularity shell --cleanenv --bind /travel/gluex/group/halld:/group/
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
-alias lorentz="ssh -p9001 localhost"
+alias lorentz="ssh -t -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
       ssh -t -L9001:localhost:22 lorentz"
 alias lorentz_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
@@ -54,6 +55,7 @@ alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
 alias svnq="svn status -u"
+alias unixtime="date +%s"
 # functions
 e() {
     emc.sh $1 >& /dev/null &

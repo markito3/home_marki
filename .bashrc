@@ -6,6 +6,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific environment
+set -o noclobber
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"

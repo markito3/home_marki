@@ -17,6 +17,7 @@ export HDSVN=https://halldsvn.jlab.org/repos
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export HOUSE=96.249.228.231
 export P12SVN=https://phys12svn.jlab.org/repos
+export EDITOR=vi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=

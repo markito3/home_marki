@@ -54,8 +54,8 @@ alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
 alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
       ssh -t -L9002:localhost:22 scosg16"
-alias shenv="printenv | grep"
-alias shenvi="printenv | grep -i"
+alias shenvni="printenv | grep"
+alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
 alias svnq="svn status -u"
 alias unixtime="date +%s"
@@ -70,10 +70,10 @@ ev() {
     echo "$1"
     evince "$1" >& /dev/null &
 }
-findgrep() {
+findgrepni() {
     find . -type f -exec grep -l $1 {} \; -exec echo ---------- \; -exec grep $1 {} \; -exec echo ========== \;
 }
-findgrepi() {
+findgrep() {
     find . -type f -exec grep -il $1 {} \; -exec echo ---------- \; -exec grep -i $1 {} \; -exec echo ========== \;
 }
 gitq() {

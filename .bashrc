@@ -71,10 +71,10 @@ ev() {
     evince "$1" >& /dev/null &
 }
 findgrepni() {
-    find . -type f -exec grep -l $1 {} \; -exec echo ---------- \; -exec grep $1 {} \; -exec echo ========== \;
+    find . -type f -exec bash -c "file {} | grep -l text > /dev/null" \; -exec grep -l $1 {} \; -exec echo ---------- \; -exec grep -C3 $1 {} \; -exec echo ========== \;
 }
 findgrep() {
-    find . -type f -exec grep -il $1 {} \; -exec echo ---------- \; -exec grep -i $1 {} \; -exec echo ========== \;
+    find . -type f -exec bash -c "file {} | grep -l text > /dev/null" \; -exec grep -il $1 {} \; -exec echo ---------- \; -exec grep -C3 -i $1 {} \; -exec echo ========== \;
 }
 gitq() {
     git status
@@ -86,6 +86,9 @@ gsetup() {
     gt=$1
     . $gt/gluex_env_boot.sh
     gxenv
+}
+humantime() {
+    date --date=@"$@"
 }
 lsd() {
     ls -laFd "$@" | more

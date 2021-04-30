@@ -52,6 +52,7 @@ alias pu=pushd
 alias po=popd
 alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
+alias sc7="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.7.sif"
 alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
       ssh -t -L9002:localhost:22 scosg16"
 alias shenvni="printenv | grep"
@@ -126,7 +127,18 @@ then
     fi
 elif [ `hostname` == "markdesk5.itodomain" ]
 then
-    source /data/gluex/gluex_top/gluex_env_boot.sh
+    if [ -d "/.singularity.d" ]
+    then
+	if grep -lq "CentOS Linux release 7" /etc/redhat-release
+	then
+	    source /data/gluex/Linux_CentOS7-x86_64-gcc4.8.5-cntr/gluex_top/gluex_env_boot.sh
+	    export PS1="[\u@\h/C7 \W]\$ "
+	else
+	    echo nothing sourced
+	fi
+    else
+	source /data/gluex/gluex_top/gluex_env_boot.sh
+    fi
 elif [ `hostname` == "beach.itodomain" ]
 then
     source /home/gluex/gluex_top/gluex_env_boot.sh

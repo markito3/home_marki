@@ -91,6 +91,9 @@ gsetup() {
 humantime() {
     date --date=@"$@"
 }
+lsa() {
+    ls -aF "$@"
+}
 lsd() {
     ls -laFd "$@" | more
 }

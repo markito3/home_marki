@@ -130,11 +130,12 @@ then
     fi
 elif [ `hostname` == "markdesk5.itodomain" ]
 then
+    export SCR=/data/scratch
     if [ -d "/.singularity.d" ]
     then
 	if grep -lq "CentOS Linux release 7" /etc/redhat-release
 	then
-	    source /data/gluex/Linux_CentOS7-x86_64-gcc4.8.5-cntr/gluex_top/gluex_env_boot.sh
+	    source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
 	    export PS1="[\u@\h/C7 \W]\$ "
 	else
 	    echo nothing sourced
@@ -149,9 +150,10 @@ elif [ `hostname` == "ZEEMAN" ]
 then
     source /home/marki/gluex_top/gluex_env_boot.sh
 else
-    # echo .bashrc: not on markdesk4
+    # echo .bashrc: assuming jlab
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
     export SOFT=/group/halld/Software
     export WEB=/group/halld/www/halldweb/html
     eval `/home/marki/bin/addpath.pl -b /site/bin`
+    export SCR=/u/scratch/$USER
 fi

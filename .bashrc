@@ -34,6 +34,7 @@ alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
+alias gq=gitq
 alias gxc="singularity shell --cleanenv --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
@@ -52,9 +53,9 @@ alias pu=pushd
 alias po=popd
 alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
-alias sc7="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.7.sif"
-alias scosg16_ssh="ssh -t -L9002:localhost:9002 login.jlab.org \
-      ssh -t -L9002:localhost:22 scosg16"
+alias sing_c7="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.7.sif"
+alias sing_c8="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.2.2004.sif"
+alias sing_f33="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_fedora-33_sng3.7.sif"
 alias shenvni="printenv | grep"
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
@@ -136,7 +137,11 @@ then
 	if grep -lq "CentOS Linux release 7" /etc/redhat-release
 	then
 	    source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
-	    export PS1="[\u@\h/C7 \W]\$ "
+	    export PS1="[\u@\h/singC7 \W]\$ "
+	elif grep -lq "Fedora release 33" /etc/redhat-release
+	then
+	    source /data/gluex/gluex_top_fedora33/gluex_env_boot.sh
+	    export PS1="[\u@\h/singF33 \W]\$ "
 	else
 	    echo nothing sourced
 	fi

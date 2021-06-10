@@ -150,6 +150,7 @@ then
     fi
 elif [ `hostname` == "beach.itodomain" ]
 then
+    export SCR=/home/scratch
     source /home/gluex/gluex_top/gluex_env_boot.sh
 elif [ `hostname` == "ZEEMAN" ]
 then

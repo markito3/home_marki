@@ -138,6 +138,10 @@ then
 	then
 	    source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
 	    export PS1="[\u@\h/singC7 \W]\$ "
+	elif grep -lq "CentOS Linux release 8" /etc/redhat-release
+	then
+	    source /data/gluex/gluex_top_centos8/gluex_env_boot.sh
+	    export PS1="[\u@\h/singC8 \W]\$ "
 	elif grep -lq "Fedora release 33" /etc/redhat-release
 	then
 	    source /data/gluex/gluex_top_fedora33/gluex_env_boot.sh

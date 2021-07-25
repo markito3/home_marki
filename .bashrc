@@ -161,6 +161,9 @@ then
 elif [ `hostname` == "ZEEMAN" ]
 then
     source /home/marki/gluex_top/gluex_env_boot.sh
+elif [ `hostname` == "markdesk4" ]
+then
+    :
 else
     # echo .bashrc: assuming jlab
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh

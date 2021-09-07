@@ -18,7 +18,7 @@ export BEACH=47.133.86.121
 export HDSVN=https://halldsvn.jlab.org/repos
 export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export HOUSE=96.249.228.231
+export HOUSE=108.39.67.176
 export P12SVN=https://phys12svn.jlab.org/repos
 export EDITOR=vi
 
@@ -38,7 +38,6 @@ alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
 alias gq=gitq
-alias gxc="singularity shell --cleanenv --bind /travel/gluex/group/halld:/group/halld /beach/singularity/containers/gluex_centos7.7.simg"
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
@@ -56,9 +55,9 @@ alias pu=pushd
 alias po=popd
 alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
-alias sing_c7="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.22.sif"
-alias sing_c8="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.3.2011_sng3.8_gxi2.23.sif"
-alias sing_f33="singularity shell --cleanenv --bind /data /data/gluex/singularity/gluex_fedora-33_sng3.7.sif"
+alias sing_c7="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.22.sif bash"
+alias sing_c8.4="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.3.2011_sng3.8_gxi2.23.sif bash"
+alias sing_c8.2="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.2.2004_sng3.8_gxi2.23.sif bash"
 alias shenvni="printenv | grep"
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
@@ -141,9 +140,13 @@ then
 	then
 	    source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
 	    export PS1="[\u@\h/singC7 \W]\$ "
-	elif grep -lq "CentOS Linux release 8" /etc/redhat-release
+	elif grep -lq "CentOS Linux release 8.2." /etc/redhat-release
 	then
 	    source /data/gluex/gluex_top_centos8/gluex_env_boot.sh
+	    export PS1="[\u@\h/singC8 \W]\$ "
+	elif grep -lq "CentOS Linux release 8.4." /etc/redhat-release
+	then
+	    source /data/gluex/gluex_top_centos8_gcc8.4/gluex_env_boot.sh
 	    export PS1="[\u@\h/singC8 \W]\$ "
 	elif grep -lq "Fedora release 33" /etc/redhat-release
 	then

@@ -38,6 +38,7 @@ alias cvsq="cvs -n -q update"
 alias del="rm -iv"
 alias di="dirs -v"
 alias gq=gitq
+alias h=history
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"

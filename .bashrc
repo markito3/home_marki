@@ -30,7 +30,7 @@ shopt -s direxpand
 # User specific aliases and functions
 # aliases
 alias backup_status="find /travel/backup/renee/ -maxdepth 2 -name backup_date -exec ls -l {} \;"
-alias bcf="bc /home/marki/marki/.bcrc"
+alias bcf="bc /home/marki/.bcrc"
 alias big_xclock="LC_ALL=C xclock -digital -norender -strftime '%a %b %d %l:%M %p' -fn -*-*-*-r-*--34-*-*-*-p-*-*-* &"
 alias cppv="cp -pv"
 alias cpv="cp -v"
@@ -41,6 +41,7 @@ alias gq=gitq
 alias h=history
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
+alias lssh="ssh -t -p9001 localhost ssh -YA"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
 alias lorentz="ssh -t -p9001 localhost"
 alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
@@ -56,9 +57,9 @@ alias pu=pushd
 alias po=popd
 alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
-alias sing_c7="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.22.sif bash"
-alias sing_c8.4="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.3.2011_sng3.8_gxi2.23.sif bash"
-alias sing_c8.2="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.2.2004_sng3.8_gxi2.23.sif bash"
+alias sing_c7="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.27.sif bash"
+alias sing_c8="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.4.2105_sng3.8_gxi2.26.sif bash"
+alias sing_u20="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_ubuntu.focal-20200925_sng3.8_gxi2.28.sif bash"
 alias shenvni="printenv | grep"
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"
@@ -108,7 +109,7 @@ lst() {
     ls -laFt "$@" | more
 }
 lw() {
-    xterm -T $1 -e less $1 &
+    xterm -fn 10x20 -T $1 -e less $1 &
 }
 psg() {
     ps auxw | grep -i $1 | grep -v 'grep '
@@ -137,27 +138,35 @@ then
     export SCR=/data/scratch
     if [ -d "/.singularity.d" ]
     then
-	if grep -lq "CentOS Linux release 7" /etc/redhat-release
+	if [ -f /etc/redhat-release ]
 	then
-	    source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
-	    export PS1="[\u@\h/singC7 \W]\$ "
-	elif grep -lq "CentOS Linux release 8.2." /etc/redhat-release
+	    if grep -lq "CentOS Linux release 7" /etc/redhat-release
+	    then
+		source /data/gluex/gluex_top_centos7/gluex_env_boot.sh
+		export PS1="[\u@\h/singC7 \W]\$ "
+	    elif grep -lq "CentOS Linux release 8.2." /etc/redhat-release
+	    then
+		source /data/gluex/gluex_top_centos8/gluex_env_boot.sh
+		export PS1="[\u@\h/singC8 \W]\$ "
+	    elif grep -lq "CentOS Linux release 8.4." /etc/redhat-release
+	    then
+		source /data/gluex/gluex_top_centos8_gcc8.4/gluex_env_boot.sh
+		export PS1="[\u@\h/singC8 \W]\$ "
+	    elif grep -lq "Fedora release 33" /etc/redhat-release
+	    then
+		source /data/gluex/gluex_top_fedora33/gluex_env_boot.sh
+		export PS1="[\u@\h/singF33 \W]\$ "
+	    fi
+	elif [ -f /etc/lsb-release ]
 	then
-	    source /data/gluex/gluex_top_centos8/gluex_env_boot.sh
-	    export PS1="[\u@\h/singC8 \W]\$ "
-	elif grep -lq "CentOS Linux release 8.4." /etc/redhat-release
-	then
-	    source /data/gluex/gluex_top_centos8_gcc8.4/gluex_env_boot.sh
-	    export PS1="[\u@\h/singC8 \W]\$ "
-	elif grep -lq "Fedora release 33" /etc/redhat-release
-	then
-	    source /data/gluex/gluex_top_fedora33/gluex_env_boot.sh
-	    export PS1="[\u@\h/singF33 \W]\$ "
+	    . /etc/lsb-release
+	    export PS1="[\u@\h/$DISTRIB_CODENAME \W]\$ "
 	else
 	    echo nothing sourced
 	fi
     else
 	source /data/gluex/gluex_top/gluex_env_boot.sh
+	xrdb -load ~/.Xdefaults
     fi
 elif [ `hostname` == "beach.itodomain" ]
 then

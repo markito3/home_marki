@@ -15,3 +15,8 @@
  ;; If there is more than one, they won't work right.
  )
 (put 'downcase-region 'disabled nil)
+(add-hook 'python-mode-hook
+  (lambda ()
+    (setq indent-tabs-mode t)
+    (setq python-indent 8)
+    (setq tab-width 4)))

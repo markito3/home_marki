@@ -168,16 +168,13 @@ then
 	source /data/gluex/gluex_top/gluex_env_boot.sh
 	xrdb -load ~/.Xdefaults
     fi
-elif [ `hostname` == "beach.itodomain" ]
+elif [ `hostname` == "markdesk4" ]
 then
     export SCR=/home/scratch
     source /home/gluex/gluex_top/gluex_env_boot.sh
 elif [ `hostname` == "ZEEMAN" ]
 then
     source /home/marki/gluex_top/gluex_env_boot.sh
-elif [ `hostname` == "markdesk4" ]
-then
-    :
 else
     # echo .bashrc: assuming jlab
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh

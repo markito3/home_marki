@@ -35,9 +35,10 @@ alias big_xclock="LC_ALL=C xclock -digital -norender -strftime '%a %b %d %l:%M %
 alias cppv="cp -pv"
 alias cpv="cp -v"
 alias cvsq="cvs -n -q update"
+alias declf="eval `declare -F`"
 alias del="rm -iv"
 alias di="dirs -v"
-alias gq=gitq
+alias gfa="git fetch --all"
 alias h=history
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
@@ -58,8 +59,8 @@ alias po=popd
 alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
 alias sing_c7="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.27.sif bash"
-alias sing_c8="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.4.2105_sng3.8_gxi2.26.sif bash"
-alias sing_u20="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_ubuntu.focal-20200925_sng3.8_gxi2.28.sif bash"
+alias sing_c8="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.4.2105_sng3.8_gxi2.28.sif bash"
+alias sing_u20="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_ubuntu.focal-20200925_sng3.8_gxi2.29.sif bash"
 alias shenvni="printenv | grep"
 alias shenv="printenv | grep -i"
 alias sshya="ssh -YA"

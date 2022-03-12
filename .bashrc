@@ -31,7 +31,7 @@ shopt -s direxpand
 # aliases
 alias backup_status="find /travel/backup/renee/ -maxdepth 2 -name backup_date -exec ls -l {} \;"
 alias bcf="bc /home/marki/.bcrc"
-alias big_xclock="LC_ALL=C xclock -digital -norender -strftime '%a %b %d %l:%M %p' -fn -*-*-*-r-*--34-*-*-*-p-*-*-* &"
+alias big_xclock="LC_ALL=C xclock -digital -norender -update 1 -strftime '%a %b %d %l:%M:%S %p' -fn -*-*-*-r-*--34-*-*-*-p-*-*-* &"
 alias cppv="cp -pv"
 alias cpv="cp -v"
 alias cvsq="cvs -n -q update"

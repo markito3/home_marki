@@ -18,7 +18,7 @@ export BEACH=47.133.86.121
 export HDSVN=https://halldsvn.jlab.org/repos
 export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export HOUSE=108.39.67.176
+export HOUSE=108.39.47.132
 export P12SVN=https://phys12svn.jlab.org/repos
 export EDITOR=vi
 

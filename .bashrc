@@ -42,17 +42,13 @@ alias gfa="git fetch --all"
 alias h=history
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"
-alias lssh="ssh -t -p9001 localhost ssh -YA"
+alias jlab="ssh -t -p9001 localhost"
+alias jlab_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
+      ssh -t -L9001:localhost:22 jlabl5"
+alias jlab_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
+      ssh -t -L54061:localhost:5901 jlabl5"
+alias jssh="ssh -t -p9001 localhost ssh -YA"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
-alias lorentz="ssh -t -p9001 localhost"
-alias lorentz_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
-      ssh -t -L9001:localhost:22 lorentz"
-alias lorentz_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
-      ssh -t -L54061:localhost:5901 lorentz"
-alias lorentz_vnc2="ssh -t -L5902:localhost:54062 login.jlab.org \
-      ssh -t -L54062:localhost:5902 lorentz"
-alias lorentz_vnc3="ssh -t -L5903:localhost:54063 login.jlab.org \
-      ssh -t -L54063:localhost:5903 lorentz"
 alias mvv="mv -v"
 alias pu=pushd
 alias po=popd
@@ -101,13 +97,13 @@ lsa() {
     ls -aF "$@"
 }
 lsd() {
-    ls -laFd "$@" | more
+    ls -laFd "$@" | more -e
 }
 lsl() {
-    ls -laF "$@" | more
+    ls -laF "$@" | more -e
 }
 lst() {
-    ls -laFt "$@" | more
+    ls -laFt "$@" | more -e
 }
 lw() {
     xterm -fn 10x20 -T $1 -e less $1 &

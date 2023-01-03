@@ -18,7 +18,7 @@ export BEACH=47.133.86.121
 export HDSVN=https://halldsvn.jlab.org/repos
 export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export HOUSE=108.39.47.132
+export HOUSE=108.39.71.49
 export P12SVN=https://phys12svn.jlab.org/repos
 export EDITOR=vi
 
@@ -56,6 +56,7 @@ alias rm_empty_dir="find . -type d -empty -exec rmdir -v {} \;"
 alias rsync_oasis="rsync -ruvt --delete --links -e 'ssh -p9002' localhost:/cvmfs/oasis.opensciencegrid.org/gluex/group/ /travel/gluex/group/"
 alias sing_c7="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-7.7.1908_sng3.8_gxi2.30.sif bash"
 alias sing_c8="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_centos-8.4.2105_sng3.8_gxi2.28.sif bash"
+alias sing_f34="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_fedora-34_sng1.0_gxi2.30.sif bash"
 alias sing_u20="singularity exec --cleanenv --bind /data /data/gluex/singularity/gluex_ubuntu.focal-20200925_sng3.8_gxi2.29.sif bash"
 alias shenvni="printenv | grep"
 alias shenv="printenv | grep -i"

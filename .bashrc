@@ -18,7 +18,7 @@ export BEACH=47.133.86.121
 export HDSVN=https://halldsvn.jlab.org/repos
 export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="%d/%m/%y %T "
-export HOUSE=108.39.71.49
+export HOUSE=72.84.88.236
 export P12SVN=https://phys12svn.jlab.org/repos
 export EDITOR=vi
 
@@ -39,6 +39,7 @@ alias declf="eval `declare -F`"
 alias del="rm -iv"
 alias di="dirs -v"
 alias gfa="git fetch --all"
+alias godaddy="ssh -i ~/.ssh/id_rsa gho3hst035b4@itofamily.online"
 alias h=history
 alias hg="history | grep -i"
 alias interactiveq="[[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'"

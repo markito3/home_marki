@@ -99,13 +99,13 @@ lsa() {
     ls -aF "$@"
 }
 lsd() {
-    ls -laFd "$@" | more -e
+    ls -laFd "$@" | more
 }
 lsl() {
-    ls -laF "$@" | more -e
+    ls -laF "$@" | more
 }
 lst() {
-    ls -laFt "$@" | more -e
+    ls -laFt "$@" | more
 }
 lw() {
     xterm -fn 10x20 -T $1 -e less $1 &

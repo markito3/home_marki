@@ -177,6 +177,7 @@ then
 elif [ `hostname` == "fedora" ]
 then
     date > /dev/null
+    export PS1="[\u@\h \W]\$ "
 else
     # echo .bashrc: assuming jlab
     source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh

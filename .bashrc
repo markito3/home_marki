@@ -7,6 +7,7 @@ fi
 
 # User specific environment
 set -o noclobber
+export PS1="\u@\h \W> "
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -49,6 +50,7 @@ alias jlab_ssh="ssh -t -L9001:localhost:9001 login.jlab.org \
 alias jlab_vnc="ssh -t -L5901:localhost:54061 login.jlab.org \
       ssh -t -L54061:localhost:5901 jlabl5"
 alias jssh="ssh -t -p9001 localhost ssh -YA"
+alias ls="ls -F --group-directories-first"
 alias loginq="shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'"
 alias mvv="mv -v"
 alias pu=pushd

@@ -180,6 +180,10 @@ elif [ `hostname` == "fedora" ]
 then
     date > /dev/null
     export PS1="[\u@\h \W]\$ "
+elif [ `hostname` == "markdesk6" ]
+then
+    date > /dev/null
+    export PS1="[\u@\h \W]\$ "
 elif [[ `hostname` == *.net ]]
 then
     date > /dev/null

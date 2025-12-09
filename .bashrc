@@ -15,7 +15,7 @@ fi
 # non-generic path additions
 PATH=$HOME/git/time-history-plots/scripts:$HOME/git/hd_singularity/scripts:$HOME/git/gluex_install:$PATH
 export PATH
-export BEACH=47.133.86.121
+export BEACH=47.133.158.218
 export HDSVN=https://halldsvn.jlab.org/repos
 export HISTCONTROL=erasedups
 export HISTTIMEFORMAT="%d/%m/%y %T "
